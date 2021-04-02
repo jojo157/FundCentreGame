@@ -15,6 +15,7 @@
 
 body{
     min-height: 100vh;
+    max-width:100hh;
     display:flex;
     flex-direction: column;
     background-color: #fff;
@@ -74,4 +75,68 @@ footer{
     background-color: #1a3e5b;
     padding-top:10px;
     color: #fff;
+}
+
+/* --------------------------- startGame.html----------------------------------------------------*/ 
+
+#choose-Game-buttons-container{
+  Padding-top: 10px;
+  max-height: 30vh;
+  display: flex;
+  -webkit-flex-direction: row; 
+  flex-direction: row; 
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#choose-Level-buttons-container{
+  padding:0;
+    Padding-top: 10px;
+  max-height: 30vh;
+  display: flex;
+  -webkit-flex-direction: row; 
+  flex-direction: row; 
+  justify-content: center;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button-StartGame{
+    height:75px;
+    width: 100px;
+    background-color: #1b6089;
+    border-radius: 8px;
+    border: 2px solid #1a3e5b;
+    transition-duration: 0.4s;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-StartGame:hover{
+    background-color:#b5ca83;
+    border: 2px solid #1a3e5b;
+    color: #000;
+}
+
+.options-area h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.options-area {
+  Padding-top: 20px;
+  display: flex;
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+#choose-Game-buttons-container .button-StartGame{
+    width: 140px;
 }
