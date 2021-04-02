@@ -1,10 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
 
 
-.page-header{
-    font-family: “Roboto Condensed”, Arial, sans-serif;
+/*  --------------------------General styles--------------------------------------------*/ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------- Fonts ----------------------------------------------------*/ 
+
+.page-header h1{
+    font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 
 p{
-    font-family: “Open Sans”, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+
+/* --------------------------- Index.html----------------------------------------------------*/ 
+
+.logo-image{
+    width: 250px;
+}
+
+#homepage-buttons-container{
+    Padding-top: 10px;
+  height: 20rem;
+  display: flex;
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  justify-content: space-evenly;
+}
+
+.button-homepage{
+    height:75px;
+    width:50%;
+    background-color: blue;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.button-homepage:hover{
+    background-color: crimson;
+    color: #fff;
 }
