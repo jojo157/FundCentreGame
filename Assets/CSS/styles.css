@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+
+
+.page-header{
+    font-family: “Roboto Condensed”, Arial, sans-serif;
+}
+
+p{
+    font-family: “Open Sans”, Arial, sans-serif;
+}
