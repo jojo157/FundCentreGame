@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
 /* --------------------------- Fonts ----------------------------------------------------*/ 
 
 .page-header h1{
@@ -32,8 +40,8 @@ p{
 }
 
 #homepage-buttons-container{
-    Padding-top: 10px;
-  height: 20rem;
+  Padding-top: 10px;
+  min-height: 60vh;
   display: flex;
   -webkit-flex-direction: column; 
   flex-direction: column; 
@@ -53,4 +61,9 @@ p{
 .button-homepage:hover{
     background-color: crimson;
     color: #fff;
+}
+
+footer{
+    min-height:50px;
+    margin-top:auto;
 }
