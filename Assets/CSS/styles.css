@@ -76,6 +76,34 @@ footer{
     color: #fff;
 }
 
+/* --------------------------- Pop up instructions window in Index.html----------------------------------------------------*/ 
+
+#popup-instructions-window{
+    display:none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100hh;
+    height: 100hh;
+    padding-top: 60px;
+}
+
+.float-screen-instructions{
+    margin:0 10px;
+    width:auto;
+    height: auto;
+    display:block;
+    border: 2px solid #1a3e5b;
+}
+
+.buttonClose{
+    color: #FF0000;
+    float:right;
+    clear:both;
+    margin: 0 auto;
+
+}
+
 /* --------------------------- startGame.html----------------------------------------------------*/ 
 
 #choose-Game-buttons-container{
