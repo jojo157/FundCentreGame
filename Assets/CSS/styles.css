@@ -59,7 +59,6 @@ p{
     transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -88,11 +87,12 @@ footer{
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
+  max-width: 100hh;
 }
 
 #choose-Level-buttons-container{
   padding:0;
-    Padding-top: 10px;
+  Padding-top: 10px;
   max-height: 30vh;
   display: flex;
   -webkit-flex-direction: row; 
@@ -101,6 +101,7 @@ footer{
   margin: 0;
   margin-top: 20px;
   margin-bottom: 10px;
+  max-width: 100hh;
 }
 
 .button-StartGame{
@@ -112,7 +113,6 @@ footer{
     transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
@@ -127,6 +127,7 @@ footer{
 .options-area h2{
     text-align: center;
     margin-top: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .options-area {
@@ -139,4 +140,35 @@ footer{
 
 #choose-Game-buttons-container .button-StartGame{
     width: 140px;
+}
+
+#home-button{
+Padding-top: 10px;
+  max-height: 30vh;
+  display: flex;
+  -webkit-flex-direction: row; 
+  flex-direction: row; 
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button-Home{
+    background-color:#5993d3;
+    border: 2px solid #1a3e5b;
+    color: #000;
+    height:50px;
+    width: 100px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.button-Home:hover{
+    background-color:#b5ca83;
+    border: 2px solid #1a3e5b;
+    color: #000;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
 }
