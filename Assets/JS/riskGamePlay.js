@@ -7,16 +7,25 @@ extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
 });
 
 setTimeout(function(){
-    let answer = displayFundQuestion();
+    startGame();
+},400);
+
+setTimeout(function(){
+    
+    
     let buttons = document.getElementsByClassName("answer-button");
 
     for(let button of buttons){
-        button.addEventListener("click", function(){
-            checkAnswer(this.textContent, answer);
+            button.addEventListener("click", function(){
+            checkAnswer(this.textContent);
         
         })
     }
 }, 500);
+
+function startGame(){
+    displayFundQuestion();
+}
 
 
 function extractDataFromTxtFile(fileAddress, arrayVariable){
@@ -42,8 +51,8 @@ function generateRandomFund(){
     let fundChoosen = fundName[index];
     let correctRisk = fundRisk[index];
     let solutions = [];
-    solutions.push(fundChoosen);
-    solutions.push(correctRisk);
+    solutions[0]=fundChoosen;
+    solutions[1]= correctRisk;
     return solutions;
     
 }
@@ -56,17 +65,17 @@ function displayFundQuestion(){
     
 }
 
-function checkAnswer(useranswer, correctanswer){
-    correctanswer = correctanswer.trim();
-    console.log(correctanswer);
-    let isCorrect = useranswer === correctanswer;
-
+function checkAnswer(useranswer){
+    let fund = document.getElementById("fund-name-text").textContent;
+    let indexFund = fundName.indexOf(fund);
+    let riskFund = fundRisk[indexFund];
+    let isCorrect = toString(useranswer) === toString(riskFund);
     if(isCorrect){
         alert("You got it right!");
         updateCorrectScore();
 
     }else{
-        alert(`Hard luck, the correct answer is ${correctanswer}!`);
+        alert(`Hard luck, the correct answer is ${riskFund}!`);
         updateIncorrectScore();
     }  
     nextQuestion();
