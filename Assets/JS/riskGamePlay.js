@@ -7,11 +7,17 @@ extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
 });
 
 setTimeout(function(){
-    console.log(fundName[3]);}, 500);
-setTimeout(function(){
-    console.log(fundRisk[3]);}, 500);
-setTimeout(function(){
-    displayFundQuestion();}, 500);
+    let answer = displayFundQuestion();
+    let buttons = document.getElementsByClassName("answer-button");
+
+    for(let button of buttons){
+        button.addEventListener("click", function(){
+            checkAnswer(this.textContent, answer);
+        
+        })
+    }
+}, 500);
+
 
 function extractDataFromTxtFile(fileAddress, arrayVariable){
      $.get(fileAddress, function(data) {
@@ -34,9 +40,31 @@ function generateRandomIndex(){
 function generateRandomFund(){
     let index = generateRandomIndex();
     let fundChoosen = fundName[index];
-    return fundChoosen;
+    let correctRisk = fundRisk[index];
+    let solutions = [];
+    solutions.push(fundChoosen);
+    solutions.push(correctRisk);
+    return solutions;
+    
 }
 
 function displayFundQuestion(){
-    document.getElementById("fund-name-text").textContent = generateRandomFund();
+    let callSolutions = generateRandomFund();
+    document.getElementById("fund-name-text").textContent = callSolutions[0];
+    let riskAnswer = callSolutions[1] ;
+    return riskAnswer;
+    
+}
+
+function checkAnswer(useranswer, correctanswer){
+    correctanswer = correctanswer.trim();
+    console.log(correctanswer);
+    let isCorrect = useranswer === correctanswer;
+
+    if(isCorrect){
+        alert("You got it right!");
+    }else{
+        alert(`Hard luck, the correct answer is ${correctanswer}!`);
+    }
+    
 }
