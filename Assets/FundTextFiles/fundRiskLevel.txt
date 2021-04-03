@@ -1,0 +1,77 @@
+FundRiskLevel
+Very Low
+Low to Medium
+Low to Medium
+Low to Medium
+Low to Medium
+Low to Medium
+Low to Medium
+Low to Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+Medium to High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+High
+Very High
+Very High
+Very High
