@@ -30,7 +30,7 @@ function extractDataFromTxtFile(fileAddress, arrayVariable){
 }
 
 function generateRandomIndex(){
-    let randomIndex = Math.floor(Math.random() *77 ) +1;
+    let randomIndex = Math.floor(Math.random() *76 ) +1;
     if (randomIndex === 1){
         randomIndex = randomIndex + 1;
     }
