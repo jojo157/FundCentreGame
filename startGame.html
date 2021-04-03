@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fund Centre Game</title>
     <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="center-horizontal">
@@ -27,13 +28,13 @@
         <h2>Choose Game Level</h2>
         <div id="choose-Level-buttons-container">
             <div id="easy-button" class="center-vertical">
-                    <button data-type="easy" class="button-StartGame">Easy</button>
+                    <button data-type="easy" class="button-StartGame" id="Easy">Easy</button>
             </div>
             <div id="medium-button" class="center-vertical">
-                <button data-type="medium" class="button-StartGame">Medium</button>
+                <button data-type="medium" class="button-StartGame" id="Medium">Medium</button>
             </div>
             <div id="hard-button" class="center-vertical">
-                <button data-type="hard" class="button-StartGame">Hard</button>
+                <button data-type="hard" class="button-StartGame" id="Hard">Hard</button>
             </div>
         </div>
         <div id="home-button" class="center-vertical">
@@ -44,6 +45,7 @@
     <footer>
         <p class="center-horizontal">For educational purposes only</p>
     </footer>
+<script src="Assets/JS/gameLevel.js"></script>
 
 </body>
 </html>

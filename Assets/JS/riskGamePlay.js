@@ -1,13 +1,17 @@
 var fundName =[];
 var fundRisk = [];
+
  
 $(document).ready(function(){
 extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
 extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
 });
 
+
+
 setTimeout(function(){
     startGame();
+
 },400);
 
 setTimeout(function(){
@@ -28,6 +32,7 @@ setTimeout(function(){
 
 function startGame(){
     displayFundQuestion();
+    gameLevel();
 }
 
 
@@ -107,4 +112,9 @@ function restartGame(){
         document.getElementById("incorrect-score").innerText = 0;
         nextQuestion();
        
+}
+
+function gameLevel(){
+    let levelGame = sessionStorage.getItem("level");
+    console.log(levelGame);
 }
