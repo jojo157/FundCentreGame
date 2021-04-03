@@ -69,7 +69,8 @@ function checkAnswer(useranswer){
     let fund = document.getElementById("fund-name-text").textContent;
     let indexFund = fundName.indexOf(fund);
     let riskFund = fundRisk[indexFund];
-    let isCorrect = toString(useranswer) === toString(riskFund);
+    riskFund = riskFund.trim();
+    let isCorrect = useranswer === riskFund;
     if(isCorrect){
         alert("You got it right!");
         updateCorrectScore();
@@ -96,5 +97,11 @@ function updateIncorrectScore(){
 function nextQuestion(){
     document.getElementById("fund-name-card-container").focus();
     displayFundQuestion();
+}
 
+function restart(){
+    document.getElementById("restart-button").addEventListener("click", function(){
+            document.getElementById("correct-score").innerText = "0";
+            document.getElementById("incorrect-score").innerText = "0";
+            nextQuestion();});
 }
