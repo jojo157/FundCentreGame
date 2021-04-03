@@ -204,3 +204,35 @@ Padding-top: 10px;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
 }
+
+
+/* --------------------------- gameRisk.html----------------------------------------------------*/ 
+
+#risk-answer-buttons-container{
+ Padding-top: 10px;
+  max-height: 30vh;
+  display: flex;
+  -webkit-flex-direction: row; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  max-width: 100hh;
+}
+
+.answer-button{
+    height:75px;
+    width: 100px;
+    background-color: #1b6089;
+    border-radius: 8px;
+    border: 2px solid #1a3e5b;
+    transition-duration: 0.4s;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+}
