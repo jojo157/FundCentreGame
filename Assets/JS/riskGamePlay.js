@@ -11,9 +11,12 @@ setTimeout(function(){
 },400);
 
 setTimeout(function(){
-    
-    
     let buttons = document.getElementsByClassName("answer-button");
+    let reset = document.getElementById("restart-button");
+
+    reset.addEventListener("click", function(){
+            restartGame();
+        })    
 
     for(let button of buttons){
             button.addEventListener("click", function(){
@@ -99,9 +102,9 @@ function nextQuestion(){
     displayFundQuestion();
 }
 
-function restart(){
-    document.getElementById("restart-button").addEventListener("click", function(){
-            document.getElementById("correct-score").innerText = "0";
-            document.getElementById("incorrect-score").innerText = "0";
-            nextQuestion();});
+function restartGame(){
+        document.getElementById("correct-score").innerText = 0;
+        document.getElementById("incorrect-score").innerText = 0;
+        nextQuestion();
+       
 }
