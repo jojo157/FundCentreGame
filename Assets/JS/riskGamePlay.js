@@ -31,8 +31,9 @@ setTimeout(function(){
 }, 500);
 
 function startGame(){
-    displayFundQuestion();
     gameLevel();
+    displayFundQuestion();
+    
 }
 
 
@@ -115,6 +116,8 @@ function restartGame(){
 }
 
 function gameLevel(){
-    let levelGame = sessionStorage.getItem("level");
-    console.log(levelGame);
+   let level =  window.location.href;
+   level = level.split("=");
+   level = level[1];
+   return level;
 }
