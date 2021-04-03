@@ -63,10 +63,25 @@ function checkAnswer(useranswer, correctanswer){
 
     if(isCorrect){
         alert("You got it right!");
+        updateCorrectScore();
+
     }else{
         alert(`Hard luck, the correct answer is ${correctanswer}!`);
+        updateIncorrectScore();
     }  
     nextQuestion();
+}
+
+function updateCorrectScore(){
+ let previousScore = parseInt(document.getElementById("correct-score").innerText);
+ previousScore = previousScore + 1;
+ document.getElementById("correct-score").innerText = previousScore;
+}
+
+function updateIncorrectScore(){
+ let previousScore = parseInt(document.getElementById("incorrect-score").innerText);
+ previousScore = previousScore + 1;
+ document.getElementById("incorrect-score").innerText = previousScore;
 }
 
 function nextQuestion(){
