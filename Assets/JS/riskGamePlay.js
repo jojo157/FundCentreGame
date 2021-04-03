@@ -1,16 +1,22 @@
 var fundName =[];
-var i;
+var fundRisk = [];
+ 
+$(document).ready(function(){
+extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
+extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
+});
+
+setTimeout(function(){
+    console.log(fundName[3]);}, 500);
+setTimeout(function(){
+    console.log(fundRisk[3]);}, 500);
 
 
- $.get('Assets/FundTextFiles/fundnames.txt', function(data) {
-        //var fileDom = $(data);
-
+function extractDataFromTxtFile(fileAddress, arrayVariable){
+     $.get(fileAddress, function(data) {
         var lines = data.split("\n");
         $.each(lines, function(n, elem) {
-            fundName.push(elem);
+            arrayVariable.push(elem);
         });
-    });
-
-
-
-setTimeout(() => {  console.log(fundName[3]); }, 2000);
+     });
+}
