@@ -236,3 +236,22 @@ Padding-top: 10px;
     margin-right: 10px;
     margin-top:10px;
 }
+
+#fund-name-card-container{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+#fund-name-card{
+    height: 60px;
+    background-color: #b5ca83;
+    width:100px;
+    margin-top:10px;
+}
+
+#fund-name-text{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
