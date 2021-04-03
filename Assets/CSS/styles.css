@@ -237,13 +237,9 @@ Padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top:10px;
+    outline: none;
 }
 
-.answer-button:hover{
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
-}
 
 #fund-name-card-container{
     display: flex;

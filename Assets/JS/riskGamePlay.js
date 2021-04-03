@@ -65,6 +65,12 @@ function checkAnswer(useranswer, correctanswer){
         alert("You got it right!");
     }else{
         alert(`Hard luck, the correct answer is ${correctanswer}!`);
-    }
-    
+    }  
+    nextQuestion();
+}
+
+function nextQuestion(){
+    document.getElementById("fund-name-card-container").focus();
+    displayFundQuestion();
+
 }
