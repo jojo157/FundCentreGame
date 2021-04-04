@@ -63,13 +63,13 @@ function generateRandomFund(){
     let solutions = [];
     solutions[0]=fundChoosen;
     solutions[1]= correctRisk;
-    
-    let repeatQ = checkRepeatQuestion(); 
-    if (repeatQ){
+
+    let repeatQ = checkRepeatQuestion(fundChoosen);
+    if(repeatQ === true){
         generateRandomFund();
-        return;
     }
-    
+
+    fundsInGame.push(fundChoosen);
     
     return solutions;
     
@@ -79,7 +79,6 @@ function displayFundQuestion(){
     let callSolutions = generateRandomFund();
     document.getElementById("fund-name-text").textContent = callSolutions[0];
     let riskAnswer = callSolutions[1] ;
-    fundsInGame.push(document.getElementById("fund-name-text").textContent);
     return riskAnswer;
     
 }
@@ -127,7 +126,6 @@ function updateIncorrectScore(){
 
 function nextQuestion(){
     displayFundQuestion();
-
 }
 
 function restartGame(){
@@ -190,17 +188,21 @@ function endGame(){
 
     if (action === true){
         restartGame();
-    } 
+    }else{
+    document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
+    }
 }
 
-function checkRepeatQuestion(){
-    let currentQuestion = document.getElementById("fund-name-text").textContent;
+function checkRepeatQuestion(choosenFund){
     for(let i=0; i<fundsInGame.length; i++){
-        if(fundsInGame[currentQuestion] === currentQuestion){
+        if(fundsInGame[i] === choosenFund){
+            console.log(true);
             return true;
         }
     }
+    console.log(false);
     return false ;
+    
 
 }
     

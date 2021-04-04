@@ -331,3 +331,8 @@ Padding-top: 10px;
     border: 2px solid #b5ca83;
     color: #fff;
 }
+
+.gameOverText{
+    color: #ff0000;
+    font-weight: bold;
+}
