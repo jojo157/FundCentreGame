@@ -76,6 +76,13 @@ function displayFundQuestion(){
 }
 
 function checkAnswer(useranswer){
+    let endValue = document.getElementById("totalNumberOfQuestions").textContent;
+    let currentValue = document.getElementById("questionsAnswered").textContent;
+
+    if(endValue === currentValue){
+        return
+    }else{
+
     let fund = document.getElementById("fund-name-text").textContent;
     let indexFund = fundName.indexOf(fund);
     let riskFund = fundRisk[indexFund];
@@ -94,6 +101,7 @@ function checkAnswer(useranswer){
         checkGameEnd();
     }  
     nextQuestion();
+    }
 }
 
 function updateCorrectScore(){
@@ -109,13 +117,14 @@ function updateIncorrectScore(){
 }
 
 function nextQuestion(){
-    document.getElementById("fund-name-card-container").focus();
     displayFundQuestion();
+
 }
 
 function restartGame(){
         document.getElementById("correct-score").innerText = 0;
         document.getElementById("incorrect-score").innerText = 0;
+        document.getElementById("questionsAnswered").innerText = 0;
         nextQuestion();
        
 }
@@ -153,6 +162,21 @@ function checkGameEnd(){
     let endValue = document.getElementById("totalNumberOfQuestions").textContent;
     let currentValue = document.getElementById("questionsAnswered").textContent;
     if(currentValue === endValue){
-        alert("Game Over!");
+        setTimeout(function(){endGame();},10);
     }
+}
+
+function endGame(){
+    let endValue = document.getElementById("totalNumberOfQuestions").textContent;
+    let currentCorrect = document.getElementById("correct-score").textContent;
+    let score ;
+    let action;
+    endValue = parseInt(endValue);
+    currentCorrect = parseInt(currentCorrect);
+    score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
+    action = confirm(`Game Over! Your score is ${score}, would you like to try again?`);
+
+    if (action === true){
+        restartGame();
+    } 
 }
