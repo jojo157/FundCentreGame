@@ -85,11 +85,13 @@ function checkAnswer(useranswer){
         alert("You got it right!");
         updateCorrectScore();
         updateNumberOfQsAnswered();
+        checkGameEnd();
 
     }else{
         alert(`Hard luck, the correct answer is ${riskFund}!`);
         updateIncorrectScore();
         updateNumberOfQsAnswered();
+        checkGameEnd();
     }  
     nextQuestion();
 }
@@ -145,4 +147,12 @@ function updateNumberOfQsAnswered(){
     let numQuestion = document.getElementById("questionsAnswered").textContent;
     numQuestion = parseInt(numQuestion) + 1;
     document.getElementById("questionsAnswered").innerText = numQuestion;
+}
+
+function checkGameEnd(){
+    let endValue = document.getElementById("totalNumberOfQuestions").textContent;
+    let currentValue = document.getElementById("questionsAnswered").textContent;
+    if(currentValue === endValue){
+        alert("Game Over!");
+    }
 }
