@@ -68,9 +68,9 @@ function generateRandomFund(){
     if(repeatQ === true){
         generateRandomFund();
     }
-
+    if(repeatQ === false){
     fundsInGame.push(fundChoosen);
-    
+    }
     return solutions;
     
 }
@@ -196,11 +196,10 @@ function endGame(){
 function checkRepeatQuestion(choosenFund){
     for(let i=0; i<fundsInGame.length; i++){
         if(fundsInGame[i] === choosenFund){
-            console.log(true);
             return true;
         }
     }
-    console.log(false);
+
     return false ;
     
 
