@@ -1,6 +1,6 @@
 var fundName =[];
 var fundRisk = [];
-
+var fundsInGame = [];
  
 $(document).ready(function(){
 extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
@@ -63,6 +63,14 @@ function generateRandomFund(){
     let solutions = [];
     solutions[0]=fundChoosen;
     solutions[1]= correctRisk;
+    
+    let repeatQ = checkRepeatQuestion(); 
+    if (repeatQ){
+        generateRandomFund();
+        return;
+    }
+    
+    
     return solutions;
     
 }
@@ -71,6 +79,7 @@ function displayFundQuestion(){
     let callSolutions = generateRandomFund();
     document.getElementById("fund-name-text").textContent = callSolutions[0];
     let riskAnswer = callSolutions[1] ;
+    fundsInGame.push(document.getElementById("fund-name-text").textContent);
     return riskAnswer;
     
 }
@@ -80,7 +89,7 @@ function checkAnswer(useranswer){
     let currentValue = document.getElementById("questionsAnswered").textContent;
 
     if(endValue === currentValue){
-        return
+        return ;
     }else{
 
     let fund = document.getElementById("fund-name-text").textContent;
@@ -125,8 +134,11 @@ function restartGame(){
         document.getElementById("correct-score").innerText = 0;
         document.getElementById("incorrect-score").innerText = 0;
         document.getElementById("questionsAnswered").innerText = 0;
+        while(fundsInGame.length > 0) {
+            fundsInGame.pop();
+        }
         nextQuestion();
-       
+      
 }
 
 function gameLevel(){
@@ -180,3 +192,16 @@ function endGame(){
         restartGame();
     } 
 }
+
+function checkRepeatQuestion(){
+    let currentQuestion = document.getElementById("fund-name-text").textContent;
+    for(let i=0; i<fundsInGame.length; i++){
+        if(fundsInGame[currentQuestion] === currentQuestion){
+            return true;
+        }
+    }
+    return false ;
+
+}
+    
+
