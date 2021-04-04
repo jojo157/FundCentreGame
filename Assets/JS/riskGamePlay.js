@@ -33,6 +33,7 @@ setTimeout(function(){
 function startGame(){
     gameLevel();
     displayFundQuestion();
+    numberOfQuestionsPerGame();
     
 }
 
@@ -120,4 +121,20 @@ function gameLevel(){
    level = level.split("=");
    level = level[1];
    return level;
+}
+
+function numberOfQuestionsPerGame(){
+    let level = gameLevel();
+    let numberOfQs;
+    if(level ==="Easy"){
+        numberOfQs = 6;
+        document.getElementById("totalNumberOfQuestions").innerText = numberOfQs;
+    }else if(level ==="Medium"){
+        numberOfQs = 12;
+        document.getElementById("totalNumberOfQuestions").innerText = numberOfQs;
+    }else{
+        numberOfQs = 18;
+        document.getElementById("totalNumberOfQuestions").tinnerText = numberOfQs;
+    }
+
 }
