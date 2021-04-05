@@ -227,7 +227,7 @@ function answerAlert(isCorrect, riskFund){
 
 function playCorrectSound(isCorrect, riskFund){
     var soundToPlay = document.createElement("audio");
-    soundToPlay.setAttribute("src", "../Assets/Sounds/correct.wav");
+    soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
   
     return
@@ -235,7 +235,7 @@ function playCorrectSound(isCorrect, riskFund){
 
 function playWrongSound(){
     var soundToPlay = document.createElement("audio");
-    soundToPlay.setAttribute("src", "../Assets/Sounds/wrong.wav");
+    soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
     return
 }

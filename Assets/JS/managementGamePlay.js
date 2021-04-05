@@ -5,14 +5,14 @@ var fundsInGame = [];
 $(document).ready(function(){
     extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
     extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
-
+});
 
 
 
 setTimeout(function(){
     startGame();
 
-},500);
+},400);
 
 setTimeout(function(){
     let buttons = document.getElementsByClassName("answer-button");
@@ -213,16 +213,15 @@ function checkRepeatQuestion(choosenFund){
     
 function playCorrectSound(){
     var soundToPlay = document.createElement("audio");
-    soundToPlay.setAttribute("src", "../Assets/Sounds/correct.wav");
+    soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
     return
 }
 
 function playWrongSound(){
     var soundToPlay = document.createElement("audio");
-    soundToPlay.setAttribute("src", "../Assets/Sounds/wrong.wav");
+    soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
     return
 }
 
-});
