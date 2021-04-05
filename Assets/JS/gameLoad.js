@@ -36,13 +36,13 @@ let games = document.getElementsByClassName("game-StartGame");
     
     function loadRiskGame(myLevelButton){
         if(myLevelButton === "Easy"){
-            window.open("../../gameRisk.html?variable=Easy", "_self");
+            window.open("gameRisk.html?variable=Easy", "_self");
         }
         else if(myLevelButton === "Medium"){
-            window.open("../../gameRisk.html?variable=Medium", "_self");
+            window.open("gameRisk.html?variable=Medium", "_self");
         }
         else{
-            window.open("../../gameRisk.html?variable=Hard", "_self");
+            window.open("gameRisk.html?variable=Hard", "_self");
         }
     }
 
