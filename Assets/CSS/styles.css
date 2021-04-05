@@ -235,7 +235,7 @@ Padding-top: 10px;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; 
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100hh;
 }
@@ -280,10 +280,19 @@ Padding-top: 10px;
     
 }
 
+#instructions{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 #score-area{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .scores{
