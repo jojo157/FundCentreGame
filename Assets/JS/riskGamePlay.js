@@ -1,6 +1,7 @@
 var fundName =[];
 var fundRisk = [];
 var fundsInGame = [];
+var soundToPlay = document.createElement("audio");
  
 $(document).ready(function(){
 extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
@@ -226,7 +227,6 @@ function answerAlert(isCorrect, riskFund){
 }
 
 function playCorrectSound(isCorrect, riskFund){
-    var soundToPlay = document.createElement("audio");
     soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
   
@@ -234,7 +234,6 @@ function playCorrectSound(isCorrect, riskFund){
 }
 
 function playWrongSound(){
-    var soundToPlay = document.createElement("audio");
     soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
     return
