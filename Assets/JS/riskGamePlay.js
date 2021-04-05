@@ -3,8 +3,8 @@ var fundRisk = [];
 var fundsInGame = [];
  
 $(document).ready(function(){
-extractDataFromTxtFile('/Assets/FundTextFiles/fundnames.txt', fundName);
-extractDataFromTxtFile('/Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
+extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
+extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
 });
 
 
