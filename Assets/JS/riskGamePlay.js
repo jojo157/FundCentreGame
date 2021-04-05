@@ -115,8 +115,12 @@ function checkAnswer(useranswer){
         updateNumberOfQsAnswered();
         checkGameEnd();
         },200);
-    }  
-    nextQuestion();
+    } 
+    
+    if(fundsInGame.length < 6){
+        setTimeout(function(){
+        nextQuestion();}, 200);
+    }
     }
 }
 

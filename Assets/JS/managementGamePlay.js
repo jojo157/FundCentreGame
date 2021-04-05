@@ -111,10 +111,13 @@ function checkAnswer(useranswer){
         checkGameEnd();
         },200);
     }  
-    setTimeout(function(){
-    nextQuestion();
-    }, 300);
+    if(fundsInGame.length < 6){
+        setTimeout(function(){
+            nextQuestion();}, 200);
     }
+
+
+}
 }
 
 function updateCorrectScore(){
