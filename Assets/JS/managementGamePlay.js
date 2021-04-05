@@ -102,7 +102,7 @@ function checkAnswer(useranswer){
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },600);
+        },800);
     }else{
         playWrongSound();
 
@@ -111,7 +111,7 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },600);
+        },800);
     }  
     if(fundsInGame.length < 6){
         setTimeout(function(){
