@@ -1,0 +1,75 @@
+Fund Name
+Cash Fund
+Elements Fund
+iFunds 3
+iFunds 3 Alpha
+PBIS Bond Fund
+PRIME 3
+BNY Mellon Global Real Return Fund
+Gilt Fund
+iFunds 4
+iFunds 4 Alpha
+Income and Growth Fund
+Indexed Eurozone Long Bond Fund
+Insight Broad Opportunities Fund
+Investment for Security Fund
+PBIS Exempt Balanced Fund
+Pension Gilt Fund
+PRIME 4
+Balanced Managed Fund
+Davy Defensive High Yield Fund
+Ethical Managed Fund
+Evergreen Fund
+Exempt Investment for Growth
+Friends First Mixed Fund
+iFunds 5
+iFunds 5 Alpha
+Investment For Growth
+KBI Pension Managed Fund
+Managed Growth Fund
+PB Managed Multimanager
+PBIS Exempt Dynamic Fund
+Pension Managed Fund
+Pension Passive Multi-Asset Fund
+PRIME 5
+Trilogy II Fund
+Alternative Energy Fund
+Asia Pacific Equity Fund
+Davy High Yield Equity Fund
+Discovery Fund
+Equity Fund
+Ethical Equity Fund
+Euroland Equity Fund
+European Equity Fund
+Eurozone Equity Indexed Fund
+Exempt Investment for Opportunity Fund
+Global Emerging Markets Fund
+High Yield Equity Fund
+iFunds Equities
+Indexed All Equity Fund
+Innovator Fund
+International Equity Fund
+Investment for Opportunity Fund
+Japanese Equity Indexed Fund
+Lifetime Equity Fund
+North American Equity Fund
+North American Equity Indexed
+PBIS Asian Real Estate Fund
+PBIS European Real Estate Fund
+PBIS Global Equity Fund
+PBIS Global Fundamentals
+Pension Equity Fund
+Pension Exempt Investment for Opportunity Fund
+Pension International Fund
+Pension Managed Opportunity Fund
+PRIME Equities
+Property Fund
+Spotlight Fund
+Technology Indexed Fund
+UK Equity Indexed Fund
+Water Fund
+World Index Fund (Hedged)
+World Index Fund (Unhedged)
+Davy Geared High Yield Fund
+Irish Equity Fund
+PBIS Emerging Markets

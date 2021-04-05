@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Centre Game</title>
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="center-horizontal">
+        <div class="page-header">
+            <img class="logo-image" src="Assets/IMAGES/logo.png" alt="bull and bear market image"> 
+            <h1>Fund Centre Quiz</h1>
+        </div>
+    </div>
+
+    <div id="management-fund-name-card-container">
+        <div id="management-fund-name-card">
+            <span id="management-fund-name-text"></span>
+        </div>
+    </div>
+
+    <p id="management-instructions">Choose the management style for the shown fund.</p>
+    <div id="management-answer-buttons-container">
+        <div id="Passive" class="center-horizontal">
+                <button class="answer-button">Passive</button>
+        </div>
+        <div id="Active" class="center-horizontal">
+            <button class="answer-button" >Active</button>
+        </div>
+    </div>
+
+    <div id="management-score-area">
+        <p class="scores"> Correct Answers: <span id="management-correct-score">0</span></p>
+        <p class="scores"> Incorrect Answers: <span id="management-incorrect-score">0</span></p>
+        <p class="scores">Question <span id="management-questionsAnswered">0</span> of <span id="management-totalNumberOfQuestions">0</span></p>
+    </div>
+
+    <div id="navigation-buttons-management-game-container">
+        <div id="management-Home" class="center-horizontal">
+                <button class="nav-button-management-game" onclick="window.location.href='index.html';">Home</button>
+        </div>
+        <div id="Restart" class="center-horizontal">
+            <button class="nav-button-management-game" id="management-restart-button">Restart</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="center-horizontal">For educational purposes only</p>
+    </footer>
+
+<script type="text/javascript" src="Assets/JS/managementGamePlay.js"></script>
+
+</body>
+</html>
