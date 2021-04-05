@@ -3,16 +3,16 @@ var fundManagement = [];
 var fundsInGame = [];
  
 $(document).ready(function(){
-extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
-extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
-});
+    extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
+    extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
+
 
 
 
 setTimeout(function(){
     startGame();
 
-},400);
+},500);
 
 setTimeout(function(){
     let buttons = document.getElementsByClassName("answer-button");
@@ -225,3 +225,4 @@ function playWrongSound(){
     return
 }
 
+});
