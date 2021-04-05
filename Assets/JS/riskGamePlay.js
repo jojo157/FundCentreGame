@@ -3,8 +3,8 @@ var fundRisk = [];
 var fundsInGame = [];
  
 $(document).ready(function(){
-extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
-extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
+extractDataFromTxtFile('../Assets/FundTextFiles/fundnames.txt', fundName);
+extractDataFromTxtFile('../Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
 });
 
 
@@ -97,16 +97,27 @@ function checkAnswer(useranswer){
     riskFund = riskFund.trim();
     let isCorrect = useranswer === riskFund;
     if(isCorrect){
+        playCorrectSound();
+
+
+        setTimeout(function(){
         alert("You got it right!");
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
 
+},200);
+
+        
+
     }else{
+        playWrongSound();
+        setTimeout(function(){
         alert(`Hard luck, the correct answer is ${riskFund}!`);
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
+        },200);
     }  
     nextQuestion();
     }
@@ -201,8 +212,19 @@ function checkRepeatQuestion(choosenFund){
     }
 
     return false ;
-    
-
 }
-    
+
+function playCorrectSound(){
+    var soundToPlay = document.createElement("audio");
+    soundToPlay.setAttribute("src", "../Assets/Sounds/correct.wav");
+    soundToPlay.play();
+    return
+}
+
+function playWrongSound(){
+    var soundToPlay = document.createElement("audio");
+    soundToPlay.setAttribute("src", "../Assets/Sounds/wrong.wav");
+    soundToPlay.play();
+    return
+}
 

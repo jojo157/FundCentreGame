@@ -5,7 +5,7 @@ $(document).ready(function(){
     var levelChosen = "";
 
     setTimeout(function(){
-        setUpGame(gameChosen, levelChosen);},400);
+        setUpGame(gameChosen, levelChosen);},200);
 })
 
 function setUpGame(gameChosen, levelChosen){
@@ -13,9 +13,8 @@ let games = document.getElementsByClassName("game-StartGame");
     for( let game of games){
         game.addEventListener("click",function(){
             gameChosen = this.id;
+            alert("Game Selected, now choose your level .... are you up for a challenge!"); 
             return(gameChosen);
-           /* alert("Game Selected, now choose your level .... are you up for a challenge!"); */
-            
         })
     }
     

@@ -97,16 +97,22 @@ function checkAnswer(useranswer){
     managementFund = managementFund.trim();
     let isCorrect = useranswer === managementFund;
     if(isCorrect){
+        playCorrectSound();
+        setTimeout(function(){
         alert("You got it right!");
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-
+        },200);
     }else{
+        playWrongSound();
+
+        setTimeout(function(){
         alert(`Hard luck, the correct answer is ${managementFund}!`);
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
+        },200);
     }  
     nextQuestion();
     }
@@ -205,4 +211,17 @@ function checkRepeatQuestion(choosenFund){
 
 }
     
+function playCorrectSound(){
+    var soundToPlay = document.createElement("audio");
+    soundToPlay.setAttribute("src", "../Assets/Sounds/correct.wav");
+    soundToPlay.play();
+    return
+}
+
+function playWrongSound(){
+    var soundToPlay = document.createElement("audio");
+    soundToPlay.setAttribute("src", "../Assets/Sounds/wrong.wav");
+    soundToPlay.play();
+    return
+}
 
