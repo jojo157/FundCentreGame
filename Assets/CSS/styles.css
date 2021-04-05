@@ -71,12 +71,18 @@ p{
     color: #000;
 }
 
+/* --------------------------- Footer ----------------------------------------------------*/ 
+
 footer{
     min-height:50px;
     margin-top:auto;
     background-color: #1a3e5b;
     padding-top:10px;
     color: #fff;
+}
+
+footer p{
+    text-transform: uppercase;
 }
 
 /* --------------------------- Pop up instructions window in Index.html----------------------------------------------------*/ 
