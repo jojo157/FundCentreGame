@@ -111,11 +111,11 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },600);
+        },700);
     }  
     if(fundsInGame.length < 6){
         setTimeout(function(){
-            nextQuestion();}, 600);
+            nextQuestion();}, 700);
     }
 }
 }
