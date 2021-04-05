@@ -115,8 +115,6 @@ function checkAnswer(useranswer){
         setTimeout(function(){
             nextQuestion();}, 200);
     }
-
-
 }
 }
 

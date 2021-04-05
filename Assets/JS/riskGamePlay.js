@@ -95,26 +95,26 @@ function checkAnswer(useranswer){
     let isCorrect = useranswer === riskFund;
     if(isCorrect){
         playCorrectSound();
-
-
         setTimeout(function(){
-        alert("You got it right!");
+        answerAlert(isCorrect, riskFund);
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-
-},200);
-
-        
-
-    }else{
+        },200);
+    }
+    
+    
+    
+    else{
         playWrongSound();
         setTimeout(function(){
-        alert(`Hard luck, the correct answer is ${riskFund}!`);
+        answerAlert(isCorrect, riskFund);
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
         },200);
+        
+        
     } 
     
     if(fundsInGame.length < 6){
@@ -215,10 +215,21 @@ function checkRepeatQuestion(choosenFund){
     return false ;
 }
 
-function playCorrectSound(){
+function answerAlert(isCorrect, riskFund){
+    if(isCorrect){
+        alert("You got it right!");
+    }
+    else{
+        alert(`Hard luck, the correct answer is ${riskFund}!`);
+    }
+    return
+}
+
+function playCorrectSound(isCorrect, riskFund){
     var soundToPlay = document.createElement("audio");
     soundToPlay.setAttribute("src", "../Assets/Sounds/correct.wav");
     soundToPlay.play();
+  
     return
 }
 
