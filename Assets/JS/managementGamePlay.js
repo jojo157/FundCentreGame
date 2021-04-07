@@ -96,14 +96,24 @@ function checkAnswer(useranswer){
     managementFund = managementFund.trim();
     let isCorrect = useranswer === managementFund;
     if(isCorrect){
-        playCorrectSound();
-        setTimeout(function(){
+        
+        /* my producing code, takes some time */
+        let myPromise = new Promise(function(myResolve, myReject) {
+            myResolve(playCorrectSound());
+            myReject(console.log("failed to play sound"));
+        })
+        
+        
+/* my consuming code, needs to wait until producing finished*/
+        myPromise.then(function(){
         alert("You got it right!");
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },600);
-    }else{
+        })}
+        
+       
+    else{
         playWrongSound();
 
         setTimeout(function(){
