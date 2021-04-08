@@ -116,7 +116,7 @@ function checkAnswer(useranswer){
     }  
     if(fundsInGame.length < 6){
         setTimeout(function(){
-            nextQuestion();}, 700);
+            nextQuestion();}, 2000);
     }
 }
 }
