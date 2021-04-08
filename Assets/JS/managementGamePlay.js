@@ -96,23 +96,14 @@ function checkAnswer(useranswer){
     managementFund = managementFund.trim();
     let isCorrect = useranswer === managementFund;
     if(isCorrect){
+        myResolve(playCorrectSound());
         
-        /* my producing code, takes some time */
-        let myPromise = new Promise(function(myResolve, myReject) {
-            myResolve(playCorrectSound());
-            myReject(console.log("failed to play sound"));
-        })
-        
-        
-/* my consuming code, needs to wait until producing finished*/
-        myPromise.then(function(){
-        alert("You got it right!");
-        updateCorrectScore();
-        updateNumberOfQsAnswered();
-        checkGameEnd();
-        })}
-        
-       
+        setTimeout(function(){
+            alert("You got it right!");
+            updateCorrectScore();
+            updateNumberOfQsAnswered();
+            checkGameEnd();}
+            ,2000); }
     else{
         playWrongSound();
 
@@ -121,7 +112,7 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },700);
+        },2000);
     }  
     if(fundsInGame.length < 6){
         setTimeout(function(){

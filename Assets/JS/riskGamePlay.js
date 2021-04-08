@@ -101,7 +101,7 @@ function checkAnswer(useranswer){
         updateCorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },600);
+        },2000);
     }
     
     
@@ -113,7 +113,7 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },700);
+        },2000);
         
         
     } 
