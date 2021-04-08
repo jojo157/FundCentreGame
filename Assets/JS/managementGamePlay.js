@@ -103,7 +103,7 @@ function checkAnswer(useranswer){
             updateCorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();}
-            ,2000); }
+            ,1500); }
     else{
         playWrongSound();
 
@@ -112,11 +112,11 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },2000);
+        },1500);
     }  
     if(fundsInGame.length < 6){
         setTimeout(function(){
-            nextQuestion();}, 2000);
+            nextQuestion();}, 1500);
     }
 }
 }
