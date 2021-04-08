@@ -96,7 +96,7 @@ function checkAnswer(useranswer){
     managementFund = managementFund.trim();
     let isCorrect = useranswer === managementFund;
     if(isCorrect){
-        myResolve(playCorrectSound());
+        playCorrectSound();
         
         setTimeout(function(){
             alert("You got it right!");
