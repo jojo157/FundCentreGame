@@ -1,3 +1,5 @@
+/* credit to emailjs for API usage*/
+/* code template for using emailjs provided in their documentation https://www.emailjs.com/docs/ */
 $('#contact-form').on('submit', function(event) {
     event.preventDefault(); // prevent reload
     
