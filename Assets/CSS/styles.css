@@ -449,3 +449,18 @@ Padding-top: 10px;
 #management-correct-score{
     color: #228B22;
 }
+
+/* --------------------------- contact.html----------------------------------------------------*/ 
+
+#contact-form-container{
+  Padding-top: 20px;
+  display: flex;
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form-container div{
+    margin: 20px;
+}
