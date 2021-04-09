@@ -106,7 +106,7 @@ function checkAnswer(useranswer){
             updateCorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();}
-            ,1500); }
+            ,1000); }
     else{
         playWrongSound();
 
@@ -115,11 +115,11 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },1500);
+        },1000);
     }  
-    if(fundsInGame.length < 6){
+    if(fundsInGame.length < parseInt(document.getElementById("management-totalNumberOfQuestions").inerText)){
         setTimeout(function(){
-            nextQuestion();}, 1500);
+            nextQuestion();}, 1000);
     }
 }
 }
