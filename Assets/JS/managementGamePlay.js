@@ -12,7 +12,7 @@ $(document).ready(function(){
 })
 
 $(window).on("load", function startup() {
-    if(document.readyState === 'complete'){
+    setTimeout(function(){
     startGame();
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("management-restart-button");
@@ -26,12 +26,8 @@ $(window).on("load", function startup() {
             checkAnswer(this.textContent);
         
         })
-    }
+    }},500);
     
-    }else{
-        startup();
-
-    }
 
 });
 
@@ -117,7 +113,7 @@ function checkAnswer(useranswer){
         checkGameEnd();
         },1000);
     }  
-    if(fundsInGame.length < parseInt(document.getElementById("management-totalNumberOfQuestions").inerText)){
+    if(fundsInGame.length < parseInt(document.getElementById("management-totalNumberOfQuestions").innerText)){
         setTimeout(function(){
             nextQuestion();}, 1000);
     }

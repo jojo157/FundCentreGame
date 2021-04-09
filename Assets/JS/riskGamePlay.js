@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 $(window).load(function startup() {
 
-    if(document.readyState === 'complete'){
+    setTimeout(function(){  
     startGame();
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("restart-button");
@@ -25,12 +25,8 @@ $(window).load(function startup() {
             checkAnswer(this.textContent);
         
         })
-    }}
-    else{
-        startup();
-
-    }
-    
+    }},500);
+       
 })
 
 function startGame(){
@@ -122,7 +118,7 @@ function checkAnswer(useranswer){
         
     } 
     
-    if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").inerText)){
+    if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").innerText)){
         setTimeout(function(){
         nextQuestion();}, 1000);
     }
