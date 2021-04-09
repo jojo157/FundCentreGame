@@ -7,10 +7,13 @@ var soundToPlay = document.createElement("audio");
 $(document).ready(function(){
     extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
     extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
+    
+    
 })
 
-$(window).load(function() {
-    
+$(window).on("load", function startup() {
+    if(document.readyState === 'complete'){
+    startGame();
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("management-restart-button");
 
@@ -24,8 +27,11 @@ $(window).load(function() {
         
         })
     }
-    restartGame();
+    
+    }else{
+        startup();
 
+    }
 
 });
 

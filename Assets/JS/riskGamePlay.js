@@ -9,10 +9,10 @@ $(document).ready(function(){
 });
 
 
-$(window).load(function() {
+$(window).load(function startup() {
 
-    
-
+    if(document.readyState === 'complete'){
+    startGame();
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("restart-button");
 
@@ -25,8 +25,12 @@ $(window).load(function() {
             checkAnswer(this.textContent);
         
         })
+    }}
+    else{
+        startup();
+
     }
-    startGame();
+    
 })
 
 function startGame(){
