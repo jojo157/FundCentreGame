@@ -93,7 +93,7 @@ footer p{
     top:0;
     left:0;
     width: 80%;
-    height: 90vh;
+    height: 80%;
     padding-top: 60px;
     background-color: #fff;
     margin-left: 10%;
@@ -104,12 +104,13 @@ footer p{
 .float-screen-instructions{
     margin-top:10px;
     width:100%;
-    height: 90vh;
+    height: 80%;
     display:block;
     border: 2px solid #1a3e5b;
     font-family: 'Open Sans', Arial, sans-serif;
     overflow: auto;
     background-color: #1b6089;
+    overflow: auto;
 }
 
 .buttonClose{
