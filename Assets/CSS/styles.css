@@ -93,20 +93,23 @@ footer p{
     top:0;
     left:0;
     width: 80%;
-    height: 60%;
+    height: 75%;
     padding-top: 60px;
     background-color: #fff;
     margin-left: 10%;
+    
 
 }
 
 .float-screen-instructions{
-    margin:0 10px;
+    margin-top:10px;
     width:100%;
     height: 100%;
     display:block;
     border: 2px solid #1a3e5b;
     font-family: 'Open Sans', Arial, sans-serif;
+    overflow: auto;
+    background-color: #1b6089;
 }
 
 .buttonClose{
@@ -114,6 +117,51 @@ footer p{
     float:right;
     clear:both;
     margin: 0 auto;
+
+}
+
+#instructions-heading{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+#instructions-to-play h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+#instructions-to-play p{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+    
+}
+
+#instructions-to-play p span{
+    font-weight: bolder;
+    color:#b5ca83;
+    
+    
+}
+
+#instructions-to-play ul{   
+    list-style-type: none;
+    text-align: center;
+    color:#b5ca83;
+}
+
+li{
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+span{
 
 }
 
