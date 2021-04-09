@@ -3,10 +3,26 @@ $(document).ready(function(){
 
     var gameChosen = "" ;
     var levelChosen = "";
+    let myPromise = new Promise(function(myResolve, myReject) {
+        
+        if(gameChosen === ""){
+          myResolve("complete loading"); 
+        }else{
+          myReject("failed"); 
+        }
+        });
+        
+        myPromise.then(
+          function(value) { 
+            setUpGame(gameChosen, levelChosen);
+          },
+          function(error) { console.log("error loading game") }
+        );
+        })
+    
 
-    setTimeout(function(){
-        setUpGame(gameChosen, levelChosen);},200);
-})
+
+
 
 function setUpGame(gameChosen, levelChosen){
 let games = document.getElementsByClassName("game-StartGame");
