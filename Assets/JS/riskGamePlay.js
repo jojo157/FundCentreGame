@@ -4,18 +4,14 @@ var fundsInGame = [];
 var soundToPlay = document.createElement("audio");
  
 $(document).ready(function(){
-extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
-extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);
+        extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
+        extractDataFromTxtFile('Assets/FundTextFiles/fundRiskLevel.txt', fundRisk);   
 });
 
 
+$(window).load(function() {
 
-setTimeout(function(){
     startGame();
-
-},400);
-
-setTimeout(function(){
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("restart-button");
 
@@ -29,7 +25,7 @@ setTimeout(function(){
         
         })
     }
-}, 500);
+})
 
 function startGame(){
     gameLevel();
@@ -40,14 +36,16 @@ function startGame(){
 
 
 function extractDataFromTxtFile(fileAddress, arrayVariable){
-     $.get(fileAddress, function(data) {
-        var lines = data.split("\n");
-        $.each(lines, function(n, elem) {
-            arrayVariable.push(elem);
-        });
-     });
-     return arrayVariable;
-}
+        $.get(fileAddress, function(data) {
+            var lines = data.split("\n");
+            $.each(lines, function(n, elem) {
+                arrayVariable.push(elem);
+            });
+         });
+         return arrayVariable;
+          
+      }
+
 
 function generateRandomIndex(){
     let randomIndex = Math.floor(Math.random() *76 ) +1;
