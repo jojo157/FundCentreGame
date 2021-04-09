@@ -10,7 +10,7 @@ $(document).ready(function(){
 })
 
 $(window).load(function() {
-    startGame();
+    
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("management-restart-button");
 
@@ -24,6 +24,7 @@ $(window).load(function() {
         
         })
     }
+    restartGame();
 
 
 });

@@ -11,7 +11,8 @@ $(document).ready(function(){
 
 $(window).load(function() {
 
-    startGame();
+    
+
     let buttons = document.getElementsByClassName("answer-button");
     let reset = document.getElementById("restart-button");
 
@@ -25,6 +26,7 @@ $(window).load(function() {
         
         })
     }
+    startGame();
 })
 
 function startGame(){
