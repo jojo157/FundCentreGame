@@ -38,6 +38,7 @@ function startGame(){
 
 
 function extractDataFromTxtFile(fileAddress, arrayVariable){
+  
         $.get(fileAddress, function(data) {
             var lines = data.split("\n");
             $.each(lines, function(n, elem) {
@@ -45,8 +46,9 @@ function extractDataFromTxtFile(fileAddress, arrayVariable){
             });
          });
          return arrayVariable;
-          
-      }
+    }
+    
+    
 
 
 function generateRandomIndex(){

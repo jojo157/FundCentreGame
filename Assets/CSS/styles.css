@@ -464,3 +464,14 @@ Padding-top: 10px;
 #contact-form-container div{
     margin: 20px;
 }
+
+/* ----------------------  404 error page-------------------------------------  */
+
+#error-message-container{
+Padding-top: 20px;
+  display: flex;
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;
+}
