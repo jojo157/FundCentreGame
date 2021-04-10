@@ -1,45 +1,58 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#Fund Centre Learning Game Website
 
-Welcome jojo157,
+## Introduction
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+The Fund Centre Learning Game Website was created to enable colleagues of New Ireland Assurance and Bank of Ireland Life to improve their product knowledge in a fun and iteractive way to assist them serving customers brillantly. 
 
-## Gitpod Reminders
+View Live Website [here](https://jojo157.github.io/FundCentreGame/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![](image of website responsive)
+image created using [Am I responsive](http://ami.responsivedesign.is/)
 
-`python3 -m http.server`
+## Table of Contents
 
-A blue button should appear to click: *Make Public*,
+- [UX](#ux)
+  - [Strategy](#strategy)
+    - [User Needs](#user-needs)
+        -[As a site user](as-a-site-user)
+        -[As the business owner](as-the-business-owner)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+  - [Surface](#surface)
+    
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## UX
 
-A blue button should appear to click: *Make Public*,
+The 5 planes of User Experience:
 
-Another blue button should appear to click: *Open Browser*.
+### Strategy
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The Fund Centre Game was created with the purpose of provide a solution to make it easy and fun for our sales and customer support colleagues to become more familiar with our investment fund offering. The game will help to associate the risk level and management style with the funds we offer. Game-based learning has been shown to be a more effective trainning method than e-learning. An employee will perform better on a learning task when presented with the learning in an engaged and stimulating nature. 
 
-## Updates Since The Instructional Video
+#### User Needs
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##### As a site user
+- I want to be able to learn about the funds available and the risk that fund has.
+- I want to be able to learn the fund management style in an effortless way.
+- I want to contact the site owner if I want to request more information about any particular funds or give feedback.
+- I want to be able to increment my knowledge at a pace that suits me. 
+- I want to feel encourage to continue learning. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+##### As the business owner
+- I want my employess to engage with the funds that we offer to learn the risk and management style.
+- I want them to go to our fund centre website to learn more after completing the game.
+- I want my employess to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Scope
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Structure
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Skeleton
 
---------
+### Surface
 
-Happy coding!
