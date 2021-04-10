@@ -79,7 +79,7 @@ The following features are in scope for this project.
     - Clear instructions to guide the user on how to play.
 - Contact Form
     - A contact form to allow the user to send a message directly to the site owner. An API will send this form data to the site owner by email.
-- Game setup page
+- Game setup Page
     - This allows the user to select the game and the game level. The relevant game then loads.
 - Fund Risk Game
     - The user will be presented with a random fund and risk level options and alerted when get question right or wrong. 
@@ -101,7 +101,7 @@ The following features are in scope for this project.
 The following features are not in scope for this project:
 
 - Player leaderboard
-    - When I learn more databases, I would like to add a leaderboard page that when a game finishes the user can submit their score and level to the leaderboard. This would encourage learning by adding a competitve nature between colleagues. By using a database the data can be stored and would update for each user that plays.
+    - When I learn more about databases, I would like to add a leaderboard page that when a game finishes the user can submit their score and level to the leaderboard. This would encourage learning by adding a competitve nature between colleagues. By using a database the data can be stored and would update for each user that plays.
 
 ### Structure
 
@@ -127,7 +127,7 @@ Link to [Wireframe](Assets/Wireframes/fundCentreWireframes.pdf)
 
 ### Surface
 
-The Fund Centre Game was designed to be consistent with New Ireland Assurance's Website. By replicating the main colour scheme and styling, the aim is to create an automatic recognition with New Ireland Assurance. 
+The Fund Centre Game was designed to be consistent with New Ireland Assurance's Website. By replicating the main colour scheme and styling, the aim is to create an automatic association with New Ireland Assurance's brand. 
 
 #### Colour Scheme
 
@@ -139,8 +139,40 @@ To obtain the hex colours used on [New Ireland Assurance website](https://www.ne
 
 To minic the text styling found on New Ireland Assurance's website, I used Google Developer tools to check the font family used for different text sections.
 
-The New Ireland Assurance website uses Din Pro for headings and Verdana for general text. As these texts were not available in goggle fonts, I found alternatives that matched the styling. For Din Pro , I used Roboto Condensed and for Verdana, I used open sans. 
+The New Ireland Assurance website uses Din Pro for headings and Verdana for general text. As these texts were not available in goggle fonts, I found free alternatives that matched the styling. For Din Pro , I used Roboto Condensed and for Verdana, I used open sans. 
 
 #### Images
 
-I wanted to use a logo that was relevant to a game about investment funds. The image chosen represents what is known as a bear and bull markets. A bear market is when stock prices are continually decreasing, whereas a bull market is when stock prices are continually increasing. The nubmer of images user was kept to a minimum to increase website performance. 
+I wanted to use a logo that was relevant to a game about investment funds. The image chosen represents a bear and bull market. A bear market is when stock prices are continually decreasing, whereas a bull market is when stock prices are continually increasing. The number of images user was kept to a minimum to increase website performance. 
+
+## Testing
+
+### Code Validation
+
+Html pages were validated with W3C Html Checker. 
+
+All pages were successful to have no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources.
+
+![Warning HTML checker result](Assets/IMAGES/warningHtml.png)
+
+After doing some searching online I discovered that with html5 the need for type was made redundant. To ensure I am keeping with the most up to date standards and my code is complaint, I removed the type attribute and re-tested the code. All pages showed no errors or warnings. 
+
+![Successful HTML checker results ](Assets/IMAGES/successHtml.png)
+
+
+### Performance Testing
+
+### User Stories Testing
+
+### Functionality Testing
+   
+### Validation Testing
+
+### Compatibility Testing
+
+#### Different devices
+
+#### Different Browsers
+
+#### Different Operating Systems
+  
