@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+const $ = window.$ ;
 
 $(document).ready(function(){
 
@@ -46,7 +48,7 @@ let games = document.getElementsByClassName("game-StartGame");
             } else if (gameChosen === "fund-management-game"){
             loadManagementGame(levelChosen); 
         }
-        })};  
+        });}
   
 }
     

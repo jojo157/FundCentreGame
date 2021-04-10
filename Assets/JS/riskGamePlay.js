@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+const $ = window.$ ;
+
 var fundName =[];
 var fundRisk = [];
 var fundsInGame = [];
@@ -18,16 +21,16 @@ $(window).load(function startup() {
 
     reset.addEventListener("click", function(){
             restartGame();
-        })    
+        });    
 
     for(let button of buttons){
             button.addEventListener("click", function(){
             checkAnswer(this.textContent);
         
-        })
+        });
     }},500);
        
-})
+});
 
 function startGame(){
     gameLevel();
@@ -225,19 +228,18 @@ function answerAlert(isCorrect, riskFund){
     else{
         alert(`Hard luck, the correct answer is ${riskFund}!`);
     }
-    return
+    return;
 }
 
 function playCorrectSound(isCorrect, riskFund){
     soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
-  
-    return
+    return;
 }
 
 function playWrongSound(){
     soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
-    return
+    return;
 }
 

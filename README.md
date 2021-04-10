@@ -174,9 +174,23 @@ No errors were found. 14 warnings were given for: -webkit-flex-direction is an u
 
 Javascript files were validated with [JSHint](https://jshint.com/)
 
+![Validation results](Assets/IMAGES/javascriptValidation.png)
 
+Errors
+- Undefined variable $
+    - As JSHint was not aware jquery is being used, I needed to add const $ = window.$ to the beginning of my javascript files to prevent an error occuring.
 
+Warnings
+- 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 
+    - to fix this warning, i added /*jshint esversion: 6 */ to all of my Javascript files as recommended. 
+- Warnings were given for missing semi-colons . 
+    - These were updated accordingly. 
+- Functions declared within loops referencing an outer scoped variable may lead to confusing semantics.
+    - ..........
 
+After following the guidance provided and re-running all javascript files through validation, no warnings or errors were present as shown below.
+
+![Javascript Validation End Result](Assets/IMAGES/javascriptValidationEndResult.png)
 
 ### Performance Testing
 

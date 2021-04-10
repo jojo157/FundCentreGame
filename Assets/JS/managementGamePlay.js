@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+const $ = window.$ ;
+
 var fundName =[];
 var fundManagement = [];
 var fundsInGame = [];
@@ -6,10 +9,8 @@ var soundToPlay = document.createElement("audio");
  
 $(document).ready(function(){
     extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
-    extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
-    
-    
-})
+    extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);   
+});
 
 $(window).on("load", function startup() {
     setTimeout(function(){
@@ -19,13 +20,12 @@ $(window).on("load", function startup() {
 
     reset.addEventListener("click", function(){
             restartGame();
-        })    
+        });    
 
     for(let button of buttons){
             button.addEventListener("click", function(){
-            checkAnswer(this.textContent);
-        
-        })
+            checkAnswer(this.textContent);     
+        });
     }},500);
     
 
@@ -101,8 +101,7 @@ function checkAnswer(useranswer){
             alert("You got it right!");
             updateCorrectScore();
             updateNumberOfQsAnswered();
-            checkGameEnd();}
-            ,1500); }
+            checkGameEnd();},1500); }
     else{
         playWrongSound();
 
@@ -216,12 +215,12 @@ function checkRepeatQuestion(choosenFund){
 function playCorrectSound(){
     soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
-    return
+    return;
 }
 
 function playWrongSound(){
     soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
-    return
+    return;
 }
 

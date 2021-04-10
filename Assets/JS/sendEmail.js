@@ -1,7 +1,10 @@
+/*jshint esversion: 6 */
+const $ = window.$ ;
+
 /* credit to emailjs for API usage*/
 /* code template for using emailjs provided in their documentation https://www.emailjs.com/docs/ */
 $('#contact-form').on('submit', function(event) {
-    event.preventDefault(); // prevent reload
+    event.preventDefault(); 
     
     var formData = new FormData(this);
     formData.append('service_id', 'service_d7aqa1n');
@@ -11,8 +14,8 @@ $('#contact-form').on('submit', function(event) {
     $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
         type: 'POST',
         data: formData,
-        contentType: false, // auto-detection
-        processData: false // no need to parse formData to string
+        contentType: false, 
+        processData: false 
     }).done(function() {
         alert('Your message has been sent and you will recieve a follow up email shortly! You will be redirected to the Home page now.');
         window.open("index.html", "_self");
