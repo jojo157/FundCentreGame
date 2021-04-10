@@ -7,7 +7,8 @@ The Fund Centre Learning Game Website was created to enable colleagues of New Ir
 View Live Website [here](https://jojo157.github.io/FundCentreGame/)
 
 ![](image of website responsive)
-image created using [Am I responsive](http://ami.responsivedesign.is/)
+
+Image created using [Am I responsive](http://ami.responsivedesign.is/)
 
 ## Table of Contents
 
@@ -27,9 +28,9 @@ image created using [Am I responsive](http://ami.responsivedesign.is/)
     - [Images](#images)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
-        -[Html](#html)
-        -[CSS](#css)
-        -[Javascript](#javascript)
+        - [Html](#html)
+        - [CSS](#css)
+        - [Javascript](#javascript)
     - [Performance Testing](#performance-testing)
     - [User Stories Testing](#user-stories-testing)
     - [Functionality Testing](#functionality-testing)
