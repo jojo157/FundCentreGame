@@ -133,7 +133,7 @@ The Fund Centre Game was designed to be consistent with New Ireland Assurance's 
 
 To obtain the hex colours used on [New Ireland Assurance website](https://www.newireland.ie/) , the tool [Color Combos](https://www.colorcombos.com) was used.
 
-![Assets/IMAGES/colorScheme.png](Hex colours used in website)
+![Hex colours used in website ](Assets/IMAGES/colorScheme.png)
 
 #### Typography
 
