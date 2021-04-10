@@ -14,9 +14,9 @@
 }
 
 body{
-    min-height: 100vh;
+    max-height: 100vh;
     
-    max-width:100hh;
+    max-width:100vw;
     display:flex;
     flex-direction: column;
     background-color: #fff;
@@ -289,7 +289,7 @@ Padding-top: 10px;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 100hh;
+  max-width: 100vh;
 }
 
 .answer-button{
@@ -369,7 +369,7 @@ Padding-top: 10px;
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 10px;
-  max-width: 100hh;
+  max-width: 100vh;
 }
 
 .nav-button-risk-game{
@@ -510,7 +510,7 @@ Padding-top: 10px;
 
 #contact-form-container div{
     margin: 20px;
-    width:90hh;
+    width:90vh;
 }
 
 .input-contact-style{

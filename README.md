@@ -149,7 +149,7 @@ I wanted to use a logo that was relevant to a game about investment funds. The i
 
 ### Code Validation
 
-Html pages were validated with W3C Html Checker. 
+Html pages were validated with [W3C Html Checker](https://validator.w3.org/nu/). 
 
 All pages were successful to have no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources.
 
@@ -159,6 +159,9 @@ After doing some searching online I discovered that with html5 the need for type
 
 ![Successful HTML checker results ](Assets/IMAGES/successHtml.png)
 
+CSS page was validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+No errors were found. 14 warnings were given for: -webkit-flex-direction is an unknown vendor extension
 
 ### Performance Testing
 
