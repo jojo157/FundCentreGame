@@ -199,15 +199,23 @@ Performance was tested using Lighthouse, one of Google web developer tools.
 
 #### Home Page
 
+![Performance of Home Page](Assets/IMAGES/homePagePerformance.png)
+
 #### Set up Game Page
+
+![Performance of Set Up Game Page](Assets/IMAGES/gameSetUpPerformance.png)
 
 #### Risk Game Page
 
+![Performance of Risk Game Page](Assets/IMAGES/fundRiskGamePerformance.png)
+
 #### Fund Management Game Page
+
+![Performance of Fund Management Game Page](Assets/IMAGES/fundManagementGamePerformance.png)
 
 #### Contact Page
 
-
+![Performance of Contact Page](Assets/IMAGES/contactPagePerformance.png)
 
 
 
