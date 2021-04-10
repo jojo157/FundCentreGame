@@ -499,6 +499,7 @@ Padding-top: 10px;
 
 #contact-form-container{
   Padding-top: 20px;
+  width: 100%;
   display: flex;
   -webkit-flex-direction: column; 
   flex-direction: column; 
@@ -509,7 +510,7 @@ Padding-top: 10px;
 
 #contact-form-container div{
     margin: 20px;
-    width:90vh;
+    width: 90vw;
 }
 
 .input-contact-style{

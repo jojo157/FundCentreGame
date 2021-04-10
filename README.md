@@ -195,6 +195,23 @@ After following the guidance provided and re-running all javascript files throug
 
 ### Performance Testing
 
+Performance was tested using Lighthouse, one of Google web developer tools.
+
+#### Home Page
+
+#### Set up Game Page
+
+#### Risk Game Page
+
+#### Fund Management Game Page
+
+#### Contact Page
+
+
+
+
+
+
 ### User Stories Testing
 
 ### Functionality Testing
