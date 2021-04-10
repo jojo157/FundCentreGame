@@ -27,6 +27,9 @@ image created using [Am I responsive](http://ami.responsivedesign.is/)
     - [Images](#images)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
+        -[Html](#html)
+        -[CSS](#css)
+        -[Javascript](#javascript)
     - [Performance Testing](#performance-testing)
     - [User Stories Testing](#user-stories-testing)
     - [Functionality Testing](#functionality-testing)
@@ -149,6 +152,8 @@ I wanted to use a logo that was relevant to a game about investment funds. The i
 
 ### Code Validation
 
+#### Html
+
 Html pages were validated with [W3C Html Checker](https://validator.w3.org/nu/). 
 
 All pages were successful to have no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources.
@@ -159,9 +164,19 @@ After doing some searching online I discovered that with html5 the need for type
 
 ![Successful HTML checker results ](Assets/IMAGES/successHtml.png)
 
+#### CSS
+
 CSS page was validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-No errors were found. 14 warnings were given for: -webkit-flex-direction is an unknown vendor extension
+No errors were found. 14 warnings were given for: -webkit-flex-direction is an unknown vendor extension. After looking up this warning, the consesus from the coding community is that it can be ignored as the extension makes the code compatible with older browsers but for newer browsers one doesnt need this CSS. 
+
+#### Javascript
+
+Javascript files were validated with [JSHint](https://jshint.com/)
+
+
+
+
 
 ### Performance Testing
 

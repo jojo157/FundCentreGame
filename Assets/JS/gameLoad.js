@@ -16,9 +16,9 @@ $(document).ready(function(){
           function(value) { 
             setUpGame(gameChosen, levelChosen);
           },
-          function(error) { console.log("error loading game") }
+          function(error) { console.log("error loading game"); }
         );
-        })
+        });
     
 
 
@@ -31,7 +31,7 @@ let games = document.getElementsByClassName("game-StartGame");
             gameChosen = this.id;
             alert("Game Selected, now choose your level .... are you up for a challenge!"); 
             return(gameChosen);
-        })
+        });
     }
     
 
@@ -46,7 +46,7 @@ let games = document.getElementsByClassName("game-StartGame");
             } else if (gameChosen === "fund-management-game"){
             loadManagementGame(levelChosen); 
         }
-        })}  
+        })};  
   
 }
     
