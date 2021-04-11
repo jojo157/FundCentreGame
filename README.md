@@ -276,6 +276,7 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 
 
 | **Home Page**     | **Functions checked** | **Working Correctly** |
+| --- | --- | --- | 
 |           | All buttons open correct page when clicked | ✓|
 |           |  Logo link reloads home page | ✓|
 |           | Fund Centre Link loads fund centre in new window | ✓ |
