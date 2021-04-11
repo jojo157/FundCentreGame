@@ -275,25 +275,26 @@ The users needs are met as follows:
 I tested the functionality of the site on a laptop first. Each page was tested and results are given below:
 
 
-| **Home Page**     | **Functions checked** | **Working Correctly** |
+| **Page**     | **Functions checked** | **Working Correctly** |
 | --- | --- | --- | 
+| **Home** | | |
 |           | All buttons open correct page when clicked | ✓|
 |           |  Logo link reloads home page | ✓|
 |           | Fund Centre Link loads fund centre in new window | ✓ |
 |           | The instructions window disappears when click X button| ✓ |
-|**Start Game Page** |  | |
+|**Start Game** |  | |
 | | When click game button, alert pops up to advise game selected and asks user to select level| ✓|
 | | Click Easy - after selecting game - relevant game loads showing 0 of 6 qs | ✓|
 | | Click Medium - after selecting game - relevant game loads showing 0 of 12 qs | ✓|
 | | Click Hard - after selecting game - relevant game loads showing 0 of 18 qs | ✓|
 | | Home button works| ✓|
 | | Logo links to home page| ✓ |
-|**Contact Page** | | |
+|**Contact** | | |
 | | After filling in form user gets correct alert| ✓|
 | | After form submitted, user returned home| ✓|
 | | If form data missing, user gets alert| ✓|
 | | Logo links to home page| ✓ |
-|**Fund Risk Game Page**| ||
+|**Fund Risk Game**| ||
 | | Home Button works| ✓|
 | | Logo links to home page| ✓ |
 | | Restart Button restarts game correctly| ✓|
@@ -310,7 +311,7 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | At game end - % correct message shown in fund box if user does not wish to restart| ✓ |
 | | At game end - if did not choose to restart - can not continue playing| ✓ |
 | | At game end - if click ok to restart - new game starts| ✓ |
-|**Management Style Game Page**| ||
+|**Management Style Game**| ||
 | | Home Button works| ✓|
 | | Logo links to home page| ✓ |
 | | Restart Button restarts game correctly| ✓|
