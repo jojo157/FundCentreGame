@@ -133,7 +133,7 @@ footer p{
     border-radius: 10px;
     width: auto;
     padding: 2px;
-    font-size: 16 px;
+    font-size: 16px;
 
 }
 
@@ -736,6 +736,9 @@ Padding-top: 20px;
 
 @media only screen and (min-width: 1026px) {
     /* For desktop: */
+
+    /* Game set up */
+
     .button-StartGame{
         width: 200px;
     }

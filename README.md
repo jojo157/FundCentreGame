@@ -6,7 +6,7 @@ The Fund Centre Learning Game Website was created to enable colleagues of New Ir
 
 View Live Website [here](https://jojo157.github.io/FundCentreGame/)
 
-![](image of website responsive)
+![Fund Centre Learning Game on different devices](Assets/IMAGES/amIresponsive.png)
 
 Image created using [Am I responsive](http://ami.responsivedesign.is/)
 
@@ -351,7 +351,7 @@ Using Google Developer tools, I viewed the website on the following devices:
 - Surface duo
 - Galaxy fold
 
-Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout. I want the user experience to be consistent across devices. 
+Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout. I want the user experience to be consistent across devices. After adding further CSS, I reran the css validation to ensure no errors had occured in the meantime. 
 
 While viewing the page on different sized devices, I realised that that the logo was not exactly centered on some devices. I changed the display to block to allow the use of text-align centre for the image and this fixed the bug. 
 
