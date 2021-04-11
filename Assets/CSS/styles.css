@@ -689,6 +689,47 @@ Padding-top: 20px;
         width: 150px; 
       }
 
+      /* Management style game Page*/
+
+      #management-fund-name-card-container{
+        margin-top: 20px;
+    }
+
+    #management-fund-name-card{
+      width: 350px;
+      height: 100px;
+    }
+
+    #management-fund-name-text{
+      font-size: 20px;
+    }
+
+    #management-instructions{
+      margin-top: 40px;
+      font-size: 20px;
+    }
+
+    #management-score-area{
+        margin-top:40px;
+    }
+    .scores{
+      font-size: 20px;
+    }
+    .answer-button{
+      font-size: 20px;
+      width: 150px;
+    }
+
+    .nav-button-management-game{
+      font-size: 20px;
+      width: 150px; 
+    }
+
+    .nav-button-management-game-container{
+        margin-top: 40px;
+    }
+
+
 }
 
 
@@ -705,6 +746,80 @@ Padding-top: 20px;
     .button-Home{
         width: 200px;
     }
+
+
+    /* Risk Game Page*/
+
+    #fund-name-card-container{
+        margin-top: 10px;
+    }
+
+    #fund-name-card{
+      width: 350px;
+      height: 80px;
+    }
+
+    #fund-name-text{
+      font-size: 20px;
+    }
+
+    #instructions{
+      margin-top: 40px;
+      font-size: 20px;
+    }
+
+    #score-area{
+        margin-top:40px;
+    }
+    .scores{
+      font-size: 20px;
+    }
+    .answer-button{
+      font-size: 20px;
+      width: 180px;
+    }
+
+    .nav-button-risk-game{
+      font-size: 20px;
+      width: 180px; 
+    }
+
+/* Management style game Page*/
+
+    #management-fund-name-card-container{
+        margin-top: 20px;
+    }
+
+    #management-fund-name-card{
+      width: 350px;
+      height: 80px;
+    }
+
+    #management-fund-name-text{
+      font-size: 20px;
+    }
+
+    #management-instructions{
+      margin-top: 40px;
+      font-size: 20px;
+    }
+
+    #management-score-area{
+        margin-top:40px;
+    }
+    .scores{
+      font-size: 20px;
+    }
+    .answer-button{
+      font-size: 20px;
+      width: 180px;
+    }
+
+    .nav-button-management-game{
+      font-size: 20px;
+      width: 180px; 
+    }
+
 }
 
 @media only screen and (min-width: 1700px) {
@@ -831,6 +946,41 @@ Padding-top: 20px;
         width: 180px; 
       }
 
+/* Management style game Page*/
+
+      #management-fund-name-card-container{
+          margin-top: 20px;
+      }
+
+      #management-fund-name-card{
+        width: 350px;
+        height: 100px;
+      }
+
+      #management-fund-name-text{
+        font-size: 20px;
+      }
+
+      #management-instructions{
+        margin-top: 40px;
+        font-size: 20px;
+      }
+
+      #management-score-area{
+          margin-top:40px;
+      }
+      .scores{
+        font-size: 20px;
+      }
+      .answer-button{
+        font-size: 20px;
+        width: 180px;
+      }
+
+      .nav-button-management-game{
+        font-size: 20px;
+        width: 180px; 
+      }
 
 
 
