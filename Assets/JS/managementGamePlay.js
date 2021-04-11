@@ -191,7 +191,7 @@ function endGame(){
     endValue = parseInt(endValue);
     currentCorrect = parseInt(currentCorrect);
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
-    action = confirm(`Game Over! Your score is ${score}, would you like to try again?`);
+    action = confirm(`Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Would you like to try again?`);
 
     if (action === true){
         restartGame();
