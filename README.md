@@ -275,16 +275,59 @@ The users needs are met as follows:
 I tested the functionality of the site on a laptop first. Each page was tested and results are given below:
 
 
-| Page      | Functions checked |
-|---        |---                |
-| Home      |  |
-|           | All buttons open correct page when clicked |
-|           |  Logo link reloads home page |
-|           | Fund Centre Link in how to play loads fund centre in new window  |
-|           | The instructions window disappears when click X button|
-| ---       | ---                |
-|Start Game |                     |
+| **Home Page**     | **Functions checked** | **Working Correctly** |
+|           | All buttons open correct page when clicked | ✓|
+|           |  Logo link reloads home page | ✓|
+|           | Fund Centre Link loads fund centre in new window | ✓ |
+|           | The instructions window disappears when click X button| ✓ |
+|**Start Game Page** |  | |
+| | When click game button, alert pops up to advise game selected and asks user to select level| ✓|
+| | Click Easy - after selecting game - relevant game loads showing 0 of 6 qs | ✓|
+| | Click Medium - after selecting game - relevant game loads showing 0 of 12 qs | ✓|
+| | Click Hard - after selecting game - relevant game loads showing 0 of 18 qs | ✓|
+| | Home button works| ✓|
+| | Logo links to home page| ✓ |
+|**Contact Page** | | |
+| | After filling in form user gets correct alert| ✓|
+| | After form submitted, user returned home| ✓|
+| | If form data missing, user gets alert| ✓|
+| | Logo links to home page| ✓ |
+|**Fund Risk Game Page**| ||
+| | Home Button works| ✓|
+| | Logo links to home page| ✓ |
+| | Restart Button restarts game correctly| ✓|
+| | All answer buttons function correctly | ✓ |
+| | Random Fund Given for each Q in game | ✓ |
+| | No repeat Qs in same game | ✓ |
+| | correct answer total updates correctly| ✓|
+| | incorrect answer total updates correctly| ✓|
+| | question X of Y updates correctly where x is number of answered qs and Y is total for game| ✓|
+| | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
+| | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
+| | Game ends when answered total number of qs for game| ✓|
+| | At game end - alert given with result and option to restart | ✓|
+| | At game end - % correct message shown in fund box if user does not wish to restart| ✓ |
+| | At game end - if did not choose to restart - can not continue playing| ✓ |
+| | At game end - if click ok to restart - new game starts| ✓ |
+|**Management Style Game Page**| ||
+| | Home Button works| ✓|
+| | Logo links to home page| ✓ |
+| | Restart Button restarts game correctly| ✓|
+| | All answer buttons function correctly | ✓ |
+| | Random Fund Given for each Q in game | ✓ |
+| | No repeat Qs in same game | ✓ |
+| | correct answer total updates correctly| ✓|
+| | incorrect answer total updates correctly| ✓|
+| | question X of Y updates correctly where x is number of answered qs and Y is total for game| ✓|
+| | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
+| | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
+| | Game ends when answered total number of qs for game| ✓|
+| | At game end - alert given with result and option to restart | ✓|
+| | At game end - % correct message shown in fund box if user does not wish to restart| ✓ |
+| | At game end - if did not choose to restart - can not continue playing| ✓ |
+| | At game end - if click ok to restart - new game starts| ✓ |
 
+All testing was repeated on a mobile device and all functions listed above are working correctly. 
 
 
    
