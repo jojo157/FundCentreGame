@@ -40,9 +40,17 @@ p{
     text-align: center;
 }
 
+.page-header a{
+    display: block;
+}
+
+
 .logo-image{
     width: 250px;
     height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #homepage-buttons-container{
@@ -559,7 +567,7 @@ Padding-top: 20px;
 
 /* ----------------------  Media Queries-------------------------------------  */
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1700px) {
      /* For larger desktop: */
     
      h1 {
@@ -590,7 +598,7 @@ Padding-top: 20px;
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     .button-StartGame{
         width: 200px;
@@ -604,7 +612,7 @@ Padding-top: 20px;
     }
 }
 
-@media only screen and (min-width: 600px)  and (max-width: 1024px){
+@media only screen and (min-width: 601px) and (max-width: 1024px){
     /* For tablets: */
 
     h1 {
@@ -637,6 +645,8 @@ Padding-top: 20px;
 
 @media only screen and (max-width: 600px) {
      /* For mobiles: */
-   
+     h1 {
+        
+    }
 
 }
