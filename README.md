@@ -243,6 +243,33 @@ The reduction in the logo image size improved the performance. A meta tag was ad
 
 ### User Stories Testing
 
+The users needs are met as follows:
+
+- I want to be able to learn about the funds available and the risk that fund has.
+    - The fund risk game gives the user the opportunity to learn about all the funds that are on offer. The user is presented with a random fund name and by choosing the risk type the user either gets it wrong and is presented with the right fund allowing a connection to be made in their memory. If the user gets the answer right, they are congratulated, again reinforcing the link between the fund and risk choosen. 
+
+- I want to be able to learn the fund management style in an effortless way.
+    - As per above need, the management style game operates in the same manner. The gamification of the fund management style and fund risk makes it easy for an employee to learn in a fun manner by recieveing feedback as they progress through the game. 
+
+- I want to contact the site owner if I want to request more information about any particular funds or give feedback.
+    - The contact button on the home page allows the site user to fill in their message and it will be emailed to the site owner. The site owner can then respond directly to the given users email address with follow up information. When the user fills in the form, they recieve an alert to let them know an email has been sent and that they will recieve a response shortly. 
+
+- I want to be able to increment my knowledge at a pace that suits me. 
+    - Both games offer 3 levels where the user is presented with a set number of questions per game. For Easy, the nubmre of questions per game is 6, for Medium this is 12 and for Hard this is 18. As the employee feels more confident in their knowledge they can choose to answer more questions per game and improve their knowledge. 
+
+- I want to feel encourage to continue learning. 
+    - Positive reinforcement messages are given to the user to keep them encouraged to learn. When they get an answer correct, a positive sound is played before they get the alert for correct answer. when a game is over, the user is given their score as a %, and the prompt to try again. Additonally, on choosing the game, the message box, encourages users with the wording "are you up for a challenge" before they choose the level to play. 
+
+- I want my employess to engage with the funds that we offer to learn the risk and management style.
+    - The funds given in the game are extracted from the offical fund centre website. The game allowers the user to interact with the funds by learning their risk and management style.
+
+- I want them to go to our fund centre website to learn more after completing the game.
+    - A link to the fund centre in the How to play window encourages the user to explore the funds more. The end of game message encourages the user to visit this resource.
+
+- I want my employess to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
+    - As the webiste is available 24/7 and accessbile on any device that is connected to the internet, the game offers a flexible learning experience.
+
+
 ### Functionality Testing
    
 ### Validation Testing
