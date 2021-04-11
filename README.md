@@ -201,24 +201,45 @@ Performance was tested using Lighthouse, one of Google web developer tools.
 
 ![Performance of Home Page](Assets/IMAGES/homePagePerformance.png)
 
+After testing the performance, I could see that my logo image was larger than needed for the site. I resized the logo image to improve the performance. 
+
+To improve the best practise score, I followed the advice and added the rel="noopener" property to all of the target="\_blank" links. Given the absence of this property poses a security risk, it is advisable to follow the best practive advise. 
+
+To improve the search engine optimisation score I added a meta description and changed the link descriptive text from "here" to the name of the link. 
+
+![Performance of Home Page After](Assets/IMAGES/homePagePerformanceAfter.png)
+
 #### Set up Game Page
 
 ![Performance of Set Up Game Page](Assets/IMAGES/gameSetUpPerformance.png)
+
+The resizing of the logo improved the performance of all pages. The accessibility was improved by changing the text colour of the home button from white to black to make it stand out from the surrounding buttons with white text. To improve the search engine optimisation score I added a meta description.
+
+![Performance of Set Up Game Page After](Assets/IMAGES/gameSetUpPerformanceAfter.png)
 
 #### Risk Game Page
 
 ![Performance of Risk Game Page](Assets/IMAGES/fundRiskGamePerformance.png)
 
+The reduction in the logo image size improved the performance. A meta tag was added to improve the search engine optimization.
+
+![Performance of Risk Game Page After](Assets/IMAGES/fundRiskGamePerformanceAfter.png)
+
 #### Fund Management Game Page
 
 ![Performance of Fund Management Game Page](Assets/IMAGES/fundManagementGamePerformance.png)
+
+The reduction in the logo image size improved the performance. A meta tag was added to improve the search engine optimization.
+
+![Performance of Fund Management Game Page After](Assets/IMAGES/fundManagementGamePerformanceAfter.png)
 
 #### Contact Page
 
 ![Performance of Contact Page](Assets/IMAGES/contactPagePerformance.png)
 
+The reduction in the logo image size improved the performance. A meta tag was added to improve the search engine optimization.
 
-
+![Performance of Contact Page After](Assets/IMAGES/contactPagePerformanceAfter.png)
 
 ### User Stories Testing
 

@@ -41,6 +41,7 @@ p{
 
 .logo-image{
     width: 250px;
+    height: auto;
 }
 
 #homepage-buttons-container{
@@ -264,7 +265,7 @@ Padding-top: 10px;
     border-radius: 8px;
     transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
+    
 }
 
 .button-Home:hover{
