@@ -354,7 +354,9 @@ Galaxy fold
 
 Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout. I want the user experience to be consistent across devices. 
 
-While viewing the page on different sized devices, i realised that that the logo was not exactly centered on some devices. I changed the display to block to allow the use of text-align centre for the image and this fixed the bug. 
+While viewing the page on different sized devices, I realised that that the logo was not exactly centered on some devices. I changed the display to block to allow the use of text-align centre for the image and this fixed the bug. 
+
+On the game setup page, on IPhone 5 on Goolge developer tools, the option buttons container was bigger than the width of the device. This was causing a display issue. I fixed the issue with a media query for smaller mobile devices to reduce the margin between level buttons to ensure all content fits within the viewport width. 
 
 #### Different Browsers
 

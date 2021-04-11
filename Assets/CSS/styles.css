@@ -133,7 +133,7 @@ footer p{
     border-radius: 10px;
     width: auto;
     padding: 2px;
-    font-size: 20px;
+    font-size: 16 px;
 
 }
 
@@ -567,54 +567,22 @@ Padding-top: 20px;
 
 /* ----------------------  Media Queries-------------------------------------  */
 
-@media only screen and (min-width: 1700px) {
-     /* For larger desktop: */
-    
-     h1 {
-        font-size: 3em;
-    }
-    
-     .logo-image{
-        width: 400px;  
-    } 
-     footer{
-        min-height:70px;
-     }
-    footer p{
-        margin-top: 2px;
-        font-size: 20px;
-    }
-    .button-homepage{
-        height:90px;
-        font-size: 20px;
-    }
-    #instructions-to-play{
-        font-size: 20px;
-    }
-    #instructions-to-play p{
-        margin-top: 20px;
-    }
+@media only screen and (max-width: 321px) {
+    /* For smaller mobiles: */
 
-}
-
-
-@media only screen and (min-width: 1025px) {
-    /* For desktop: */
     .button-StartGame{
-        width: 200px;
-    }
-
-    .game-StartGame{
-        width: 250px;
-    }
-    .button-Home{
-        width: 200px;
-    }
+       margin-left: 2px;
+       margin-right: 2px;
+       
+   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px){
+
+
+@media only screen and (min-width: 601px) and (max-width: 1025px){
     /* For tablets: */
 
+    /* Home Page */
     h1 {
         font-size: 3em;
     }
@@ -638,15 +606,159 @@ Padding-top: 20px;
     #instructions-to-play p{
         margin-top: 20px;
     }
+    /* Game setup Page*/
+    .options-area{
+        min-height: 65vh;
+    }
 
-
-
-}
-
-@media only screen and (max-width: 600px) {
-     /* For mobiles: */
-     h1 {
+    .button-StartGame{
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
         
     }
 
+    .game-StartGame{
+        width: 250px;
+        height: 100px;
+        font-size: 20px;
+    }
+    
+    #home-button{
+        padding:0;
+        margin: 0;
+        
+    }
+    
+    .button-Home{
+        width: 200px;
+        height: 75px;
+        font-size: 20px;
+        Padding-top: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .options-area h2{
+        font-size: 2em;
+    }
+
+    #choose-Game-buttons-container{
+        Padding-top: 0px;
+        margin-top: 0px;
+    
+      }
+      
+      #choose-Level-buttons-container{
+        Padding-top: 0px;
+        margin-top: 0px;
+      }
+
 }
+
+
+
+@media only screen and (min-width: 1026px) {
+    /* For desktop: */
+    .button-StartGame{
+        width: 200px;
+    }
+
+    .game-StartGame{
+        width: 250px;
+    }
+    .button-Home{
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    /* For larger desktop: */
+   /* Home Page */
+    h1 {
+       font-size: 3em;
+   }
+   
+    .logo-image{
+       width: 400px;  
+   } 
+    footer{
+       min-height:70px;
+    }
+   footer p{
+       margin-top: 2px;
+       font-size: 20px;
+   }
+   .button-homepage{
+       height:90px;
+       font-size: 20px;
+   }
+   #instructions-to-play{
+       font-size: 20px;
+   }
+   #instructions-to-play p{
+       margin-top: 20px;
+   }
+
+   /* Game setup Page*/
+   .options-area{
+       min-height: 60vh;
+   }
+
+   .button-StartGame{
+       width: 250px;
+       height: 100px;
+       font-size: 20px;
+       
+   }
+
+   .game-StartGame{
+       width: 350px;
+       height: 100px;
+       font-size: 20px;
+   }
+   
+   #home-button{
+       padding:0;
+       margin: 0;
+       
+   }
+   
+   .button-Home{
+       width: 200px;
+       height: 75px;
+       font-size: 20px;
+       Padding-top: 0;
+       margin: 0;
+       margin-top: 20px;
+   }
+   .options-area h2{
+       font-size: 2em;
+   }
+
+   #choose-Game-buttons-container{
+       Padding-top: 0px;
+       margin-top: 0px;
+   
+     }
+     
+     #choose-Level-buttons-container{
+       Padding-top: 0px;
+       margin-top: 0px;
+     }
+
+     #fund-risk{
+         margin-right: 30px;
+     }
+
+     #easy{
+        margin-right: 30px;
+     }
+
+     #medium{
+        margin-right: 30px;
+     }
+
+}
+
+
+
