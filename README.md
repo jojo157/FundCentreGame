@@ -298,6 +298,7 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Home Button works| ✓|
 | | Logo links to home page| ✓ |
 | | Restart Button restarts game correctly| ✓|
+| | Each game is different | ✓|
 | | All answer buttons function correctly | ✓ |
 | | Random Fund Given for each Q in game | ✓ |
 | | No repeat Qs in same game | ✓ |
@@ -315,6 +316,7 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Home Button works| ✓|
 | | Logo links to home page| ✓ |
 | | Restart Button restarts game correctly| ✓|
+| | Each game is different | ✓|
 | | All answer buttons function correctly | ✓ |
 | | Random Fund Given for each Q in game | ✓ |
 | | No repeat Qs in same game | ✓ |
@@ -330,10 +332,10 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | At game end - if click ok to restart - new game starts| ✓ |
 
 All testing was repeated on a mobile device and all functions listed above are working correctly. 
-
-
    
 ### Validation Testing
+
+The contact form was tested by leaving each input blank and trying to submit the form. The correct validation message was given for each input except the textarea. I had forgot to include the required parameter and updated this. I retested the contact form and all fields are working as expected now. 
 
 ### Compatibility Testing
 
