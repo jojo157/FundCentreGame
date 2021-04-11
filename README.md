@@ -271,6 +271,22 @@ The users needs are met as follows:
 
 
 ### Functionality Testing
+
+I tested the functionality of the site on a laptop first. Each page was tested and results are given below:
+
+
+| Page      | Functions checked |
+|---        |---                |
+| Home      |  |
+|           | All buttons open correct page when clicked |
+|           |  Logo link reloads home page |
+|           | Fund Centre Link in how to play loads fund centre in new window  |
+|           | The instructions window disappears when click X button|
+| ---       | ---                |
+|Start Game |                     |
+
+
+
    
 ### Validation Testing
 
