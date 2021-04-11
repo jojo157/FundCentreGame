@@ -203,7 +203,7 @@ Performance was tested using Lighthouse, one of Google web developer tools.
 
 After testing the performance, I could see that my logo image was larger than needed for the site. I resized the logo image to improve the performance. 
 
-To improve the best practise score, I followed the advice and added the rel="noopener" property to all of the target="\_blank" links. Given the absence of this property poses a security risk, it is advisable to follow the best practive advise. 
+To improve the best practise score, I followed the advice and added the rel="noopener" property to all of the anchor links. Given the absence of this property poses a security risk, it is advisable to follow the best practive advise. 
 
 To improve the search engine optimisation score I added a meta description and changed the link descriptive text from "here" to the name of the link. 
 
