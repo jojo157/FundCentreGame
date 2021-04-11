@@ -653,6 +653,42 @@ Padding-top: 20px;
         margin-top: 0px;
       }
 
+      /* Risk Game Page*/
+
+      #fund-name-card-container{
+          margin-top: 20px;
+      }
+
+      #fund-name-card{
+        width: 350px;
+        height: 100px;
+      }
+
+      #fund-name-text{
+        font-size: 20px;
+      }
+
+      #instructions{
+        margin-top: 40px;
+        font-size: 20px;
+      }
+
+      #score-area{
+          margin-top:40px;
+      }
+      .scores{
+        font-size: 20px;
+      }
+      .answer-button{
+        font-size: 20px;
+        width: 150px;
+      }
+
+      .nav-button-risk-game{
+        font-size: 20px;
+        width: 150px; 
+      }
+
 }
 
 
@@ -757,6 +793,46 @@ Padding-top: 20px;
      #medium{
         margin-right: 30px;
      }
+
+
+    /* Risk Game Page*/
+
+      #fund-name-card-container{
+          margin-top: 20px;
+      }
+
+      #fund-name-card{
+        width: 350px;
+        height: 100px;
+      }
+
+      #fund-name-text{
+        font-size: 20px;
+      }
+
+      #instructions{
+        margin-top: 40px;
+        font-size: 20px;
+      }
+
+      #score-area{
+          margin-top:40px;
+      }
+      .scores{
+        font-size: 20px;
+      }
+      .answer-button{
+        font-size: 20px;
+        width: 180px;
+      }
+
+      .nav-button-risk-game{
+        font-size: 20px;
+        width: 180px; 
+      }
+
+
+
 
 }
 

@@ -342,15 +342,14 @@ The contact form was tested by leaving each input blank and trying to submit the
 #### Different devices
 
 Using Google Developer tools, I viewed the website on the following devices:
-
-Galaxy S5
-Pixel 2
-Pixel 2 XL
-iPhone 5/6/7/8 & Plus
-iPhone X
-iPad & iPad Pro
-Surface duo
-Galaxy fold
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- iPhone 5/6/7/8 & Plus
+- iPhone X
+- iPad & iPad Pro
+- Surface duo
+- Galaxy fold
 
 Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout. I want the user experience to be consistent across devices. 
 
