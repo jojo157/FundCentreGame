@@ -98,7 +98,7 @@ function checkAnswer(useranswer){
         playCorrectSound();
         
         setTimeout(function(){
-            alert("You got it right!");
+            answerAlert(isCorrect,managementFund);
             updateCorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();},1500); }
@@ -106,7 +106,7 @@ function checkAnswer(useranswer){
         playWrongSound();
 
         setTimeout(function(){
-        alert(`Hard luck, the correct answer is ${managementFund}!`);
+        answerAlert(isCorrect,managementFund);
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
@@ -114,7 +114,7 @@ function checkAnswer(useranswer){
     }  
     if(fundsInGame.length < parseInt(document.getElementById("management-totalNumberOfQuestions").innerText)){
         setTimeout(function(){
-            nextQuestion();}, 1500);
+            nextQuestion();}, 2000);
     }
 }
 }
@@ -210,6 +210,21 @@ function checkRepeatQuestion(choosenFund){
     return false ;
     
 
+}
+
+
+function answerAlert(isCorrect,managementFund){
+    if(isCorrect){
+    document.getElementById("management-Game-Title").innerText = "Congratulations"
+    document.getElementById("management-answer-text-message").innerText = "Well Done, you got it right. Keep it up!"
+    document.getElementById("management-game-modal").click();
+    }
+    else{
+    document.getElementById("management-Game-Title").innerText = "Hard Luck"
+    document.getElementById("management-answer-text-message").innerText = `The correct answer is ${managementFund}.`
+    document.getElementById("management-game-modal").click();
+    }
+    return;
 }
     
 function playCorrectSound(){

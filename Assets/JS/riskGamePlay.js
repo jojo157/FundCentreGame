@@ -118,7 +118,7 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },1500);
+        },2000);
         
         
     } 
@@ -223,10 +223,14 @@ function checkRepeatQuestion(choosenFund){
 
 function answerAlert(isCorrect, riskFund){
     if(isCorrect){
-        alert("You got it right!");
+    document.getElementById("exampleModalLongTitle").innerText = "Congratulations"
+    document.getElementById("answer-text-message").innerText = "Well Done, you got it right. Keep it up!"
+    document.getElementById("risk-game-modal").click();
     }
     else{
-        alert(`Hard luck, the correct answer is ${riskFund}!`);
+    document.getElementById("exampleModalLongTitle").innerText = "Hard Luck"
+    document.getElementById("answer-text-message").innerText = `The correct answer is ${riskFund}.`
+    document.getElementById("risk-game-modal").click();
     }
     return;
 }
@@ -242,4 +246,5 @@ function playWrongSound(){
     soundToPlay.play();
     return;
 }
+
 

@@ -421,6 +421,15 @@ Padding-top: 10px;
     font-weight: bold;
 }
 
+/* ---------------------- modal  for games---------------------------------------------------------------------*/
+
+#risk-game-modal{
+  display:none;
+}
+
+#management-game-modal{
+  display:none;
+}
 
 /* --------------------------- gameManagement.html----------------------------------------------------*/ 
 

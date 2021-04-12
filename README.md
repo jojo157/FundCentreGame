@@ -359,5 +359,23 @@ On the game setup page, on IPhone 5 on Goolge developer tools, the option button
 
 #### Different Browsers
 
+I tested the website on:
+
+Google Chrome
+Safari
+Firefox
+Microsoft Edge
+Internet explorer
+
+Differences discovered across browsers:
+
+- If using autofill, the autofilling of the form field changes the cell background colour. The cell colour varies depending on the browser.
+
+- The alert box appears different on different browsers. Additonally, On firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additonal dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages dont appear.
+
+![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
+
+To prevent this happening, I did some searching on line to see what other users have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. 
+
 #### Different Operating Systems
   
