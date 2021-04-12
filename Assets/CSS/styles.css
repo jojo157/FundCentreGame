@@ -263,7 +263,7 @@ li{
 
 #home-button{
 Padding-top: 10px;
-  max-height: 30vh;
+  height: 75px;
   display: flex;
   -webkit-flex-direction: row; 
   flex-direction: row; 
@@ -273,7 +273,7 @@ Padding-top: 10px;
 }
 
 .button-Home{
-    background-color:#5993d3;
+    background-color:#b5ca83;
     border: 2px solid #1a3e5b;
     color: #000;
     height:50px;
@@ -281,13 +281,14 @@ Padding-top: 10px;
     border-radius: 8px;
     transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
     
 }
 
 .button-Home:hover{
-    background-color:#b5ca83;
+    background-color: #1b6089;
     border: 2px solid #1a3e5b;
-    color: #000;
+    color: #fff;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
 }
