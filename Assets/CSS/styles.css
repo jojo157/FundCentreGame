@@ -777,17 +777,35 @@ label{
 @media only screen and (min-width: 1026px) {
     /* For desktop: */
 
+    footer p{
+      
+      font-size: 18px;
+    }
+
+    .button-homepage{
+      font-size: 18px;
+  }
+  #instructions-to-play{
+      font-size: 18px;
+  }
+  #instructions-to-play p{
+      margin-top: 18px;
+  }
+
     /* Game set up */
 
     .button-StartGame{
         width: 200px;
+        font-size: 18px;
     }
 
     .game-StartGame{
         width: 250px;
+        font-size: 18px;
     }
     .button-Home{
         width: 200px;
+        font-size: 18px;
     }
 
 
@@ -803,34 +821,34 @@ label{
     }
 
     #fund-name-text{
-      font-size: 20px;
+      font-size: 18px;
     }
 
     #instructions{
       margin-top: 40px;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     #score-area{
         margin-top:40px;
     }
     .scores{
-      font-size: 20px;
+      font-size: 18px;
     }
     .answer-button{
-      font-size: 20px;
+      font-size: 18px;
       width: 180px;
     }
 
     .nav-button-risk-game{
-      font-size: 20px;
+      font-size: 18px;
       width: 180px; 
     }
 
 /* Management style game Page*/
 
     #management-fund-name-card-container{
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
     #management-fund-name-card{
@@ -839,34 +857,34 @@ label{
     }
 
     #management-fund-name-text{
-      font-size: 20px;
+      font-size: 18px;
     }
 
     #management-instructions{
       margin-top: 40px;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     #management-score-area{
         margin-top:40px;
     }
     .scores{
-      font-size: 20px;
+      font-size: 18px;
     }
     .answer-button{
-      font-size: 20px;
+      font-size: 18px;
       width: 180px;
     }
 
     .nav-button-management-game{
-      font-size: 20px;
+      font-size: 18px;
       width: 180px; 
     }
 
          /* --------------------------- contact.html----------------------------------------------------*/ 
 
 #contact-form-container{
-  Padding-top: 20px; 
+  Padding-top: 18px; 
 }
 
 #contact-form-container div{
