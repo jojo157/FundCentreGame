@@ -375,7 +375,8 @@ Differences discovered across browsers:
 
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
 
-To prevent this happening, I did some searching on line to see what other users have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. 
+To prevent this happening, I did some searching on line to see what other users have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this I used Bootstraps Modal.
+ 
 
 #### Different Operating Systems
   
