@@ -343,7 +343,7 @@ Padding-top: 10px;
 }
 
 #fund-name-card{
-    height: 70px;
+    height: 100px;
     background-color: #b5ca83;
     width:250px;
     margin-top:10px;
@@ -492,7 +492,7 @@ Padding-top: 10px;
 }
 
 #management-fund-name-card{
-    height: 70px;
+    height: 100px;
     background-color: #b5ca83;
     width:250px;
     margin-top:10px;
@@ -688,7 +688,7 @@ Padding-top: 20px;
 
       #fund-name-card{
         width: 350px;
-        height: 100px;
+        height: 150px;
       }
 
       #fund-name-text{
@@ -724,7 +724,7 @@ Padding-top: 20px;
 
     #management-fund-name-card{
       width: 350px;
-      height: 100px;
+      height: 150px;
     }
 
     #management-fund-name-text{
@@ -834,7 +834,7 @@ label{
 
     #fund-name-card{
       width: 350px;
-      height: 80px;
+      height: 100px;
     }
 
     #fund-name-text{
@@ -870,7 +870,7 @@ label{
 
     #management-fund-name-card{
       width: 350px;
-      height: 80px;
+      height: 100px;
     }
 
     #management-fund-name-text{
@@ -1029,7 +1029,7 @@ label{
 
       #fund-name-card{
         width: 350px;
-        height: 100px;
+        height: 120px;
       }
 
       #fund-name-text{
@@ -1065,7 +1065,7 @@ label{
 
       #management-fund-name-card{
         width: 350px;
-        height: 100px;
+        height: 120px;
       }
 
       #management-fund-name-text{
