@@ -361,11 +361,11 @@ On the game setup page, on IPhone 5 on Goolge developer tools, the option button
 
 I tested the website on:
 
-Google Chrome
-Safari
-Firefox
-Microsoft Edge
-Internet explorer
+- Google Chrome
+- Safari
+- Firefox
+- Microsoft Edge
+- Internet explorer
 
 Differences discovered across browsers:
 
@@ -375,7 +375,7 @@ Differences discovered across browsers:
 
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
 
-To prevent this happening, I did some searching on line to see what other users have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this I used Bootstraps Modal.
+To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
  
 
 #### Different Operating Systems

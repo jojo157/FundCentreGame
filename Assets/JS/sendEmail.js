@@ -17,9 +17,22 @@ $('#contact-form').on('submit', function(event) {
         contentType: false, 
         processData: false 
     }).done(function() {
-        alert('Your message has been sent and you will recieve a follow up email shortly! You will be redirected to the Home page now.');
-        window.open("index.html", "_self");
+        sendContactConfirmation();
+        returnToHome();
     }).fail(function(error) {
         alert('Oops... ' + JSON.stringify(error));
     });
 });
+
+
+
+function sendContactConfirmation(){
+    document.getElementById("contact-modal").click();
+    return;
+}
+
+function returnToHome(){
+    document.getElementById("okButton").addEventListener("click", function(){
+        window.open("index.html", "_self");
+    });
+}
