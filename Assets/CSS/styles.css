@@ -299,6 +299,10 @@ Padding-top: 10px;
     font-size: 16px;
 }
 
+#setup-game-modal{
+  display:none;
+}
+
 
 /* --------------------------- gameRisk.html----------------------------------------------------*/ 
 

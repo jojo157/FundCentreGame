@@ -68,15 +68,14 @@ function generateRandomFund(){
     solutions[1]= correctRisk;
 
     let repeatQ = checkRepeatQuestion(fundChoosen);
+
     if(repeatQ === true){
         generateRandomFund();
     }
     if(repeatQ === false){
     fundsInGame.push(fundChoosen);
     return solutions;
-    }
-    return;
-    
+    }  
 }
 
 function displayFundQuestion(){
@@ -107,7 +106,7 @@ function checkAnswer(useranswer){
             updateCorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();
-            },0);
+            },1000);
         }
         
         
@@ -119,14 +118,14 @@ function checkAnswer(useranswer){
             updateIncorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();
-            },0);
+            },1000);
             
             
         } 
         
         if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").innerText)){
             setTimeout(function(){
-            nextQuestion();}, 1000);
+            nextQuestion();}, 2000);
         }
         return;
     }
@@ -210,16 +209,7 @@ function endGame(){
     document.getElementById("risk-game-modal").click();
     document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
 
-    /*
-    action = confirm(`Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Would you like to try again?`);
 
-    if (action === true){
-        restartGame();
-    }else{
-    document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
-    }
-
-    */
 }
 
 function checkRepeatQuestion(choosenFund){

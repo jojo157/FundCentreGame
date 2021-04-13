@@ -63,6 +63,7 @@ function generateRandomFund(){
     solutions[1]= correctManagement;
 
     let repeatQ = checkRepeatQuestion(fundChoosen);
+    
     if(repeatQ === true){
         generateRandomFund();
     }
@@ -101,7 +102,7 @@ function checkAnswer(useranswer){
             answerAlert(isCorrect,managementFund);
             updateCorrectScore();
             updateNumberOfQsAnswered();
-            checkGameEnd();},0); }
+            checkGameEnd();},1000); }
     else{
         playWrongSound();
 
@@ -110,11 +111,11 @@ function checkAnswer(useranswer){
         updateIncorrectScore();
         updateNumberOfQsAnswered();
         checkGameEnd();
-        },0);
+        },1000);
     }  
     if(fundsInGame.length < parseInt(document.getElementById("management-totalNumberOfQuestions").innerText)){
         setTimeout(function(){
-            nextQuestion();}, 1000);
+            nextQuestion();}, 2000);
     }
 }
 }
@@ -196,17 +197,7 @@ function endGame(){
     document.getElementById("management-answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
     document.getElementById("management-game-modal").click();
     document.getElementById("management-fund-name-text").innerText = `Game Over! Your score is ${score}`;
-    
-    /*
-    action = confirm(`Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Would you like to try again?`);
-
-
-    if (action === true){
-        restartGame();
-    }else{
-    document.getElementById("management-fund-name-text").innerText = `Game Over! Your score is ${score}`;
-    }
-    */
+   
 }
 
 function checkRepeatQuestion(choosenFund){

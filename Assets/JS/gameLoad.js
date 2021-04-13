@@ -31,7 +31,7 @@ let games = document.getElementsByClassName("game-StartGame");
     for( let game of games){
         game.addEventListener("click",function(){
             gameChosen = this.id;
-            alert("Game Selected, now choose your level. Are you up for a challenge!"); 
+            displayModal();
             return(gameChosen);
         });
     }
@@ -76,5 +76,9 @@ let games = document.getElementsByClassName("game-StartGame");
         }
     }
 
-
+    function displayModal(){
+        document.getElementById("setup-Game-Title").innerText = "Lets Get Started";
+        document.getElementById("setup-text-message").innerText = "Game selected, now choose your level. Are you up for a challenge!";
+        document.getElementById("setup-game-modal").click();
+    }
     
