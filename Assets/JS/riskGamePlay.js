@@ -199,12 +199,11 @@ function endGame(){
     let endValue = document.getElementById("totalNumberOfQuestions").textContent;
     let currentCorrect = document.getElementById("correct-score").textContent;
     let score ;
-    let action;
     endValue = parseInt(endValue);
     currentCorrect = parseInt(currentCorrect);
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
     
-    document.getElementById("exampleModalLongTitle").innerText = "Congratulations"
+    document.getElementById("exampleModalLongTitle").innerText = "Congratulations";
     document.getElementById("answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
     document.getElementById("risk-game-modal").click();
     document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
@@ -224,13 +223,13 @@ function checkRepeatQuestion(choosenFund){
 
 function answerAlert(isCorrect, riskFund){
     if(isCorrect){
-    document.getElementById("exampleModalLongTitle").innerText = "Congratulations"
-    document.getElementById("answer-text-message").innerText = "Well Done, you got it right. Keep it up!"
+    document.getElementById("exampleModalLongTitle").innerText = "Congratulations";
+    document.getElementById("answer-text-message").innerText = "Well Done, you got it right. Keep it up!";
     document.getElementById("risk-game-modal").click();
     }
     else{
-    document.getElementById("exampleModalLongTitle").innerText = "Hard Luck"
-    document.getElementById("answer-text-message").innerText = `The correct answer is ${riskFund}.`
+    document.getElementById("exampleModalLongTitle").innerText = "Hard Luck";
+    document.getElementById("answer-text-message").innerText = `The correct answer is ${riskFund}.`;
     document.getElementById("risk-game-modal").click();
     }
     return;

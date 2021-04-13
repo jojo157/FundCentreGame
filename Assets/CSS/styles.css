@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
 
 
@@ -8,16 +15,27 @@
 }
 
 .center-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body{
     min-height: 100vh;
     max-width:100vw;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     overflow-y: scroll;
     
@@ -56,10 +74,17 @@ p{
 #homepage-buttons-container{
   Padding-top: 10px;
   min-height: 60vh;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex; 
   display: flex;
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
-  justify-content: space-evenly;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .button-homepage{
@@ -68,7 +93,9 @@ p{
     background-color: #1b6089;
     border-radius: 8px;
     border: 2px solid #1a3e5b;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -190,10 +217,16 @@ li{
 #choose-Game-buttons-container{
   Padding-top: 10px;
   max-height: 30vh;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
@@ -203,10 +236,16 @@ li{
   padding:0;
   Padding-top: 10px;
   max-height: 30vh;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -219,7 +258,9 @@ li{
     background-color: #1b6089;
     border-radius: 8px;
     border: 2px solid #1a3e5b;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -239,7 +280,9 @@ li{
     background-color: #1b6089;
     border-radius: 8px;
     border: 2px solid #1a3e5b;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -261,19 +304,31 @@ li{
 
 .options-area {
   Padding-top: 20px;
-  display: flex;
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
-  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: column; 
+          flex-direction: column; 
+  -webkit-box-pack: justify; 
+      -ms-flex-pack: justify; 
+          justify-content: space-between;
 }
 
 #home-button{
 Padding-top: 10px;
   height: 75px;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -285,7 +340,9 @@ Padding-top: 10px;
     height:50px;
     width: 100px;
     border-radius: 8px;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
     
@@ -308,12 +365,19 @@ Padding-top: 10px;
 
 #risk-answer-buttons-container{
  Padding-top: 10px;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
   -webkit-flex-wrap: wrap; 
-  justify-content: center;
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100vw;
@@ -325,7 +389,9 @@ Padding-top: 10px;
     background-color: #1b6089;
     border-radius: 8px;
     border: 2px solid #1a3e5b;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -337,9 +403,15 @@ Padding-top: 10px;
 
 
 #fund-name-card-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-   align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 #fund-name-card{
@@ -368,9 +440,15 @@ Padding-top: 10px;
 }
 
 #score-area{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
 }
 
@@ -390,10 +468,15 @@ Padding-top: 10px;
 
 #navigation-buttons-risk-game-container{
   Padding-top: 10px;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -ms-flex-pack: distribute; 
+      justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
@@ -403,7 +486,9 @@ Padding-top: 10px;
     height:50px;
     width: 100px;
     border-radius: 8px;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
     margin-left: 10px;
@@ -439,12 +524,19 @@ Padding-top: 10px;
 
 #management-answer-buttons-container{
  Padding-top: 10px;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
   -webkit-flex-wrap: wrap; 
-  justify-content: center;
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100vw;
@@ -453,10 +545,15 @@ Padding-top: 10px;
 
 #navigation-buttons-management-game-container{
   Padding-top: 10px;
-  display: flex;
-  -webkit-flex-direction: row; 
-  flex-direction: row; 
-  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: row; 
+          flex-direction: row; 
+  -ms-flex-pack: distribute; 
+      justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
@@ -466,7 +563,9 @@ Padding-top: 10px;
     height:50px;
     width: 100px;
     border-radius: 8px;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
     margin-left: 10px;
@@ -486,9 +585,15 @@ Padding-top: 10px;
 
 
 #management-fund-name-card-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-   align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 #management-fund-name-card{
@@ -517,9 +622,15 @@ Padding-top: 10px;
 }
 
 #management-score-area{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
 }
 
@@ -537,10 +648,16 @@ Padding-top: 10px;
 #contact-form-container{
   Padding-top: 20px;
   max-width: 100%;
-  display: flex;
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: column; 
+          flex-direction: column; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   text-align: center;
   
 }
@@ -583,10 +700,16 @@ margin-top: 20px;
 
 #error-message-container{
 Padding-top: 20px;
-  display: flex;
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: column; 
+          flex-direction: column; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
   text-align: center;
 }
 
@@ -795,7 +918,6 @@ label{
     /* For desktop: */
 
     footer p{
-      
       font-size: 18px;
     }
 
@@ -1124,6 +1246,5 @@ label{
 }
 
 }
-
 
 

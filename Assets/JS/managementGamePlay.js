@@ -188,12 +188,11 @@ function endGame(){
     let endValue = document.getElementById("management-totalNumberOfQuestions").textContent;
     let currentCorrect = document.getElementById("management-correct-score").textContent;
     let score ;
-    let action;
     endValue = parseInt(endValue);
     currentCorrect = parseInt(currentCorrect);
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
     
-    document.getElementById("management-Game-Title").innerText = "Congratulations"
+    document.getElementById("management-Game-Title").innerText = "Congratulations";
     document.getElementById("management-answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
     document.getElementById("management-game-modal").click();
     document.getElementById("management-fund-name-text").innerText = `Game Over! Your score is ${score}`;
@@ -215,13 +214,13 @@ function checkRepeatQuestion(choosenFund){
 
 function answerAlert(isCorrect,managementFund){
     if(isCorrect){
-    document.getElementById("management-Game-Title").innerText = "Congratulations"
-    document.getElementById("management-answer-text-message").innerText = "Well Done, you got it right. Keep it up!"
+    document.getElementById("management-Game-Title").innerText = "Congratulations";
+    document.getElementById("management-answer-text-message").innerText = "Well Done, you got it right. Keep it up!";
     document.getElementById("management-game-modal").click();
     }
     else{
-    document.getElementById("management-Game-Title").innerText = "Hard Luck"
-    document.getElementById("management-answer-text-message").innerText = `The correct answer is ${managementFund}.`
+    document.getElementById("management-Game-Title").innerText = "Hard Luck";
+    document.getElementById("management-answer-text-message").innerText = `The correct answer is ${managementFund}.`;
     document.getElementById("management-game-modal").click();
     }
     return;

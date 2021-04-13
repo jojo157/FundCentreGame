@@ -308,10 +308,7 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
 | | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
 | | Game ends when answered total number of qs for game| ✓|
-| | At game end - alert given with result and option to restart | ✓|
-| | At game end - % correct message shown in fund box if user does not wish to restart| ✓ |
-| | At game end - if did not choose to restart - can not continue playing| ✓ |
-| | At game end - if click ok to restart - new game starts| ✓ |
+| | At game end - alert given with result | ✓|
 |**Management Style Game**| ||
 | | Home Button works| ✓|
 | | Logo links to home page| ✓ |
@@ -326,10 +323,8 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
 | | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
 | | Game ends when answered total number of qs for game| ✓|
-| | At game end - alert given with result and option to restart | ✓|
-| | At game end - % correct message shown in fund box if user does not wish to restart| ✓ |
-| | At game end - if did not choose to restart - can not continue playing| ✓ |
-| | At game end - if click ok to restart - new game starts| ✓ |
+| | At game end - alert given with result | ✓|
+
 
 All testing was repeated on a mobile device and all functions listed above are working correctly. 
    
@@ -371,12 +366,18 @@ Differences discovered across browsers:
 
 - If using autofill, the autofilling of the form field changes the cell background colour. The cell colour varies depending on the browser.
 
-- The alert box appears different on different browsers. Additonally, On firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additonal dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages dont appear.
-
+- The alert box appears different on different browsers. Additonally, on firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additonal dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages dont appear.
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
-
 To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
+
+- On Internet Explorer on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other
  
 
 #### Different Operating Systems
   
+Different Operating Systems
+The above testing was conducted on operating systems:
+
+- Windows 8.1
+- MacOS Big Sur 11.2.3
+- iOS 14.4.2
