@@ -1054,7 +1054,7 @@ label{
 
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1900px) {
     /* For larger desktop: */
    /* Home Page */
     h1 {
@@ -1253,9 +1253,8 @@ label{
 
   .button-homepage{
     margin-bottom: 30px;
+    margin-top: 10px;
   }
- #game-how-button{
-  margin-bottom: 30px;
- }
+ 
 
 }
