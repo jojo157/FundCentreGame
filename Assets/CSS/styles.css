@@ -1256,5 +1256,8 @@ label{
     margin-top: 10px;
   }
  
+  .modal-open .modal {
+    display: block;
+  }
 
 }
