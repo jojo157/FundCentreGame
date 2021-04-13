@@ -371,6 +371,8 @@ Differences discovered across browsers:
 To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
 
 - On Internet Explorer on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other
+
+I used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes 
  
 
 #### Different Operating Systems
