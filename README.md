@@ -370,9 +370,9 @@ Differences discovered across browsers:
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
 To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
 
-- On Internet Explorer on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other
+- On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to to add vendor prefixes to increase browser compability. After checking caniuse.com, I relaised that the spacing used not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the problem.
 
-I used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes 
+- On IE11 , the modals are not working at all. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing.
  
 
 #### Different Operating Systems
