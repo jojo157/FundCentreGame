@@ -73,8 +73,9 @@ function generateRandomFund(){
     }
     if(repeatQ === false){
     fundsInGame.push(fundChoosen);
-    }
     return solutions;
+    }
+    return;
     
 }
 
@@ -94,39 +95,40 @@ function checkAnswer(useranswer){
         return ;
     }else{
 
-    let fund = document.getElementById("fund-name-text").textContent;
-    let indexFund = fundName.indexOf(fund);
-    let riskFund = fundRisk[indexFund];
-    riskFund = riskFund.trim();
-    let isCorrect = useranswer === riskFund;
-    if(isCorrect){
-        playCorrectSound();
-        setTimeout(function(){
-        answerAlert(isCorrect, riskFund);
-        updateCorrectScore();
-        updateNumberOfQsAnswered();
-        checkGameEnd();
-        },1500);
-    }
-    
-    
-    
-    else{
-        playWrongSound();
-        setTimeout(function(){
-        answerAlert(isCorrect, riskFund);
-        updateIncorrectScore();
-        updateNumberOfQsAnswered();
-        checkGameEnd();
-        },2000);
+        let fund = document.getElementById("fund-name-text").textContent;
+        let indexFund = fundName.indexOf(fund);
+        let riskFund = fundRisk[indexFund];
+        riskFund = riskFund.trim();
+        let isCorrect = useranswer === riskFund;
+        if(isCorrect){
+            playCorrectSound();
+            setTimeout(function(){
+            answerAlert(isCorrect, riskFund);
+            updateCorrectScore();
+            updateNumberOfQsAnswered();
+            checkGameEnd();
+            },0);
+        }
         
         
-    } 
-    
-    if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").innerText)){
-        setTimeout(function(){
-        nextQuestion();}, 1500);
-    }
+        
+        else{
+            playWrongSound();
+            setTimeout(function(){
+            answerAlert(isCorrect, riskFund);
+            updateIncorrectScore();
+            updateNumberOfQsAnswered();
+            checkGameEnd();
+            },0);
+            
+            
+        } 
+        
+        if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").innerText)){
+            setTimeout(function(){
+            nextQuestion();}, 1000);
+        }
+        return;
     }
 }
 
@@ -202,6 +204,13 @@ function endGame(){
     endValue = parseInt(endValue);
     currentCorrect = parseInt(currentCorrect);
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
+    
+    document.getElementById("exampleModalLongTitle").innerText = "Congratulations"
+    document.getElementById("answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
+    document.getElementById("risk-game-modal").click();
+    document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
+
+    /*
     action = confirm(`Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Would you like to try again?`);
 
     if (action === true){
@@ -209,6 +218,8 @@ function endGame(){
     }else{
     document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
     }
+
+    */
 }
 
 function checkRepeatQuestion(choosenFund){
