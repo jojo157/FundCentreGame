@@ -108,7 +108,7 @@ function checkAnswer(useranswer){
         let indexFund = fundName.indexOf(fund);
         let riskFund = fundRisk[indexFund];
         
-        riskFund = trimStr(riskFund);
+        riskFund = riskFund.replace(/^\s+|\s+$/g, '');
         let isCorrect = useranswer === riskFund;
         if(isCorrect){
             playCorrectSound();
@@ -142,9 +142,7 @@ function checkAnswer(useranswer){
     }
 }
 
-function trimStr(str) {
-    return str.replace(/^\s+|\s+$/g, '');
-  }
+
 
 function updateCorrectScore(){
  let previousScore = parseInt(document.getElementById("correct-score").innerText);
