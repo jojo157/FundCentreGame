@@ -214,7 +214,7 @@ function endGame(){
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
     
     document.getElementById("exampleModalLongTitle").innerText = "Congratulations";
-    document.getElementById("answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
+    document.getElementById("answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not see if you can beat your score.`;
     document.getElementById("risk-game-modal").click();
     document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
 
