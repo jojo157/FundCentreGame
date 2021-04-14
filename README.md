@@ -372,7 +372,9 @@ To prevent this happening, I did some searching online to see what other develop
 
 - On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to to add vendor prefixes to increase browser compability. After checking caniuse.com, I relaised that the spacing used not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the problem.
 
-- On IE11 , the modals are not working at all. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing.
+- On IE11 , the modals are not working at all. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing. I debugged the issue by changing the display to show for the button and when click the modal appears. Further testing shows my jquery files are causing the issue. 
+
+I updated the script to the latest version of jquery CDN. 
  https://stackoverflow.com/questions/16329980/modal-not-opening-in-ie
 
 #### Different Operating Systems
