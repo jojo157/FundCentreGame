@@ -107,7 +107,10 @@ function checkAnswer(useranswer){
         let fund = document.getElementById("fund-name-text").textContent;
         let indexFund = fundName.indexOf(fund);
         let riskFund = fundRisk[indexFund];
+        /*
         riskFund = riskFund.trim();
+        */
+       
         let isCorrect = useranswer === riskFund;
         if(isCorrect){
             playCorrectSound();
@@ -214,9 +217,9 @@ function endGame(){
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%"  ; 
     
     document.getElementById("exampleModalLongTitle").innerText = "Congratulations";
-    document.getElementById("answer-text-message").innerText = "Game Over! Your score is" + score + ". Check out the Fund Centre Website to learn more! Why not try and beat your score.";
+    document.getElementById("answer-text-message").innerText = "Game Over! Your score is " + score + ". Check out the Fund Centre Website to learn more! Why not try and beat your score.";
     document.getElementById("risk-game-modal").click();
-    document.getElementById("fund-name-text").innerText = "Game Over! Your score is" + score;
+    document.getElementById("fund-name-text").innerText = "Game Over! Your score is " + score;
 
 
 }
@@ -239,7 +242,7 @@ function answerAlert(isCorrect, riskFund){
     }
     else{
     document.getElementById("exampleModalLongTitle").innerText = "Hard Luck";
-    document.getElementById("answer-text-message").innerText = "The correct answer is" + riskFund;
+    document.getElementById("answer-text-message").innerText = "The correct answer is " + riskFund;
     document.getElementById("risk-game-modal").click();
     }
     return;
