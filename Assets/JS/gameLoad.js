@@ -28,21 +28,18 @@ $(document).ready(function(){
 
 function setUpGame(gameChosen, levelChosen){
 let games = document.getElementsByClassName("game-StartGame");
- for(var i = 0; i< games.length; i++){   
-/*
-for( let game of games){
-    */
-        game.addEventListener("onclick",function(){
+    for( let game of games){
+        game.addEventListener("click",function(){
             gameChosen = this.id;
             displayModal();
             return(gameChosen);
         });
+    }
     
-}  
 
     let chosenLevel = document.getElementsByClassName("button-StartGame");
     for(let level of chosenLevel){
-        level.addEventListener("onclick", function(){
+        level.addEventListener("click", function(){
             let myLevelButton = this.textContent;
             levelChosen = myLevelButton;
 
