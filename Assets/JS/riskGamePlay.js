@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 
-$(window).load(function startup() {
+$(window).on("load", function startup(){
 
     setTimeout(function(){  
     startGame();
