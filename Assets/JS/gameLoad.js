@@ -38,6 +38,7 @@ for(let i=0; i< games.length; i++){
 
 
 }
+/* bla bla */ 
 
 /*
     for( let game of games){
