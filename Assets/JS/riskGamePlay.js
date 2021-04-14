@@ -23,13 +23,23 @@ $(window).on("load", function startup(){
             restartGame();
         });    
 
-    for(let button of buttons){
+    for(i=0; i<buttons.length; i++){
+        buttons[i].addEventListener("click", function(){
+            checkAnswer(this.textContent);
+        
+        });
+    }},500);
+    
+    
+    
+    /*
+        for(let button of buttons){
             button.addEventListener("click", function(){
             checkAnswer(this.textContent);
         
         });
     }},500);
-       
+       */
 });
 
 function startGame(){
