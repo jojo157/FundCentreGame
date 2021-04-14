@@ -28,8 +28,7 @@ $(document).ready(function(){
 
 function setUpGame(gameChosen, levelChosen){
 let games = document.getElementsByClassName("game-StartGame");
-    let game;
-    for( game in games){
+    for( let game of games){
         game.addEventListener("click",function(){
             gameChosen = this.id;
             displayModal();
@@ -39,7 +38,7 @@ let games = document.getElementsByClassName("game-StartGame");
     
 
     let chosenLevel = document.getElementsByClassName("button-StartGame");
-    for(let level in chosenLevel){
+    for(let level of chosenLevel){
         level.addEventListener("click", function(){
             let myLevelButton = this.textContent;
             levelChosen = myLevelButton;
