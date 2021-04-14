@@ -28,7 +28,8 @@ $(document).ready(function(){
 
 function setUpGame(gameChosen, levelChosen){
 let games = document.getElementsByClassName("game-StartGame");
-    for( let game of games){
+    let game;
+    for( game of games){
         game.addEventListener("click",function(){
             gameChosen = this.id;
             displayModal();
