@@ -108,7 +108,7 @@ function checkAnswer(useranswer){
         let indexFund = fundName.indexOf(fund);
         let riskFund = fundRisk[indexFund];
         
-        riskFund = $(riskFund).trim();
+        riskFund = $.trim( $(riskFund).val() );
         let isCorrect = useranswer === riskFund;
         if(isCorrect){
             playCorrectSound();
