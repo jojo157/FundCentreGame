@@ -237,4 +237,3 @@ function playWrongSound(){
     soundToPlay.play();
     return;
 }
-

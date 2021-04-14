@@ -28,45 +28,16 @@ $(document).ready(function(){
 
 function setUpGame(gameChosen, levelChosen){
 let games = document.getElementsByClassName("game-StartGame");
-    
-for(let i=0; i< games.length; i++){
-    games[0].addEventListener("click",function(){
-        gameChosen = this.id;
-        displayModal();
-        return(gameChosen);
-    });
-
-
-}
-/* bla bla */ 
-
-/*
     for( let game of games){
-      game.addEventListener("click",function(){
-        gameChosen = this.id;
-        displayModal();
-        return(gameChosen); 
+        game.addEventListener("click",function(){
+            gameChosen = this.id;
+            displayModal();
+            return(gameChosen);
+        });
     }
     
-*/
+
     let chosenLevel = document.getElementsByClassName("button-StartGame");
-    
-    for(let i=0; i< chosenLevel.length; i++){
-    
-        chosenLevel[i].addEventListener("click", function(){
-            let myLevelButton = this.textContent;
-            levelChosen = myLevelButton;
-
-            if(gameChosen === "fund-risk"){
-            loadRiskGame(levelChosen);
-            } else if (gameChosen === "fund-management-game"){
-            loadManagementGame(levelChosen); 
-    }
-        });}}
-
-
-
-   /*
     for(let level of chosenLevel){
         level.addEventListener("click", function(){
             let myLevelButton = this.textContent;
@@ -78,8 +49,8 @@ for(let i=0; i< games.length; i++){
             loadManagementGame(levelChosen); 
         }
         });}
-  */
-   
+  
+}
     
     function loadRiskGame(myLevelButton){
         if(myLevelButton === "Easy"){
@@ -110,4 +81,3 @@ for(let i=0; i< games.length; i++){
         document.getElementById("setup-text-message").innerText = "Game selected, now choose your level. Are you up for a challenge!";
         document.getElementById("setup-game-modal").click();
     }
-    
