@@ -15,7 +15,7 @@ $(document).ready(function () {
     function detectIE() {
         let ua = window.navigator.userAgent;
         // IE 11
-        // ua = 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko';
+        ua = 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko';
         let msie = ua.indexOf('MSIE ');
         if (msie > 0) {
             // IE 10 or older => return version number
