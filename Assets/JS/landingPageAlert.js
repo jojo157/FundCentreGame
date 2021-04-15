@@ -8,6 +8,9 @@ $(document).ready(function () {
     // Get IE or Edge browser version
     let version = detectIE();
     console.log("version: ", version);
+    if (version) {
+        window.alert("This game is incompatible with IE11 please use another browser");
+    }
     /**
      * detect IE
      * returns version of IE or false, if browser is not Internet Explorer
