@@ -2,9 +2,7 @@
 const $ = window.$ ;
 
 $(document).ready(function () {
-    if(navigator.appName == "Microsoft Internet Explorer" || window.msCrypto){
-        alert("This game is incompatible with Internet Explorer, please use another browser");
-    }
+    internetExplorerAlert();
 
     document.getElementById("play-button").addEventListener("click", function () {
         window.open("startGame.html", "_self");
@@ -23,3 +21,12 @@ $(document).ready(function () {
 
 });
 
+function internetExplorerAlert(){
+/** 
+* This function will display an alert if the user is accessing the website using Internet Explorer browser.
+*/
+    if(navigator.appName == "Microsoft Internet Explorer" || window.msCrypto){
+        alert("This game is incompatible with Internet Explorer, please use another browser");
+    }
+    return;
+}

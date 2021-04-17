@@ -20,6 +20,10 @@ $(document).ready(function () {
     );
 });
 function setUpGame(gameChosen, levelChosen) {
+/** 
+* This function will display a modal when the button with the game name is choosen, alerting the user to select the game level.
+* Following the user selecting the game level, the relevant game page will be called for Example - Game Risk - Easy.
+*/
     let games = document.getElementsByClassName("game-StartGame");
     for (let game of games) {
         game.addEventListener("click", function () {
@@ -41,6 +45,9 @@ function setUpGame(gameChosen, levelChosen) {
     }
 }
 function loadRiskGame(myLevelButton) {
+/** 
+* This function will load the Risk game page and pass the data for the level choosen in the page address.
+*/
     if (myLevelButton === "Easy") {
         window.open("gameRisk.html?variable=Easy", "_self");
     } else if (myLevelButton === "Medium") {
@@ -50,6 +57,9 @@ function loadRiskGame(myLevelButton) {
     }
 }
 function loadManagementGame(myLevelButton) {
+/** 
+* This function will load the Management game page and pass the data for the level choosen in the page address.
+*/
     if (myLevelButton === "Easy") {
         window.open("gameManagement.html?variable=Easy", "_self");
     } else if (myLevelButton === "Medium") {
@@ -59,6 +69,10 @@ function loadManagementGame(myLevelButton) {
     }
 }
 function displayModal() {
+ /** 
+* This function will display a modal when the user clicks the game type (risk game or management style game).
+* The modal will ask the user to choose a game level.
+*/   
     document.getElementById("setup-Game-Title").innerText = "Lets Get Started";
     document.getElementById("setup-text-message").innerText = "Game selected, now choose your level. Are you up for a challenge!";
     document.getElementById("setup-game-modal").click();

@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
 const $ = window.$ ;
 
-var fundName =[];
-var fundRisk = [];
-var fundsInGame = [];
-var soundToPlay = document.createElement("audio");
+const fundName =[];
+const fundRisk = [];
+const fundsInGame = [];
+const soundToPlay = document.createElement("audio");
  
 $(document).ready(function(){
         extractDataFromTxtFile('Assets/FundTextFiles/fundnames.txt', fundName);
@@ -13,7 +13,6 @@ $(document).ready(function(){
 
 
 $(window).load(function startup() {
-
     setTimeout(function(){  
     startGame();
     let buttons = document.getElementsByClassName("answer-button");
@@ -33,6 +32,11 @@ $(window).load(function startup() {
 });
 
 function startGame(){
+/** 
+* This function calls the game level - sets how many qs are in in game
+* Displays a random fund to the user by calling the displayFundQuestion fucntion
+* Displays the total number of qs per game
+*/
     gameLevel();
     displayFundQuestion();
     numberOfQuestionsPerGame();
@@ -44,9 +48,15 @@ function extractDataFromTxtFile(fileAddress, arrayVariable){
   /* 
     credit to stack overflow for help with the code to extract data from a text file
   */
+
+/** 
+* This function will extract all the data from a text file where each entry is on a new line.
+* The function will remove any trailing white space before adding the data to an array. 
+*/
         $.get(fileAddress, function(data) {
             var lines = data.split("\n");
             $.each(lines, function(n, elem) {
+                elem = $.trim(elem);
                 arrayVariable.push(elem);
             });
          });
@@ -57,11 +67,18 @@ function extractDataFromTxtFile(fileAddress, arrayVariable){
 
 
 function generateRandomIndex(){
-    let randomIndex = Math.floor(Math.random() *76 ) +1;
-    return randomIndex;
+/** 
+* This function will generate a random number between 1 and 77
+*/
+
+    return Math.floor(Math.random() *76 ) +1;
 }
 
 function generateRandomFund(){
+/** 
+* This function will generate a unique fund that has not already appeared in the game 
+* The function will re-run if the fund given is not unique in the game by calling the checkRepeatQuestion function.
+*/
     let index = generateRandomIndex();
     let fundChoosen = fundName[index];
     let correctRisk = fundRisk[index];
@@ -76,19 +93,29 @@ function generateRandomFund(){
     }
     if(repeatQ === false){
     fundsInGame.push(fundChoosen);
-    return solutions;
     }  
+    return solutions;
 }
 
 function displayFundQuestion(){
+/** 
+* This function will display the random fund on the users screen in the fund box and 
+* returns the fund risk for this random fund.
+*/
     let callSolutions = generateRandomFund();
     document.getElementById("fund-name-text").textContent = callSolutions[0];
-    let riskAnswer = callSolutions[1] ;
-    return riskAnswer;
+    return callSolutions[1];
     
 }
 
 function checkAnswer(useranswer){
+/** 
+* This function will check the users answer against the fund shown on screen
+* It will call the answer alert -  sound and message - to inform the user of outcome
+* It will call the function to undate the number of correct, incorrect and total answers answered and 
+* then call the function to give the user another Q while game is still in play
+*/
+
     let endValue = document.getElementById("totalNumberOfQuestions").textContent;
     let currentValue = document.getElementById("questionsAnswered").textContent;
 
@@ -99,7 +126,6 @@ function checkAnswer(useranswer){
         let fund = document.getElementById("fund-name-text").textContent;
         let indexFund = fundName.indexOf(fund);
         let riskFund = fundRisk[indexFund];
-        riskFund = riskFund.trim();
         let isCorrect = useranswer === riskFund;
         if(isCorrect){
             playCorrectSound();
@@ -110,9 +136,6 @@ function checkAnswer(useranswer){
             checkGameEnd();
             },1000);
         }
-        
-        
-        
         else{
             playWrongSound();
             setTimeout(function(){
@@ -120,39 +143,49 @@ function checkAnswer(useranswer){
             updateIncorrectScore();
             updateNumberOfQsAnswered();
             checkGameEnd();
-            },1000);
-            
-            
+            },1000);        
         } 
         
         if(fundsInGame.length < parseInt(document.getElementById("totalNumberOfQuestions").innerText)){
             setTimeout(function(){
             nextQuestion();}, 2000);
         }
-        return;
     }
 }
 
 function updateCorrectScore(){
+/** 
+* This function will update the number of correct answers on the screen
+*/
  let previousScore = parseInt(document.getElementById("correct-score").innerText);
- previousScore = previousScore + 1;
+ previousScore = (previousScore + 1).toString();
  document.getElementById("correct-score").innerText = previousScore;
 }
 
 function updateIncorrectScore(){
+/** 
+* This function will update the number of incorrect answers on the screen
+*/
  let previousScore = parseInt(document.getElementById("incorrect-score").innerText);
- previousScore = previousScore + 1;
+ previousScore = (previousScore + 1).toString();
  document.getElementById("incorrect-score").innerText = previousScore;
 }
 
 function nextQuestion(){
+/** 
+* This function will call the function to get a new fund
+*/
     displayFundQuestion();
 }
 
 function restartGame(){
-        document.getElementById("correct-score").innerText = 0;
-        document.getElementById("incorrect-score").innerText = 0;
-        document.getElementById("questionsAnswered").innerText = 0;
+/** 
+* This function will set the number of correct, incorrect and total qs answered to 0 and empty the array for fundsInGame
+* The function then gives the user a new fund
+*/
+        document.getElementById("correct-score").innerText = "0";
+        document.getElementById("incorrect-score").innerText = "0";
+        document.getElementById("questionsAnswered").innerText = "0";
         while(fundsInGame.length > 0) {
             fundsInGame.pop();
         }
@@ -161,6 +194,9 @@ function restartGame(){
 }
 
 function gameLevel(){
+/** 
+* This function will extract the game level from the address that was passed when user selected game level on game load page.
+*/
    let level =  window.location.href;
    level = level.split("=");
    level = level[1];
@@ -168,6 +204,9 @@ function gameLevel(){
 }
 
 function numberOfQuestionsPerGame(){
+/** 
+* This function sets the number of Qs in each game level
+*/
     let level = gameLevel();
     let numberOfQs;
     if(level ==="Easy"){
@@ -184,12 +223,18 @@ function numberOfQuestionsPerGame(){
 }
 
 function updateNumberOfQsAnswered(){
+/** 
+* This function increases the number of questions answered by 1
+*/
     let numQuestion = document.getElementById("questionsAnswered").textContent;
-    numQuestion = parseInt(numQuestion) + 1;
+    numQuestion = (parseInt(numQuestion) + 1).toString();
     document.getElementById("questionsAnswered").innerText = numQuestion;
 }
 
 function checkGameEnd(){
+/** 
+* This function checks if the user has answered all the questions allowable in a game level
+*/
     let endValue = document.getElementById("totalNumberOfQuestions").textContent;
     let currentValue = document.getElementById("questionsAnswered").textContent;
     if(currentValue === endValue){
@@ -198,6 +243,10 @@ function checkGameEnd(){
 }
 
 function endGame(){
+/** 
+* This function ends the users game when they have answered all the questions allowable in a game 
+* The user is given the game outcome with a modal for % correct
+*/
     let endValue = document.getElementById("totalNumberOfQuestions").textContent;
     let currentCorrect = document.getElementById("correct-score").textContent;
     let score ;
@@ -214,16 +263,22 @@ function endGame(){
 }
 
 function checkRepeatQuestion(choosenFund){
+/** 
+* This function checkes if a passed fund is in the fundsInGame array
+*/
     for(let i=0; i<fundsInGame.length; i++){
         if(fundsInGame[i] === choosenFund){
             return true;
         }
     }
-
     return false ;
 }
 
 function answerAlert(isCorrect, riskFund){
+/** 
+* This function updated the page modal with a message depending on the answer outcome (correct, incorrect)
+* if incorrect, the user is told the correct answer
+*/
     if(isCorrect){
     document.getElementById("exampleModalLongTitle").innerText = "Congratulations";
     document.getElementById("answer-text-message").innerText = "Well Done, you got it right. Keep it up!";
@@ -234,17 +289,20 @@ function answerAlert(isCorrect, riskFund){
     document.getElementById("answer-text-message").innerText = `The correct answer is ${riskFund}.`;
     document.getElementById("risk-game-modal").click();
     }
-    return;
 }
 
 function playCorrectSound(isCorrect, riskFund){
+/** 
+* This function plays the correct sound file
+*/
     soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
-    return;
 }
 
 function playWrongSound(){
+/** 
+* This function plays the incorrect sound file
+*/
     soundToPlay.setAttribute("src", "Assets/Sounds/wrong.wav");
     soundToPlay.play();
-    return;
 }
