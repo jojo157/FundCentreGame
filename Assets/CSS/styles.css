@@ -1261,11 +1261,10 @@ label{
 }
 }
 
-@supports (-ms-accelerator: true) {
-  /* Edge only */
-
-  #homepage-buttons-container{
+@supports (-ms-ime-align: auto){
+  /* Edge only  version < 90 */
+  #homepage-buttons-container {
     justify-content: space-around;
-    /* you can also add some other adjustments to size, margins etc to get the same positioning */
   }
+
 }
