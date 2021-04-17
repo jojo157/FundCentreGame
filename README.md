@@ -406,6 +406,7 @@ The was no differences detected on different operating systems.
 
 - [Google Fonts](https://fonts.google.com/) was used to import the font used for the website.
 - [jQuery](https://jquery.com/) was used as a Javascript library.
+- [Bootstrap](https://getbootstrap.com/) was used for creating the modals on the website to ensure the message box was consistenct across browsers. 
 
 ### Version Control
 
@@ -459,6 +460,9 @@ You can add the Fund Centre Game repository to your local machine using the belo
 
 - [Email js API](https://www.emailjs.com/docs/) code template for using emailjs provided in their documentation was used to implement the email tempalte API on contact page when form submitted.
 - [Bootstrap](https://getbootstrap.com/) was used to implement the modal across pages.
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) was used as aguide for using the css flexbox. 
+- To import the text files [Stack Overflow](https://stackoverflow.com/questions/26656260/importing-data-from-a-text-file-into-an-array-using-javascript/26656364) provided assistance and help with the code. 
+- To create the floating pop up div, an essential resource was [Encode DNA](https://www.encodedna.com/2012/12/floating-div-using-css.htm) .
 
 ### Content
 - The funds for the game were extracted from [Bank of Ireland Life Fund Centre](http://fundcentre.bankofirelandlife.ie/#).
@@ -476,3 +480,4 @@ You can add the Fund Centre Game repository to your local machine using the belo
 - I would like to thank Code Institue's Tutor support for their help throughout the course.
 - I would like to thank my fellow students for their help on slack. 
 - I would like to thank my wife Leticia for her continued support. 
+- I would like to thank Stack Overflow and W3Schools for their content as when trouble shooting these resources were essential to work out how to correct my code. 

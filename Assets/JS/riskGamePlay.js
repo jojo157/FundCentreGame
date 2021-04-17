@@ -41,7 +41,9 @@ function startGame(){
 
 
 function extractDataFromTxtFile(fileAddress, arrayVariable){
-  
+  /* 
+    credit to stack overflow for help with the code to extract data from a text file
+  */
         $.get(fileAddress, function(data) {
             var lines = data.split("\n");
             $.each(lines, function(n, elem) {
