@@ -1259,5 +1259,13 @@ label{
   .modal-open .modal {
   display: block;
 }
+}
 
+@supports (-ms-accelerator: true) {
+  /* Edge only */
+
+  #homepage-buttons-container{
+    justify-content: space-around;
+    /* you can also add some other adjustments to size, margins etc to get the same positioning */
+  }
 }

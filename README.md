@@ -425,6 +425,7 @@ The was no differences detected on different operating systems.
 - [Am I responsive](http://ami.responsivedesign.is/) was used to view the website across several devices at once.
 - [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) checker was used to check the spelling of the website.
 - [Free Sound](https://freesound.org/) was used to get the sound files used in the game. 
+- [Can I use](https://caniuse.com/) was used to check browser support for CSS and 
 
 
 ## Deployment
