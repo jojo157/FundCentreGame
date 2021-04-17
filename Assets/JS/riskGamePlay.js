@@ -83,18 +83,17 @@ function generateRandomFund(){
     let fundChoosen = fundName[index];
     let correctRisk = fundRisk[index];
     let solutions = [];
-    solutions[0]=fundChoosen;
-    solutions[1]= correctRisk;
-
+    
     let repeatQ = checkRepeatQuestion(fundChoosen);
-
-    if(repeatQ === true){
-        generateRandomFund();
-    }
     if(repeatQ === false){
-    fundsInGame.push(fundChoosen);
+        fundsInGame.push(fundChoosen);
+        solutions[0]=fundChoosen;
+        solutions[1]= correctRisk;
+        return solutions;  
+    }
+    else{
+        return false;
     }  
-    return solutions;
 }
 
 function displayFundQuestion(){
@@ -103,9 +102,13 @@ function displayFundQuestion(){
 * returns the fund risk for this random fund.
 */
     let callSolutions = generateRandomFund();
-    document.getElementById("fund-name-text").textContent = callSolutions[0];
-    return callSolutions[1];
-    
+    if(callSolutions === false){
+        displayFundQuestion();
+    }
+    else{
+        document.getElementById("fund-name-text").textContent = callSolutions[0];
+        return callSolutions[1];
+    }       
 }
 
 function checkAnswer(useranswer){

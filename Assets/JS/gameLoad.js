@@ -71,7 +71,7 @@ function loadManagementGame(myLevelButton) {
 function displayModal() {
  /** 
 * This function will display a modal when the user clicks the game type (risk game or management style game).
-* The modal will ask the user to choose a game level.
+* The modal will ask the user to choose a game
 */   
     document.getElementById("setup-Game-Title").innerText = "Lets Get Started";
     document.getElementById("setup-text-message").innerText = "Game selected, now choose your level. Are you up for a challenge!";

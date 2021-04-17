@@ -66,16 +66,18 @@ function generateRandomFund() {
     let fundChoosen = fundName[index];
     let correctManagement = fundManagement[index];
     let solutions = [];
-    solutions[0] = fundChoosen;
-    solutions[1] = correctManagement;
+
+   
     let repeatQ = checkRepeatQuestion(fundChoosen);
-    if (repeatQ === true) {
-        generateRandomFund();
-    }
     if (repeatQ === false) {
         fundsInGame.push(fundChoosen);
+        solutions[0] = fundChoosen;
+        solutions[1] = correctManagement;
+        return solutions; 
     }
-    return solutions;
+    else{
+        return false;
+    }
 }
 
 function displayFundQuestion() {
@@ -84,8 +86,12 @@ function displayFundQuestion() {
 * returns the management style for this random fund.
 */
     let callSolutions = generateRandomFund();
+    if(callSolutions === false){
+        displayFundQuestion();
+    }else{
     document.getElementById("management-fund-name-text").textContent = callSolutions[0];
     return callSolutions[1];
+    }
 }
 
 function checkAnswer(useranswer) {
@@ -189,9 +195,9 @@ function numberOfQuestionsPerGame() {
     } else if (level === "Medium") {
         numberOfQs = 12;
         document.getElementById("management-totalNumberOfQuestions").innerText = numberOfQs;
-    } else {
+    } else{
         numberOfQs = 18;
-        document.getElementById("managementtotalNumberOfQuestions").innerText = numberOfQs;
+        document.getElementById("management-totalNumberOfQuestions").innerText = numberOfQs;
     }
 }
 function updateNumberOfQsAnswered() {
