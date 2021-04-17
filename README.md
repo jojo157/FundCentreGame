@@ -383,7 +383,7 @@ I then started working on the game page but even after fixing the same issues as
 
 I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covers Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented in IE11
 
-![Alert on Internet Explorer](Assets/IMAGES/IEalert.png)
+![Alert on Internet Explorer](Assets/IMAGES/IEalert.PNG)
 
 After submitting my project, I will fork my repositoray and then work on the Javascript files to make them compatible with Internet explorer aswell. 
 
