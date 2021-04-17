@@ -187,9 +187,9 @@ Warnings
 - Warnings were given for missing semi-colons . 
     - These were updated accordingly. 
 - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics.
-    - ..........
+    - The functions were updated to improve semantics where applicable.
 
-After following the guidance provided and re-running all javascript files through validation, no warnings or errors were present as shown below.
+After following the guidance provided and re-running all javascript files through validation, no errors were present as shown below.
 
 ![Javascript Validation End Result](Assets/IMAGES/javascriptValidationEndResult.png)
 
@@ -382,7 +382,7 @@ To prevent this happening, I did some searching online to see what other develop
 
     - I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covers Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented in IE11
 
-![Alert on Internet Explorer](Assets/IMAGES/IEalert.PNG)
+![Alert on Internet Explorer](Assets/IMAGES/ieAalert.PNG)
 
 After submitting my project, I will fork my repositoray and then work on the Javascript files to make them compatible with Internet Explorer aswell. 
 
@@ -395,8 +395,9 @@ The above testing was conducted on operating systems:
 - Windows 8.1
 - MacOS Big Sur 11.2.3
 - iOS 14.4.2
+- Android
 
-The was no differences detected on different operating systems. 
+The was no differences detected on different operating systems. [Browser Stack](live.browserstack.com) was used to view and check the functionality across a wide range of devices and operating systems.
 
 
 ## Technologies Used
@@ -425,7 +426,8 @@ The was no differences detected on different operating systems.
 - [Am I responsive](http://ami.responsivedesign.is/) was used to view the website across several devices at once.
 - [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) checker was used to check the spelling of the website.
 - [Free Sound](https://freesound.org/) was used to get the sound files used in the game. 
-- [Can I use](https://caniuse.com/) was used to check browser support for CSS and 
+- [Can I use](https://caniuse.com/) was used to check browser supports range and potential compability issues and known bugs. 
+- [Browser Stack](live.browserstack.com) was used to test the website on different operating systems and browsers.
 
 
 ## Deployment
