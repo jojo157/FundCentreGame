@@ -383,7 +383,9 @@ I then started working on the game page but even after fixing the same issues as
 
 I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covers Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented in IE11
 
+![Alert on Internet Explorer](Assets/IMAGES/IEalert.png)
 
+After submitting my project, I will fork my repositoray and then work on the Javascript files to make them compatible with Internet explorer aswell. 
 
 
 #### Different Operating Systems
@@ -396,3 +398,81 @@ The above testing was conducted on operating systems:
 - iOS 14.4.2
 
 The was no differences detected on different operating systems. 
+
+
+## Technologies Used
+
+### Frameworks and Libraries
+
+- [Google Fonts](https://fonts.google.com/) was used to import the font used for the website.
+- [jQuery](https://jquery.com/) was used as a Javascript library.
+
+### Version Control
+
+- [Git](https://git-scm.com/) was used as a version control system.
+- [GitHub](https://github.com/) was used for repository hosting.
+- [Gitpod](https://www.gitpod.io/) was used as the developer platform.
+
+### Other Programs
+
+- [Balsamiq](https://balsamiq.com/) was used to create a mock-up of the website after exploring the strategy and scope planes of user experience for this project.
+- [Color Combos](https://www.colorcombos.com) was used to extract all the hex colours used on the New Ireland Website and create teh colour scheme for this project.
+- [Shuttle Stock](https://www.shutterstock.com) was used for the logo image.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
+- [W3C Html Checker](https://validator.w3.org/) was used to validate HTML code.
+- [Pic Resize](https://picresize.com/) was used to resize images available on the website to improve its performance.
+- [Ligthhouse](https://github.com/GoogleChrome/lighthouse) was used to audit my website. The results of the audit were considered when making improvements to improve the website performance etc.
+- [Am I responsive](http://ami.responsivedesign.is/) was used to view the website across several devices at once.
+- [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) checker was used to check the spelling of the website.
+- [Free Sound](https://freesound.org/) was used to get the sound files used in the game. 
+
+
+## Deployment
+
+This milestone project was deployed to GitHub Pages using the below steps:
+
+- Log into GitHub and locate the [Fund Centre Game](https://github.com/jojo157/FundCentreGame) repository.
+- At the top of this page navigate to "Settings" on the menu.
+- Scroll down until you reach the "GitHub Pages" Section on the settings page.
+- Click on the 'Check it out here!' hyperlink.
+- Under "Source", click the dropdown called "None" and select "main" branch.
+- The page will automatically re-load.
+- At the top of the page you will see the site published address displayed.
+
+To copy the repository so that you have access to all the files and any new changes will not affect the original repository follow the below steps:
+
+- Log into GitHub and locate the [Fund Centre Game](https://github.com/jojo157/FundCentreGame) repository.
+- On the top far right click on the fork button.
+- This will add a copy of Fund Centre Game repository to your repository.
+
+You can add the Fund Centre Game repository to your local machine using the below steps:
+
+- Log into GitHub and locate the [Fund Centre Game](https://github.com/jojo157/FundCentreGame) repository.
+- Click the "Code" button, click HTTPS and copy the link shown.
+- Open terminal and change the working directory to where you want the clone repository to be.
+- In the terminal, type git clone, and then paste the URL you copied earlier.
+- Press enter and your local clone is now created.
+
+## Credits
+
+### Code
+
+- [Email js API](https://www.emailjs.com/docs/) code template for using emailjs provided in their documentation was used to implement the email tempalte API on contact page when form submitted.
+- [Bootstrap](https://getbootstrap.com/) was used to implement the modal across pages.
+
+### Content
+- The funds for the game were extracted from [Bank of Ireland Life Fund Centre](http://fundcentre.bankofirelandlife.ie/#).
+- The colour scheme is based on the [New Ireland Assurance](https://www.newireland.ie/) website. 
+
+### Media
+
+- The logo image was obtained from [Shutterstock](https://www.shutterstock.com/image-vector/bull-bear-shapes-that-look-like-218090794).
+- Correct answer sound was obtained from [Free Sound](https://freesound.org/people/Eponn/sounds/421002/).
+- Incorrect answer sound was obtained from [Free Sound](https://freesound.org/people/TheBuilder15/sounds/415764/).
+
+### Acknowledgements
+- I would like to thank Bank of Ireland Life / New Ireland Assurance for the content for the game.
+- I would like to thank my mentor Spencer Barriball for his help, encouragement and advice. 
+- I would like to thank Code Institue's Tutor support for their help throughout the course.
+- I would like to thank my fellow students for their help on slack. 
+- I would like to thank my wife Leticia for her continued support. 
