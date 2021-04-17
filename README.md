@@ -370,7 +370,7 @@ Differences discovered across browsers:
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
 To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
 
-- On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to to add vendor prefixes to increase browser compability. After checking caniuse.com, I relaised that the spacing used not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the problem.
+- On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes to increase browser compability. After checking caniuse.com, I relaised that the spacing used not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the problem.
 
 - On IE11 , the modals were not working at all. I added a meta tag to improve compability. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing. I debugged the issue by changing the display to show for the button and when click the modal appears. Further testing shows my jquery files are causing the issue. As my only access to Internet explorer is through my work computer, with security settings I did not have access to the console on IE. I continued to trial and test other possible known compability issues using stack overflow. This was still proving difficult without being able to pinpoint the issue. 
 
@@ -380,6 +380,8 @@ The next error that the console gave was that Promise is undefined. I looked up 
 https://stackoverflow.com/questions/42533264/getting-error-promise-is-undefined-in-ie11 . I added this script and retested. Finally the page is working as intended on IE.
 
 I then started working on the game page but even after fixing the same issues as mentioned there were more compability issues. After trying many different troubleshooting steps, I decided to use githubs version control to revert my files to before I made the changes, as parts of my site that were working started to give errors. Given the time constriants of the project, I reached out to the student support in my course and they advised that as IE is being used less frequent that I should not focus on this browsers issues for the project as it is rapidly declining with time. 
+
+I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covers Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented in IE11
 
 
 
@@ -392,3 +394,5 @@ The above testing was conducted on operating systems:
 - Windows 8.1
 - MacOS Big Sur 11.2.3
 - iOS 14.4.2
+
+The was no differences detected on different operating systems. 
