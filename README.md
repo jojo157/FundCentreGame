@@ -135,7 +135,7 @@ The Fund Centre Game was designed to be consistent with New Ireland Assurance's 
 
 #### Colour Scheme
 
-To obtain the hex colours used on [New Ireland Assurance website](https://www.newireland.ie/) the tool [Color Combos](https://www.colorcombos.com) was used.
+To obtain the hex colours used on [New Ireland Assurance website](https://www.newireland.ie/) the tool [Color Combos](https://www.colorcombos.com) was used. The colour scheme is presented in the image below:
 
 ![Hex colours used in website ](Assets/IMAGES/colorScheme.png)
 
@@ -147,7 +147,7 @@ The New Ireland Assurance's website uses Din Pro for headings and Verdana for ge
 
 #### Images
 
-I wanted to use a logo that was relevant to a game about investment funds. The image chosen represents a bear and bull market. A bear market is when stock prices are continually decreasing, whereas a bull market is when stock prices are continually increasing. The number of images user was kept to a minimum to increase website performance. 
+I wanted to use a logo that was relevant to a game about investment funds. The image chosen represents a bear and bull market. A bear market is when stock prices are continually decreasing, whereas a bull market is when stock prices are continually increasing. The number of images used was kept to a minimum to increase website performance. 
 
 ## Testing
 
@@ -157,7 +157,7 @@ I wanted to use a logo that was relevant to a game about investment funds. The i
 
 Html pages were validated with [W3C Html Checker](https://validator.w3.org/nu/). 
 
-All pages were successful to had no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources as per image below:
+All pages successfully had no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources as per image below:
 
 ![Warning HTML checker result](Assets/IMAGES/warningHtml.png)
 
@@ -169,7 +169,7 @@ After doing some research online I discovered that with html5 the need for type 
 
 CSS page was validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-No errors were found. several warnings were given for: -webkit-flex-direction is an unknown vendor extension. After looking up this warning, the consensus from the coding community is that it can be ignored as the extension makes the code compatible with older browsers but for newer browsers one doesn't need this CSS. 
+No errors were found. Several warnings were given for: -webkit-flex-direction is an unknown vendor extension. After looking up this warning, the consensus from the coding community is that it can be ignored as the extension makes the code compatible with older browsers but for newer browsers one doesn't need this CSS. 
 
 #### Javascript
 
@@ -195,7 +195,7 @@ After following the guidance provided and re-running all Javascript files throug
 
 ### Performance Testing
 
-Performance was tested using Lighthouse, one of Google web developer tools.
+Performance was tested using Lighthouse, one of Google's web developer tools.
 
 #### Home Page
 
@@ -368,6 +368,7 @@ Differences discovered across browsers:
 
 - The alert box appears different on different browsers. Additonally, on Firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additional dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages don't appear.
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
+
 To prevent this from happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built-in security features from confusing the game user. To achieve this, I have used the Bootstraps Modal. I reviewed this feature on all browsers and the display is more user friendly and consistent across browsers. 
 
 - On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column CSS styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes to increase browser compatibility. After checking caniuse.com, I realised that the spacing used is not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the layout problem.
@@ -378,11 +379,11 @@ To prevent this from happening, I did some searching online to see what other de
 
     - The next error that the console gave was that Promise is undefined. I looked up to see why this occured on IE11 and discovered that you need to include a Polyfill to make it work in Internet Explorer according to [Stack Overflow](https://stackoverflow.com/questions/42533264/getting-error-promise-is-undefined-in-ie11). I added this script and re-tested. Finally, the game setup page is working as intended on IE.
 
-    - I then started working on the game page, but even after fixing the same issues as mentioned above, there were more compatibility issues arising. After trying many different troubleshooting steps, I decided to use Githubs version control to revert my files to before I made the changes, as parts of my site that were working started to give errors. Given the time constraint of the project, I reached out to the student support in my course and they advised that as IE is being used less frequently, that I should not focus on this browser's issues for the project as its use is rapidly declining with time. 
+    - I then started working on the game page, but even after fixing the same issues as mentioned above, there were more compatibility issues arising. After trying many different troubleshooting steps, I decided to use Gits version control to revert my files to before I made the changes, as parts of my site that were working started to give errors. Given the time constraint of the project, I reached out to the student support in my course and they advised that as IE is being used less frequently, that I should not focus on this browser's issues for the project as its use is rapidly declining with time. 
 
     - I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covered Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented on IE11. Using an if else statement, I tested that my newly added code only gave the alert on IE. The alert message is shown below. 
 
-![Alert on Internet Explorer](Assets/IMAGES/ieAalert.PNG)
+![Alert on Internet Explorer](Assets/IMAGES/ieAlert.PNG)
 
 After submitting my project, I intend to fork my repository to work on the Javascript files and make them compatible with Internet Explorer aswell. 
 
