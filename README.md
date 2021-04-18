@@ -162,7 +162,7 @@ During development, testing was conducted at every step, mainly using the consol
 
 - I wanted to be able to pass the user selected game level from the Game Load page to the Game page. I had tried using session storage but realised this is independent for each page as the document is updated. I discovered a suggestion on Stack Overflow to add the variable to the page address and then extract the variable from the address on the Game page. I created a function for both pages to achieve this result and the game level is now passed to the game. 
 
-- I wanted to prevent repeat fund questions within the same game. My first function gave an error of "Uncaught RangeError: Maximum call stack size exceeded". After debugging the function at different lines, I realised the variable I had expected to be false was resulting in true. This had created an infinity loop calling my function. I then changed my code and checked that the result was as expected. The next error was given when the repeat question fuction returned true. The error was "Uncaught Type Error: Cannot read property '0' of undefined". I then went through the function line by line, identified the issue and created a conditional statement to handle the event to ensure there was no Type Error and a new unique fund was displayed instead of the repeat question. This was tested using the console to view the outputs as the game was played and to identify when a repeat question was encounted and how the code responded. All questions in a game are now unique.. 
+- I wanted to prevent repeat fund questions within the same game. My first function gave an error of "Uncaught RangeError: Maximum call stack size exceeded". After debugging the function at different lines, I realised the variable I had expected to be false was resulting in true. This had created an infinity loop calling my function. I then changed my code and checked that the result was as expected. The next error was given when the repeat question fuction returned true. The error was "Uncaught Type Error: Cannot read property '0' of undefined". I then went through the function line by line, identified the issue and created a conditional statement to handle the event to ensure there was no Type Error and a new unique fund was displayed instead of the repeat question. This was tested using the console to view the outputs as the game was played and to identify when a repeat question was encounted and how the code responded. All questions in a game are now unique. 
 
 
 ### Code Validation
@@ -445,6 +445,7 @@ There were no differences detected on those operating systems. [Browser Stack](l
 - [Free Sound](https://freesound.org/) was used to get the sound files used in the game. 
 - [Can I use](https://caniuse.com/) was used to check browser supports range and potential compability issues and known bugs. 
 - [Browser Stack](live.browserstack.com) was used to test the website on different operating systems and browsers.
+- [Favicon from Pics](http://favicon.htmlkit.com/favicon/) was used to create a favicon to be used in the address bar.
 
 
 ## Deployment

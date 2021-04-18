@@ -244,7 +244,7 @@ function endGame(){
     document.getElementById("answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try again and beat your score.`;
     document.getElementById("risk-game-modal").click();
     document.getElementById("fund-name-text").innerText = `Game Over! Your score is ${score}`;
-}
+}   
 
 function checkRepeatQuestion(choosenFund){
 /** 
