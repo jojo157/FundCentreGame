@@ -16,74 +16,64 @@
             <h1>Fund Centre Quiz</h1>
         </div>
     </div>
-
     <div id="management-fund-name-card-container">
         <div id="management-fund-name-card">
             <span id="management-fund-name-text"></span>
         </div>
     </div>
-
     <p id="management-instructions">Choose the management style for the shown fund.</p>
     <div id="management-answer-buttons-container">
         <div id="Passive" class="center-horizontal">
-                <button class="answer-button">Passive</button>
+            <button class="answer-button">Passive</button>
         </div>
         <div id="Active" class="center-horizontal">
             <button class="answer-button" >Active</button>
         </div>
     </div>
-
     <div id="management-score-area">
         <p class="scores"> Correct Answers: <span id="management-correct-score">0</span></p>
         <p class="scores"> Incorrect Answers: <span id="management-incorrect-score">0</span></p>
         <p class="scores">Question <span id="management-questionsAnswered">0</span> of <span id="management-totalNumberOfQuestions">0</span></p>
     </div>
-
     <div id="navigation-buttons-management-game-container">
         <div id="management-Home" class="center-horizontal">
-                <button class="nav-button-management-game" onclick="window.location.href='index.html';">Home</button>
+            <button class="nav-button-management-game" onclick="window.location.href='index.html';">Home</button>
         </div>
         <div id="Restart" class="center-horizontal">
             <button class="nav-button-management-game" id="management-restart-button">Restart</button>
         </div>
     </div>
+  <!-- credit to bootstrap for the modal tempalte code -->
+  <!-- Button trigger modal -->
+  <button  id="management-game-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  </button>
 
-    <!-- credit to bootstrap for the modal tempalte code -->
-    <!-- Button trigger modal -->
-<button  id="management-game-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="management-Game-Title" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="management-Game-Title"> title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p id="management-answer-text-message"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="management-Game-Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="management-Game-Title"> title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="management-answer-text-message"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-    
-    <footer>
-        <p class="center-horizontal">For educational purposes only</p>
-        <p class = "center-horizontal">Created by Joanne Carrig</p>
-    </footer>
-
-<script src="Assets/JS/managementGamePlay.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+  </div> 
+  <footer>
+      <p class="center-horizontal">For educational purposes only</p>
+      <p class = "center-horizontal">Created by Joanne Carrig</p>
+  </footer>
+  <script src="Assets/JS/managementGamePlay.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 const $ = window.$;
+
 $(document).ready(function () {
     let gameChosen = "";
     let levelChosen = "";
@@ -19,6 +20,7 @@ $(document).ready(function () {
         }
     );
 });
+
 function setUpGame(gameChosen, levelChosen) {
 /** 
 * This function will display a modal when the button with the game name is choosen, alerting the user to select the game level.
@@ -44,6 +46,7 @@ function setUpGame(gameChosen, levelChosen) {
         });
     }
 }
+
 function loadRiskGame(myLevelButton) {
 /** 
 * This function will load the Risk game page and pass the data for the level choosen in the page address.
@@ -56,6 +59,7 @@ function loadRiskGame(myLevelButton) {
         window.open("gameRisk.html?variable=Hard", "_self");
     }
 }
+
 function loadManagementGame(myLevelButton) {
 /** 
 * This function will load the Management game page and pass the data for the level choosen in the page address.
@@ -68,6 +72,7 @@ function loadManagementGame(myLevelButton) {
         window.open("gameManagement.html?variable=Hard", "_self");
     }
 }
+
 function displayModal() {
  /** 
 * This function will display a modal when the user clicks the game type (risk game or management style game).

@@ -5,13 +5,12 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap");
 
-
-/*  --------------------------General styles--------------------------------------------*/ 
-*{
-    margin: 0;
-    padding: 0;
+/*  --------------------------General styles--------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .center-horizontal {
@@ -26,57 +25,50 @@
   align-items: center;
 }
 
-body{
-    min-height: 100vh;
-    max-width:100vw;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    overflow-y: scroll;
-    
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  overflow-y: scroll;
 }
 
+/* --------------------------- Fonts ----------------------------------------------------*/
 
-
-/* --------------------------- Fonts ----------------------------------------------------*/ 
-
-
-p{
-    font-family: 'Open Sans', Arial, sans-serif;
+p {
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
-
-
-/* --------------------------- Index.html----------------------------------------------------*/ 
-.page-header h1{
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    text-align: center;
+/* --------------------------- Index.html----------------------------------------------------*/
+.page-header h1 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-align: center;
 }
 
-.page-header a{
-    display: block;
+.page-header a {
+  display: block;
 }
 
-
-.logo-image{
-    width: 250px;
-    height: auto;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+.logo-image {
+  width: 250px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#homepage-buttons-container{
-  Padding-top: 10px;
+#homepage-buttons-container {
+  padding-top: 10px;
   min-height: 60vh;
   display: -ms-flexbox;
   display: -webkit-box;
-  display: flex; 
+  display: flex;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
@@ -87,1196 +79,1155 @@ p{
   justify-content: space-evenly;
 }
 
-.button-homepage{
-    height:75px;
-    width:50%;
-    background-color: #1b6089;
-    border-radius: 8px;
-    border: 2px solid #1a3e5b;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
+.button-homepage {
+  height: 75px;
+  width: 50%;
+  background-color: #1b6089;
+  border-radius: 8px;
+  border: 2px solid #1a3e5b;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
 }
 
-.button-homepage:hover{
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+.button-homepage:hover {
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-/* --------------------------- Footer ----------------------------------------------------*/ 
+/* --------------------------- Footer ----------------------------------------------------*/
 
-footer{
-    min-height:50px;
-    margin-top:auto;
-    background-color: #1a3e5b;
-    padding-top:10px;
-    color: #fff;
+footer {
+  min-height: 50px;
+  margin-top: auto;
+  background-color: #1a3e5b;
+  padding-top: 10px;
+  color: #fff;
 }
 
-footer p{
-    text-transform: uppercase;
+footer p {
+  text-transform: uppercase;
 }
 
-/* --------------------------- Pop up instructions window in Index.html----------------------------------------------------*/ 
+/* --------------------------- Pop up instructions window in Index.html----------------------------------------------------*/
 
-#popup-instructions-window{
-    display:none;
-    position: fixed;
-    top:0;
-    left:0;
-    width: 80%;
-    min-height: 100vh;
-    margin-left: 10%;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    overflow:auto;
-    
+#popup-instructions-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  min-height: 100vh;
+  margin-left: 10%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
 }
 
-.float-screen-instructions{
-    padding-bottom:20px;
-    width:100%;
-    height: 85vh;
-    display:block;
-    border: 2px solid #1a3e5b;
-    font-family: 'Open Sans', Arial, sans-serif;
-    overflow: auto;
-    background-color: #1b6089;
-    overflow: auto;
+.float-screen-instructions {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 85vh;
+  display: block;
+  border: 2px solid #1a3e5b;
+  font-family: "Open Sans", Arial, sans-serif;
+  overflow: auto;
+  background-color: #1b6089;
+  overflow: auto;
 }
 
-.buttonClose{
-    color: #FF0000;
-    float:right;
-    clear:both;
-    margin-right: 5px;
-    background-color: #dfe7f0;
-    border: 2px solid #1a3e5b;
-    height: 40px;
-    border-radius: 10px;
-    width: auto;
-    padding: 2px;
-    font-size: 16px;
-
+.buttonClose {
+  color: #ff0000;
+  float: right;
+  clear: both;
+  margin-right: 5px;
+  background-color: #dfe7f0;
+  border: 2px solid #1a3e5b;
+  height: 40px;
+  border-radius: 10px;
+  width: auto;
+  padding: 2px;
+  font-size: 16px;
 }
 
-#instructions-heading{
-    margin-top: 70px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
+#instructions-heading {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
 }
 
-#instructions-to-play h3{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
+#instructions-to-play h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
 }
 
-#instructions-to-play p{
-    margin: 10px;
-    text-align: center;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
-    
+#instructions-to-play p {
+  margin: 10px;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
 }
 
-#instructions-to-play p span{
-    font-weight: bolder;
-    color:#b5ca83;
-    
-    
+#instructions-to-play p span {
+  font-weight: bolder;
+  color: #b5ca83;
 }
 
-#instructions-to-play ul{   
-    list-style-type: none;
-    text-align: center;
-    color:#b5ca83;
+#instructions-to-play ul {
+  list-style-type: none;
+  text-align: center;
+  color: #b5ca83;
 }
 
-li{
-    font-family: 'Open Sans', Arial, sans-serif;
+li {
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
-#fund-centre{
+#fund-centre {
   text-decoration: none;
-  color:#b5ca83;
-  font-family: 'Open Sans', Arial, sans-serif;
+  color: #b5ca83;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
+/* --------------------------- startGame.html----------------------------------------------------*/
 
-/* --------------------------- startGame.html----------------------------------------------------*/ 
-
-#choose-Game-buttons-container{
-  Padding-top: 10px;
+#choose-Game-buttons-container {
+  padding-top: 10px;
   max-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
 }
 
-#choose-Level-buttons-container{
-  padding:0;
-  Padding-top: 10px;
+#choose-Level-buttons-container {
+  padding: 0;
+  padding-top: 10px;
   max-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
 }
 
-.button-StartGame{
-    height:75px;
-    width: 100px;
-    background-color: #1b6089;
-    border-radius: 8px;
-    border: 2px solid #1a3e5b;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
+.button-StartGame {
+  height: 75px;
+  width: 100px;
+  background-color: #1b6089;
+  border-radius: 8px;
+  border: 2px solid #1a3e5b;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.button-StartGame:hover{
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+.button-StartGame:hover {
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-.game-StartGame{
-    height:75px;
-    width: 140px;
-    background-color: #1b6089;
-    border-radius: 8px;
-    border: 2px solid #1a3e5b;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
+.game-StartGame {
+  height: 75px;
+  width: 140px;
+  background-color: #1b6089;
+  border-radius: 8px;
+  border: 2px solid #1a3e5b;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.game-StartGame:hover{
-     background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+.game-StartGame:hover {
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-.options-area h2{
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Open Sans', Arial, sans-serif;
+.options-area h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .options-area {
-  Padding-top: 20px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: vertical; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: column; 
-          flex-direction: column; 
-  -webkit-box-pack: justify; 
-      -ms-flex-pack: justify; 
-          justify-content: space-between;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-#home-button{
-Padding-top: 10px;
+#home-button {
+  padding-top: 10px;
   height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.button-Home{
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
-    height:50px;
-    width: 100px;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    
+.button-Home {
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
-.button-Home:hover{
-    background-color: #1b6089;
-    border: 2px solid #1a3e5b;
-    color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
+.button-Home:hover {
+  background-color: #1b6089;
+  border: 2px solid #1a3e5b;
+  color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
-#setup-game-modal{
-  display:none;
+#setup-game-modal {
+  display: none;
 }
 
+/* --------------------------- gameRisk.html----------------------------------------------------*/
 
-/* --------------------------- gameRisk.html----------------------------------------------------*/ 
-
-#risk-answer-buttons-container{
- Padding-top: 10px;
+#risk-answer-buttons-container {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -ms-flex-wrap: wrap; 
-      flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100vw;
 }
 
-.answer-button{
-    height:75px;
-    width: 100px;
-    background-color: #1b6089;
-    border-radius: 8px;
-    border: 2px solid #1a3e5b;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:10px;
-    outline: none;
+.answer-button {
+  height: 75px;
+  width: 100px;
+  background-color: #1b6089;
+  border-radius: 8px;
+  border: 2px solid #1a3e5b;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  outline: none;
 }
 
-
-#fund-name-card-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-}
-
-#fund-name-card{
-    height: 100px;
-    background-color: #b5ca83;
-    width:250px;
-    margin-top:10px;
-    text-align: center;
-    padding-top:30px;
-}
-
-#fund-name-text{
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #000;
-    font-size: 16px;
-    text-align: center;
-    
-}
-
-#instructions{
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #000;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-#score-area{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 20px;
-}
-
-.scores{
-    margin:10px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-}
-
-#incorrect-score{
-    color: #ff0000;
-}
-
-#correct-score{
-    color: #228B22;
-}
-
-#navigation-buttons-risk-game-container{
-  Padding-top: 10px;
+#fund-name-card-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -ms-flex-pack: distribute; 
-      justify-content: space-around;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#fund-name-card {
+  height: 100px;
+  background-color: #b5ca83;
+  width: 250px;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#fund-name-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+#instructions {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#score-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.scores {
+  margin: 10px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+#incorrect-score {
+  color: #ff0000;
+}
+
+#correct-score {
+  color: #228b22;
+}
+
+#navigation-buttons-risk-game-container {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
 }
 
-.nav-button-risk-game{
-    height:50px;
-    width: 100px;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:10px;
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+.nav-button-risk-game {
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-.nav-button-risk-game:hover{
-    background-color: #1b6089;
-    border: 2px solid #b5ca83;
-    color: #fff;
+.nav-button-risk-game:hover {
+  background-color: #1b6089;
+  border: 2px solid #b5ca83;
+  color: #fff;
 }
 
-.gameOverText{
-    color: #ff0000;
-    font-weight: bold;
+.gameOverText {
+  color: #ff0000;
+  font-weight: bold;
 }
 
 /* ---------------------- modal  for games---------------------------------------------------------------------*/
 
-#risk-game-modal{
-  display:none;
+#risk-game-modal {
+  display: none;
 }
 
-#management-game-modal{
-  display:none;
+#management-game-modal {
+  display: none;
 }
 
-/* --------------------------- gameManagement.html----------------------------------------------------*/ 
+/* --------------------------- gameManagement.html----------------------------------------------------*/
 
-#management-answer-buttons-container{
- Padding-top: 10px;
+#management-answer-buttons-container {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -ms-flex-wrap: wrap; 
-      flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100vw;
-
 }
 
-#navigation-buttons-management-game-container{
-  Padding-top: 10px;
+#navigation-buttons-management-game-container {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: row; 
-          flex-direction: row; 
-  -ms-flex-pack: distribute; 
-      justify-content: space-around;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 100vw;
 }
 
-.nav-button-management-game{
-    height:50px;
-    width: 100px;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:10px;
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+.nav-button-management-game {
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-.nav-button-management-game:hover{
-    background-color: #1b6089;
-    border: 2px solid #b5ca83;
-    color: #fff;
+.nav-button-management-game:hover {
+  background-color: #1b6089;
+  border: 2px solid #b5ca83;
+  color: #fff;
 }
 
-
-
-#management-fund-name-card-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
+#management-fund-name-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#management-fund-name-card{
-    height: 100px;
-    background-color: #b5ca83;
-    width:250px;
-    margin-top:10px;
-    text-align: center;
-    padding-top:30px;
+#management-fund-name-card {
+  height: 100px;
+  background-color: #b5ca83;
+  width: 250px;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-#management-fund-name-text{
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #000;
-    font-size: 16px;
-    text-align: center;
-    
+#management-fund-name-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
 }
 
-#management-instructions{
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #000;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 16px;
+#management-instructions {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-#management-score-area{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 20px;
+#management-score-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-
-#management-incorrect-score{
-    color: #ff0000;
+#management-incorrect-score {
+  color: #ff0000;
 }
 
-#management-correct-score{
-    color: #228B22;
+#management-correct-score {
+  color: #228b22;
 }
 
-/* --------------------------- contact.html----------------------------------------------------*/ 
+/* --------------------------- contact.html----------------------------------------------------*/
 
-#contact-form-container{
-  Padding-top: 20px;
+#contact-form-container {
+  padding-top: 20px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: vertical; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: column; 
-          flex-direction: column; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
-  
 }
 
-#contact-form-container div{
-    margin: 20px;
-    width: 90vw;
+#contact-form-container div {
+  margin: 20px;
+  width: 90vw;
 }
 
-.input-contact-style{
-    width: 70%;
-    height: 40px;
-    background-color: #1b6089;
-    border: 2px solid #b5ca83;
-    color: #fff;
+.input-contact-style {
+  width: 70%;
+  height: 40px;
+  background-color: #1b6089;
+  border: 2px solid #b5ca83;
+  color: #fff;
 }
 
-textarea{
-    width: 70%;
-    height: 100px;
-    background-color: #1b6089;
-    border: 2px solid #b5ca83;
-    color: #fff;
+textarea {
+  width: 70%;
+  height: 100px;
+  background-color: #1b6089;
+  border: 2px solid #b5ca83;
+  color: #fff;
 }
 
-#submit-button{
-background-color:#b5ca83;
-border: 2px solid #1b6089;
-color:#000;
-width: 40%;
-border-radius: 10px;
-margin-top: 20px;
+#submit-button {
+  background-color: #b5ca83;
+  border: 2px solid #1b6089;
+  color: #000;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-#contact-modal{
-  display:none;
+#contact-modal {
+  display: none;
 }
 
 /* ----------------------  404 error page-------------------------------------  */
 
-#error-message-container{
-Padding-top: 20px;
+#error-message-container {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
-  -webkit-box-orient: vertical; 
-  -webkit-box-direction: normal; 
-      -ms-flex-direction: column; 
-          flex-direction: column; 
-  -webkit-box-pack: space-between; 
-      -ms-flex-pack: space-between; 
-          justify-content: space-between;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   text-align: center;
 }
 
-#home-button-404{
-  height:50px;
-    width: 100px;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:10px;
-    background-color:#b5ca83;
-    border: 2px solid #1a3e5b;
-    color: #000;
+#home-button-404 {
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #b5ca83;
+  border: 2px solid #1a3e5b;
+  color: #000;
 }
 
-.error-404-subsection{
+.error-404-subsection {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-#image-404{
+#image-404 {
   height: 40vh;
-  width:auto;
-  
+  width: auto;
 }
 
-#image-404 image{
+#image-404 image {
   object-fit: fill;
   height: 100%;
 }
 
-
 /* ----------------------  Media Queries-------------------------------------  */
 
 @media only screen and (max-width: 321px) {
-    /* For smaller mobiles: */
+  /* For smaller mobiles: */
 
-    .button-StartGame{
-       margin-left: 2px;
-       margin-right: 2px;
-       
-   }
+  .button-StartGame {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+  /* For tablets: */
 
+  /* Home Page */
+  h1 {
+    font-size: 3em;
+  }
+  .logo-image {
+    width: 300px;
+  }
+  footer {
+    min-height: 70px;
+  }
+  footer p {
+    margin-top: 2px;
+    font-size: 20px;
+  }
+  .button-homepage {
+    height: 90px;
+    font-size: 20px;
+  }
+  #instructions-to-play {
+    font-size: 20px;
+  }
+  #instructions-to-play p {
+    margin-top: 20px;
+  }
+  /* Game setup Page*/
+  .options-area {
+    min-height: 65vh;
+  }
 
-@media only screen and (min-width: 601px) and (max-width: 1025px){
-    /* For tablets: */
+  .button-StartGame {
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+  }
 
-    /* Home Page */
-    h1 {
-        font-size: 3em;
-    }
-    .logo-image{
-        width: 300px;  
-    } 
-     footer{
-        min-height:70px;
-     }
-    footer p{
-        margin-top: 2px;
-        font-size: 20px;
-    }
-    .button-homepage{
-        height:90px;
-        font-size: 20px;
-    }
-    #instructions-to-play{
-        font-size: 20px;
-    }
-    #instructions-to-play p{
-        margin-top: 20px;
-    }
-    /* Game setup Page*/
-    .options-area{
-        min-height: 65vh;
-    }
+  .game-StartGame {
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+  }
 
-    .button-StartGame{
-        width: 200px;
-        height: 100px;
-        font-size: 20px;
-        
-    }
+  #home-button {
+    padding: 0;
+    margin: 0;
+  }
 
-    .game-StartGame{
-        width: 250px;
-        height: 100px;
-        font-size: 20px;
-    }
-    
-    #home-button{
-        padding:0;
-        margin: 0;
-        
-    }
-    
-    .button-Home{
-        width: 200px;
-        height: 75px;
-        font-size: 20px;
-        Padding-top: 0;
-        margin: 0;
-        margin-top: 20px;
-    }
-    .options-area h2{
-        font-size: 2em;
-    }
+  .button-Home {
+    width: 200px;
+    height: 75px;
+    font-size: 20px;
+    padding-top: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .options-area h2 {
+    font-size: 2em;
+  }
 
-    #choose-Game-buttons-container{
-        Padding-top: 0px;
-        margin-top: 0px;
-    
-      }
-      
-      #choose-Level-buttons-container{
-        Padding-top: 0px;
-        margin-top: 0px;
-      }
+  #choose-Game-buttons-container {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
 
-      /* Risk Game Page*/
+  #choose-Level-buttons-container {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
 
-      #fund-name-card-container{
-          margin-top: 20px;
-      }
+  /* Risk Game Page*/
 
-      #fund-name-card{
-        width: 350px;
-        height: 150px;
-      }
+  #fund-name-card-container {
+    margin-top: 20px;
+  }
 
-      #fund-name-text{
-        font-size: 20px;
-      }
+  #fund-name-card {
+    width: 350px;
+    height: 150px;
+  }
 
-      #instructions{
-        margin-top: 40px;
-        font-size: 20px;
-      }
+  #fund-name-text {
+    font-size: 20px;
+  }
 
-      #score-area{
-          margin-top:40px;
-      }
-      .scores{
-        font-size: 20px;
-      }
-      .answer-button{
-        font-size: 20px;
-        width: 150px;
-      }
+  #instructions {
+    margin-top: 40px;
+    font-size: 20px;
+  }
 
-      .nav-button-risk-game{
-        font-size: 20px;
-        width: 150px; 
-      }
+  #score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 20px;
+  }
+  .answer-button {
+    font-size: 20px;
+    width: 150px;
+  }
 
-      /* Management style game Page*/
+  .nav-button-risk-game {
+    font-size: 20px;
+    width: 150px;
+  }
 
-      #management-fund-name-card-container{
-        margin-top: 20px;
-    }
+  /* Management style game Page*/
 
-    #management-fund-name-card{
-      width: 350px;
-      height: 150px;
-    }
+  #management-fund-name-card-container {
+    margin-top: 20px;
+  }
 
-    #management-fund-name-text{
-      font-size: 20px;
-    }
+  #management-fund-name-card {
+    width: 350px;
+    height: 150px;
+  }
 
-    #management-instructions{
-      margin-top: 40px;
-      font-size: 20px;
-    }
+  #management-fund-name-text {
+    font-size: 20px;
+  }
 
-    #management-score-area{
-        margin-top:40px;
-    }
-    .scores{
-      font-size: 20px;
-    }
-    .answer-button{
-      font-size: 20px;
-      width: 150px;
-    }
+  #management-instructions {
+    margin-top: 40px;
+    font-size: 20px;
+  }
 
-    .nav-button-management-game{
-      font-size: 20px;
-      width: 150px; 
-    }
+  #management-score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 20px;
+  }
+  .answer-button {
+    font-size: 20px;
+    width: 150px;
+  }
 
-    .nav-button-management-game-container{
-        margin-top: 40px;
-    }
+  .nav-button-management-game {
+    font-size: 20px;
+    width: 150px;
+  }
 
-      /* --------------------------- contact.html----------------------------------------------------*/ 
+  .nav-button-management-game-container {
+    margin-top: 40px;
+  }
 
-#contact-form-container{
-  Padding-top: 40px; 
-}
+  /* --------------------------- contact.html----------------------------------------------------*/
 
-#contact-form-container div{
+  #contact-form-container {
+    padding-top: 40px;
+  }
+
+  #contact-form-container div {
     margin: 20px;
     width: 90vw;
-}
+  }
 
-.input-contact-style{
+  .input-contact-style {
     width: 60%;
     height: 50px;
-}
+  }
 
-textarea{
+  textarea {
     width: 60%;
     height: 150px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  #submit-button {
+    font-size: 20px;
+  }
 }
-
-
-label{
-  font-size: 20px;
-}
-
-#submit-button{
-  font-size: 20px;
-}
-
-
-}
-
-
 
 @media only screen and (min-width: 1026px) {
-    /* For desktop: */
+  /* For desktop: */
 
-    footer p{
-      font-size: 18px;
-    }
-
-    .button-homepage{
-      font-size: 18px;
-  }
-  #instructions-to-play{
-      font-size: 18px;
-  }
-  #instructions-to-play p{
-      margin-top: 18px;
+  footer p {
+    font-size: 18px;
   }
 
-    /* Game set up */
+  .button-homepage {
+    font-size: 18px;
+  }
+  #instructions-to-play {
+    font-size: 18px;
+  }
+  #instructions-to-play p {
+    margin-top: 18px;
+  }
 
-    .button-StartGame{
-        width: 200px;
-        font-size: 18px;
-    }
+  /* Game set up */
 
-    .game-StartGame{
-        width: 250px;
-        font-size: 18px;
-    }
-    .button-Home{
-        width: 200px;
-        font-size: 18px;
-    }
+  .button-StartGame {
+    width: 200px;
+    font-size: 18px;
+  }
 
+  .game-StartGame {
+    width: 250px;
+    font-size: 18px;
+  }
+  .button-Home {
+    width: 200px;
+    font-size: 18px;
+  }
 
-    /* Risk Game Page*/
+  /* Risk Game Page*/
 
-    #fund-name-card-container{
-        margin-top: 10px;
-    }
+  #fund-name-card-container {
+    margin-top: 10px;
+  }
 
-    #fund-name-card{
-      width: 350px;
-      height: 100px;
-    }
+  #fund-name-card {
+    width: 350px;
+    height: 100px;
+  }
 
-    #fund-name-text{
-      font-size: 18px;
-    }
+  #fund-name-text {
+    font-size: 18px;
+  }
 
-    #instructions{
-      margin-top: 40px;
-      font-size: 18px;
-    }
+  #instructions {
+    margin-top: 40px;
+    font-size: 18px;
+  }
 
-    #score-area{
-        margin-top:40px;
-    }
-    .scores{
-      font-size: 18px;
-    }
-    .answer-button{
-      font-size: 18px;
-      width: 180px;
-    }
+  #score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 18px;
+  }
+  .answer-button {
+    font-size: 18px;
+    width: 180px;
+  }
 
-    .nav-button-risk-game{
-      font-size: 18px;
-      width: 180px; 
-    }
+  .nav-button-risk-game {
+    font-size: 18px;
+    width: 180px;
+  }
 
-/* Management style game Page*/
+  /* Management style game Page*/
 
-    #management-fund-name-card-container{
-        margin-top: 18px;
-    }
+  #management-fund-name-card-container {
+    margin-top: 18px;
+  }
 
-    #management-fund-name-card{
-      width: 350px;
-      height: 100px;
-    }
+  #management-fund-name-card {
+    width: 350px;
+    height: 100px;
+  }
 
-    #management-fund-name-text{
-      font-size: 18px;
-    }
+  #management-fund-name-text {
+    font-size: 18px;
+  }
 
-    #management-instructions{
-      margin-top: 40px;
-      font-size: 18px;
-    }
+  #management-instructions {
+    margin-top: 40px;
+    font-size: 18px;
+  }
 
-    #management-score-area{
-        margin-top:40px;
-    }
-    .scores{
-      font-size: 18px;
-    }
-    .answer-button{
-      font-size: 18px;
-      width: 180px;
-    }
+  #management-score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 18px;
+  }
+  .answer-button {
+    font-size: 18px;
+    width: 180px;
+  }
 
-    .nav-button-management-game{
-      font-size: 18px;
-      width: 180px; 
-    }
+  .nav-button-management-game {
+    font-size: 18px;
+    width: 180px;
+  }
 
-         /* --------------------------- contact.html----------------------------------------------------*/ 
+  /* --------------------------- contact.html----------------------------------------------------*/
 
-#contact-form-container{
-  Padding-top: 18px; 
-}
+  #contact-form-container {
+    padding-top: 18px;
+  }
 
-#contact-form-container div{
+  #contact-form-container div {
     margin: 20px;
     width: 90vw;
-}
+  }
 
-.input-contact-style{
+  .input-contact-style {
     width: 60%;
     height: 50px;
-}
+  }
 
-textarea{
+  textarea {
     width: 60%;
     height: 130px;
-}
+  }
 
+  label {
+    font-size: 18px;
+  }
 
-label{
-  font-size: 18px;
-}
-
-#submit-button{
-  font-size: 18px;
-}
-
-
-
+  #submit-button {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
-    /* For larger desktop: */
-   /* Home Page */
-    h1 {
-       font-size: 3em;
-   }
-   
-    .logo-image{
-       width: 400px;  
-   } 
-    footer{
-       min-height:70px;
-    }
-   footer p{
-       margin-top: 2px;
-       font-size: 20px;
-   }
-   .button-homepage{
-       height:90px;
-       font-size: 20px;
-   }
-   #instructions-to-play{
-       font-size: 20px;
-   }
-   #instructions-to-play p{
-       margin-top: 20px;
-   }
+  /* For larger desktop: */
+  /* Home Page */
+  h1 {
+    font-size: 3em;
+  }
 
-   /* Game setup Page*/
-   .options-area{
-       min-height: 50vh;
-   }
+  .logo-image {
+    width: 400px;
+  }
+  footer {
+    min-height: 70px;
+  }
+  footer p {
+    margin-top: 2px;
+    font-size: 20px;
+  }
+  .button-homepage {
+    height: 90px;
+    font-size: 20px;
+  }
+  #instructions-to-play {
+    font-size: 20px;
+  }
+  #instructions-to-play p {
+    margin-top: 20px;
+  }
 
-   .button-StartGame{
-       width: 250px;
-       height: 100px;
-       font-size: 20px;
-       
-   }
+  /* Game setup Page*/
+  .options-area {
+    min-height: 50vh;
+  }
 
-   .game-StartGame{
-       width: 350px;
-       height: 100px;
-       font-size: 20px;
-   }
-   
-   #home-button{
-       padding:0;
-      
-       
-   }
-   
-   .button-Home{
-       width: 200px;
-       height: 75px;
-       font-size: 20px;
-       Padding-top: 0;
-       margin: 0;
-       margin-top: 20px;
-       margin-bottom: 10px;
-   }
-   .options-area h2{
-       font-size: 2em;
-   }
+  .button-StartGame {
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+  }
 
-   #choose-Game-buttons-container{
-       Padding-top: 0px;
-       margin-top: 0px;
-   
-     }
-     
-     #choose-Level-buttons-container{
-       Padding-top: 0px;
-       margin-top: 0px;
-     }
+  .game-StartGame {
+    width: 350px;
+    height: 100px;
+    font-size: 20px;
+  }
 
-     #fund-risk{
-         margin-right: 30px;
-     }
+  #home-button {
+    padding: 0;
+  }
 
-     #easy{
-        margin-right: 30px;
-     }
+  .button-Home {
+    width: 200px;
+    height: 75px;
+    font-size: 20px;
+    padding-top: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .options-area h2 {
+    font-size: 2em;
+  }
 
-     #medium{
-        margin-right: 30px;
-     }
+  #choose-Game-buttons-container {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
 
+  #choose-Level-buttons-container {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
 
-    /* Risk Game Page*/
+  #fund-risk {
+    margin-right: 30px;
+  }
 
-      #fund-name-card-container{
-          margin-top: 20px;
-      }
+  #easy {
+    margin-right: 30px;
+  }
 
-      #fund-name-card{
-        width: 350px;
-        height: 120px;
-      }
+  #medium {
+    margin-right: 30px;
+  }
 
-      #fund-name-text{
-        font-size: 20px;
-      }
+  /* Risk Game Page*/
 
-      #instructions{
-        margin-top: 40px;
-        font-size: 20px;
-      }
+  #fund-name-card-container {
+    margin-top: 20px;
+  }
 
-      #score-area{
-          margin-top:40px;
-      }
-      .scores{
-        font-size: 20px;
-      }
-      .answer-button{
-        font-size: 20px;
-        width: 180px;
-      }
+  #fund-name-card {
+    width: 350px;
+    height: 120px;
+  }
 
-      .nav-button-risk-game{
-        font-size: 20px;
-        width: 180px; 
-      }
+  #fund-name-text {
+    font-size: 20px;
+  }
 
-/* Management style game Page*/
+  #instructions {
+    margin-top: 40px;
+    font-size: 20px;
+  }
 
-      #management-fund-name-card-container{
-          margin-top: 20px;
-      }
+  #score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 20px;
+  }
+  .answer-button {
+    font-size: 20px;
+    width: 180px;
+  }
 
-      #management-fund-name-card{
-        width: 350px;
-        height: 120px;
-      }
+  .nav-button-risk-game {
+    font-size: 20px;
+    width: 180px;
+  }
 
-      #management-fund-name-text{
-        font-size: 20px;
-      }
+  /* Management style game Page*/
 
-      #management-instructions{
-        margin-top: 40px;
-        font-size: 20px;
-      }
+  #management-fund-name-card-container {
+    margin-top: 20px;
+  }
 
-      #management-score-area{
-          margin-top:40px;
-      }
-      .scores{
-        font-size: 20px;
-      }
-      .answer-button{
-        font-size: 20px;
-        width: 180px;
-      }
+  #management-fund-name-card {
+    width: 350px;
+    height: 120px;
+  }
 
-      .nav-button-management-game{
-        font-size: 20px;
-        width: 180px; 
-      }
+  #management-fund-name-text {
+    font-size: 20px;
+  }
 
-      /* --------------------------- contact.html----------------------------------------------------*/ 
+  #management-instructions {
+    margin-top: 40px;
+    font-size: 20px;
+  }
 
-#contact-form-container{
-  Padding-top: 40px; 
-}
+  #management-score-area {
+    margin-top: 40px;
+  }
+  .scores {
+    font-size: 20px;
+  }
+  .answer-button {
+    font-size: 20px;
+    width: 180px;
+  }
 
-#contact-form-container div{
+  .nav-button-management-game {
+    font-size: 20px;
+    width: 180px;
+  }
+
+  /* --------------------------- contact.html----------------------------------------------------*/
+
+  #contact-form-container {
+    padding-top: 40px;
+  }
+
+  #contact-form-container div {
     margin: 20px;
     width: 90vw;
-}
+  }
 
-.input-contact-style{
+  .input-contact-style {
     width: 60%;
     height: 50px;
-}
+  }
 
-textarea{
+  textarea {
     width: 60%;
     height: 150px;
-}
+  }
 
+  label {
+    font-size: 20px;
+  }
 
-label{
-  font-size: 20px;
-}
-
-#submit-button{
-  font-size: 20px;
-}
-
+  #submit-button {
+    font-size: 20px;
+  }
 }
 
 /* browser targeted CSS for older version compatibility browser issues */
@@ -1284,20 +1235,19 @@ label{
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
 
-  .button-homepage{
+  .button-homepage {
     margin-bottom: 30px;
     margin-top: 10px;
   }
- 
+
   .modal-open .modal {
-  display: block;
-}
+    display: block;
+  }
 }
 
-@supports (-ms-ime-align: auto){
+@supports (-ms-ime-align: auto) {
   /* Edge only  version < 90 */
   #homepage-buttons-container {
     justify-content: space-around;
   }
-
 }

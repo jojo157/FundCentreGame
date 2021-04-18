@@ -3,22 +3,18 @@ const $ = window.$ ;
 
 $(document).ready(function () {
     internetExplorerAlert();
-
     document.getElementById("play-button").addEventListener("click", function () {
         window.open("startGame.html", "_self");
     });
-
-   document.getElementById("contact-button").addEventListener("click", function () {
+    document.getElementById("contact-button").addEventListener("click", function () {
         window.open("contact.html", "_self");
     });
-
     document.getElementById("game-how-button").addEventListener("click", function(){
         document.getElementById("popup-instructions-window").style.display =  "block";
     });
     document.getElementById("buttonClose").addEventListener("click",function(){
         document.getElementById("popup-instructions-window").style.display= "none";
     });
-
 });
 
 function internetExplorerAlert(){

@@ -4,10 +4,12 @@ const fundName = [];
 const fundManagement = [];
 const fundsInGame = [];
 const soundToPlay = document.createElement("audio");
+
 $(document).ready(function () {
     extractDataFromTxtFile('Assets/FundTextFiles/fundsForManagement.txt', fundName);
     extractDataFromTxtFile('Assets/FundTextFiles/fundManagementStyle.txt', fundManagement);
 });
+
 $(window).on("load", function startup() {
     setTimeout(function () {
         startGame();
@@ -23,6 +25,7 @@ $(window).on("load", function startup() {
         }
     }, 500);
 });
+
 function startGame() {
 /** 
 * This function calls the game level - determines how many Qs per game
@@ -33,10 +36,11 @@ function startGame() {
     displayFundQuestion();
     numberOfQuestionsPerGame();
 }
+
 function extractDataFromTxtFile(fileAddress, arrayVariable) {
-/* 
+/***************** 
     credit to stack overflow for help with the code to extract data from a text file
-*/
+******************/
 /** 
 * This function will extract all the data from a text file where each entry is on a new line.
 * The function will remove any trailing white space before adding the data to an array. 
@@ -57,6 +61,7 @@ function generateRandomIndex() {
 */
     return Math.floor(Math.random() * 74) + 1;
 }
+
 function generateRandomFund() {
 /** 
 * This function will generate a unique fund that has not already appeared in the game 
@@ -66,8 +71,6 @@ function generateRandomFund() {
     let fundChoosen = fundName[index];
     let correctManagement = fundManagement[index];
     let solutions = [];
-
-   
     let repeatQ = checkRepeatQuestion(fundChoosen);
     if (repeatQ === false) {
         fundsInGame.push(fundChoosen);
@@ -89,8 +92,8 @@ function displayFundQuestion() {
     if(callSolutions === false){
         displayFundQuestion();
     }else{
-    document.getElementById("management-fund-name-text").textContent = callSolutions[0];
-    return callSolutions[1];
+        document.getElementById("management-fund-name-text").textContent = callSolutions[0];
+        return callSolutions[1];
     }
 }
 
@@ -134,6 +137,7 @@ function checkAnswer(useranswer) {
         }
     }
 }
+
 function updateCorrectScore() {
 /** 
 * This function will update the number of correct answers on the screen
@@ -200,6 +204,7 @@ function numberOfQuestionsPerGame() {
         document.getElementById("management-totalNumberOfQuestions").innerText = numberOfQs;
     }
 }
+
 function updateNumberOfQsAnswered() {
 /** 
 * This function increases the number of questions answered by 1
@@ -221,6 +226,7 @@ function checkGameEnd() {
         }, 10);
     }
 }
+
 function endGame() {
 /** 
 * This function ends the users game when they have answered all the questions allowable in a game 
@@ -233,7 +239,7 @@ function endGame() {
     currentCorrect = parseInt(currentCorrect);
     score = (((currentCorrect / endValue) * 100).toFixed(0)) + "%";
     document.getElementById("management-Game-Title").innerText = "Congratulations";
-    document.getElementById("management-answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try and beat your score.`;
+    document.getElementById("management-answer-text-message").innerText = `Game Over! Your score is ${score}. Check out the Fund Centre Website to learn more! Why not try again and beat your score.`;
     document.getElementById("management-game-modal").click();
     document.getElementById("management-fund-name-text").innerText = `Game Over! Your score is ${score}`;
 }
@@ -249,6 +255,7 @@ function checkRepeatQuestion(choosenFund) {
     }
     return false;
 }
+
 function answerAlert(isCorrect, managementFund) {
 /** 
 * This function updated the page modal with a message depending on the answer outcome (correct, incorrect)
@@ -264,6 +271,7 @@ function answerAlert(isCorrect, managementFund) {
         document.getElementById("management-game-modal").click();
     }
 }
+
 function playCorrectSound() {
 /** 
 * This function plays the correct sound file
@@ -271,6 +279,7 @@ function playCorrectSound() {
     soundToPlay.setAttribute("src", "Assets/Sounds/correct.wav");
     soundToPlay.play();
 }
+
 function playWrongSound() {
 /** 
 * This function plays the incorrect sound file
