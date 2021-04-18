@@ -54,7 +54,7 @@ function extractDataFromTxtFile(fileAddress, arrayVariable){
             });
          });
          return arrayVariable;
-    }
+}
 
 function generateRandomIndex(){
 /** 
