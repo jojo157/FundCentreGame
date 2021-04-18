@@ -331,6 +331,7 @@ li {
   transition-duration: 0.4s;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .button-Home:hover {
