@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Fund Centre Learning Game Website was created to enable colleagues of New Ireland Assurance and Bank of Ireland Life to improve their product knowledge in a fun and iteractive way to assist them serving customers brillantly. 
+The Fund Centre Learning Game Website was created to enable colleagues of New Ireland Assurance and Bank of Ireland Life to improve their product knowledge in a fun and interactive way to assist them serving customers brilliantly. 
 
 View Live Website [here](https://jojo157.github.io/FundCentreGame/)
 
@@ -57,21 +57,21 @@ The 5 planes of User Experience:
 
 ### Strategy
 
-The Fund Centre Game was created with the purpose of providing a solution to make it easy and fun for our sales and customer support colleagues to become more familiar with our investment fund offering. The game will help to associate the risk level and management style with the funds we offer. Game-based learning has been shown to be a more effective trainning method than e-learning. An employee will perform better on a learning task when presented with the learning in an engaged and stimulating nature. 
+The Fund Centre Game was created with the purpose of providing a solution to make it easy and fun for our sales and customer support colleagues to become more familiar with our investment fund offering. The game will help them to associate the risk level and management style with the funds we offer. Game-based learning has been shown to be a more effective training method than e-learning. An employee will perform better on a learning task when presented with an engaging and stimulating environment. 
 
 #### User Needs
 
 ##### As a site user
 - I want to be able to learn about the funds available and the risk that fund has.
 - I want to be able to learn the fund management style in an effortless way.
-- I want to contact the site owner if I want to request more information about any particular funds or give feedback.
+- I want to contact the site owner to request more information about any particular funds or give feedback if needed.
 - I want to be able to increment my knowledge at a pace that suits me. 
-- I want to feel encourage to continue learning. 
+- I want to feel encouraged to continue learning. 
 
 ##### As the business owner
-- I want my employess to engage with the funds that we offer to learn the risk and management style.
+- I want my employees to engage with the funds that we offer to learn the risk and management style.
 - I want them to go to our fund centre website to learn more after completing the game.
-- I want my employess to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
+- I want my employees to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
 
 ### Scope
 
@@ -84,15 +84,15 @@ The following features are in scope for this project.
 - Contact Form
     - A contact form to allow the user to send a message directly to the site owner. An API will send this form data to the site owner by email.
 - Game setup Page
-    - This allows the user to select the game and the game level. The relevant game then loads.
+    - This allows the user to select between 2 different games and three game levels. The relevant game/level then loads.
+- Game Level Option
+    - The user can choose between Easy, Medium and Hard Game Level.
 - Fund Risk Game
     - The user will be presented with a random fund and risk level options and alerted when get question right or wrong. 
 - Fund Management Style Game
     - The user will be presented with a random fund and management style options and alerted when get question right or wrong.   
-- Game Level Option
-    - The user can choose between Easy, Medium and Hard Game Level.
 - Score card
-    - During an active game, the user can see the number of correct and incorrect answers. At the end of a game, the user will be given their correct score. The user is also shown the total number of questions in the game, so they know how many they have left to complete the game. 
+    - During an active game, the user can see the number of correct and incorrect answers. The user is also shown the total number of questions in the game, so they know how many they have left to complete the game. At the end of a game, the user will be given their final score. 
 - Restart button
     - The user can choose to restart a game at any time.
 - Home Button
@@ -104,24 +104,24 @@ The following features are in scope for this project.
 
 The following features are not in scope for this project:
 
-- Player leaderboard
-    - When I learn more about databases, I would like to add a leaderboard page that when a game finishes the user can submit their score and level to the leaderboard. This would encourage learning by adding a competitve nature between colleagues. By using a database the data can be stored and would update for each user that plays.
+- Player leader board
+    - When I learn more about databases, I would like to add a leader board page that when a game finishes the user can submit their score and level to be tracked. This would encourage learning by adding interaction and competition between colleagues. By using a database the data can be updated and stored accordingly for each user that plays.
 
 ### Structure
 
 During the planning stage, it was decided that the following pages would be needed to ensure the user needs are meet:
 
-- Landing Page
-    - With elements to tell user how to play.
-    - With elements to give user the options to choose game and level.
-    - With elements to allow user to contact site owner.
+- Landing Page with elements:
+    - To tell user how to play.
+    - To give user the options to choose game and level.
+    - To allow user to contact site owner.
 
-- Game Page
-    - With area to show the random fund.
-    - With area to give the user answer options.
-    - With a score area.
-    - With controls to navigate.
-    - With area to give the correct answer, when wrong answer chosen.
+- Game Page with areas:
+    - To show the random fund.
+    - To give the user answer options.
+    - To track score.
+    - To give the correct answer, when wrong answer chosen.
+    - And controls to navigate those areas.
 
 ### Skeleton
 
@@ -135,15 +135,15 @@ The Fund Centre Game was designed to be consistent with New Ireland Assurance's 
 
 #### Colour Scheme
 
-To obtain the hex colours used on [New Ireland Assurance website](https://www.newireland.ie/) , the tool [Color Combos](https://www.colorcombos.com) was used.
+To obtain the hex colours used on [New Ireland Assurance website](https://www.newireland.ie/) the tool [Color Combos](https://www.colorcombos.com) was used.
 
 ![Hex colours used in website ](Assets/IMAGES/colorScheme.png)
 
 #### Typography
 
-To minic the text styling found on New Ireland Assurance's website, I used Google Developer tools to check the font family used for different text sections.
+To mimic the text styling found on New Ireland Assurance's website, I used Google Developer tools to check the font family for different text sections.
 
-The New Ireland Assurance website uses Din Pro for headings and Verdana for general text. As these texts were not available in goggle fonts, I found free alternatives that matched the styling. For Din Pro , I used Roboto Condensed and for Verdana, I used open sans. 
+The New Ireland Assurance's website uses Din Pro for headings and Verdana for general text. As these texts were not available in goggle fonts, I found free alternatives that matched the styling. For Din Pro , I used Roboto Condensed and for Verdana, I used open sans. 
 
 #### Images
 
@@ -157,11 +157,11 @@ I wanted to use a logo that was relevant to a game about investment funds. The i
 
 Html pages were validated with [W3C Html Checker](https://validator.w3.org/nu/). 
 
-All pages were successful to have no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources.
+All pages were successful to had no errors. All pages gave the Warning : The type attribute is unnecessary for Javascript resources as per image below:
 
 ![Warning HTML checker result](Assets/IMAGES/warningHtml.png)
 
-After doing some searching online I discovered that with html5 the need for type was made redundant. To ensure I am keeping with the most up to date standards and my code is complaint, I removed the type attribute and re-tested the code. All pages showed no errors or warnings. 
+After doing some research online I discovered that with html5 the need for type was made redundant. To ensure I am keeping with the most up to date standards and my code is compliant, I removed the type attribute and re-tested the code. All pages showed no errors or warnings as per image below: 
 
 ![Successful HTML checker results ](Assets/IMAGES/successHtml.png)
 
@@ -169,7 +169,7 @@ After doing some searching online I discovered that with html5 the need for type
 
 CSS page was validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-No errors were found. 14 warnings were given for: -webkit-flex-direction is an unknown vendor extension. After looking up this warning, the consesus from the coding community is that it can be ignored as the extension makes the code compatible with older browsers but for newer browsers one doesnt need this CSS. 
+No errors were found. several warnings were given for: -webkit-flex-direction is an unknown vendor extension. After looking up this warning, the consensus from the coding community is that it can be ignored as the extension makes the code compatible with older browsers but for newer browsers one doesn't need this CSS. 
 
 #### Javascript
 
@@ -179,17 +179,17 @@ Javascript files were validated with [JSHint](https://jshint.com/)
 
 Errors
 - Undefined variable $
-    - As JSHint was not aware jquery is being used, I needed to add const $ = window.$ to the beginning of my javascript files to prevent an error occuring.
+    - As JSHint was not aware jquery is being used, I needed to add `const $ = window.$` to the beginning of my Javascript files to prevent an error occurring.
 
 Warnings
 - 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 
-    - to fix this warning, i added /*jshint esversion: 6 */ to all of my Javascript files as recommended. 
+    - to fix this warning, i added `/*jshint esversion: 6 */` to all of my Javascript files as recommended. 
 - Warnings were given for missing semi-colons . 
     - These were updated accordingly. 
 - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics.
     - The functions were updated to improve semantics where applicable.
 
-After following the guidance provided and re-running all javascript files through validation, no errors were present as shown below.
+After following the guidance provided and re-running all Javascript files through validation, no errors were presented as shown below.
 
 ![Javascript Validation End Result](Assets/IMAGES/javascriptValidationEndResult.png)
 
@@ -203,7 +203,7 @@ Performance was tested using Lighthouse, one of Google web developer tools.
 
 After testing the performance, I could see that my logo image was larger than needed for the site. I resized the logo image to improve the performance. 
 
-To improve the best practise score, I followed the advice and added the rel="noopener" property to all of the anchor links. Given the absence of this property poses a security risk, it is advisable to follow the best practive advise. 
+To improve the best practices score, I followed the advice and added the `rel="noopener"` property to all of the anchor links. Given the absence of this property poses a security risk, it is advisable to follow the best practices advise. 
 
 To improve the search engine optimisation score I added a meta description and changed the link descriptive text from "here" to the name of the link. 
 
@@ -243,31 +243,31 @@ The reduction in the logo image size improved the performance. A meta tag was ad
 
 ### User Stories Testing
 
-The users needs are met as follows:
+The user's needs are met as follows:
 
 - I want to be able to learn about the funds available and the risk that fund has.
-    - The fund risk game gives the user the opportunity to learn about all the funds that are on offer. The user is presented with a random fund name and by choosing the risk type the user either gets it wrong and is presented with the right fund allowing a connection to be made in their memory. If the user gets the answer right, they are congratulated, again reinforcing the link between the fund and risk choosen. 
+    - The fund risk game gives the user the opportunity to learn about all the funds that are on offer. The user is presented with a random fund name and by choosing the risk type the user either gets it wrong and is presented with the right fund allowing a connection to be made in their memory. If the user gets the answer right, they are congratulated, again reinforcing the link between the fund and risk chosen. 
 
 - I want to be able to learn the fund management style in an effortless way.
-    - As per above need, the management style game operates in the same manner. The gamification of the fund management style and fund risk makes it easy for an employee to learn in a fun manner by recieveing feedback as they progress through the game. 
+    - As per above need, the management style game operates in the same manner. The gamification of the fund management style and fund risk makes it easy for an employee to learn in a fun manner by receiving feedback as they progress through the game. 
 
-- I want to contact the site owner if I want to request more information about any particular funds or give feedback.
-    - The contact button on the home page allows the site user to fill in their message and it will be emailed to the site owner. The site owner can then respond directly to the given users email address with follow up information. When the user fills in the form, they recieve an alert to let them know an email has been sent and that they will recieve a response shortly. 
+- I want to contact the site owner to request more information about any particular funds or give feedback if needed.
+    - The contact button on the home page allows the site user to fill in their message to be emailed to the site owner. The site owner can then respond directly to the given users email address with follow up information. When the user fills in the form, they receive an alert to let them know an email has been sent and that they will get a response shortly. 
 
 - I want to be able to increment my knowledge at a pace that suits me. 
-    - Both games offer 3 levels where the user is presented with a set number of questions per game. For Easy, the nubmre of questions per game is 6, for Medium this is 12 and for Hard this is 18. As the employee feels more confident in their knowledge they can choose to answer more questions per game and improve their knowledge. 
+    - Both games offer 3 difficulty levels where the user is presented with a set number of questions per game. The number of questions per game is 6 for easy,12 for medium and 18 for hard. As the employee feels more confident in their knowledge they can choose to answer more questions per game and improve their knowledge. 
 
-- I want to feel encourage to continue learning. 
-    - Positive reinforcement messages are given to the user to keep them encouraged to learn. When they get an answer correct, a positive sound is played before they get the alert for correct answer. when a game is over, the user is given their score as a %, and the prompt to try again. Additonally, on choosing the game, the message box, encourages users with the wording "are you up for a challenge" before they choose the level to play. 
+- I want to feel encouraged to continue learning. 
+    - Positive reinforcement messages are given to the user to keep them encouraged to learn. When they get an answer correct, a positive sound is played before they get the alert informing them of the correct answer. When a game is over, the user is given their score as a %, and they are invited to try again and check the fund centre website. Additionally, on choosing the game, the message box encourages users with the wording "are you up for a challenge" before they choose the level to play. 
 
-- I want my employess to engage with the funds that we offer to learn the risk and management style.
-    - The funds given in the game are extracted from the offical fund centre website. The game allowers the user to interact with the funds by learning their risk and management style.
+- I want my employees to engage with the funds that we offer to learn their risk and management style.
+    - The funds given in the game are extracted from the official fund centre website. The game allows the user to interact with the funds by learning their risk and management style.
 
 - I want them to go to our fund centre website to learn more after completing the game.
     - A link to the fund centre in the How to play window encourages the user to explore the funds more. The end of game message encourages the user to visit this resource.
 
-- I want my employess to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
-    - As the webiste is available 24/7 and accessbile on any device that is connected to the internet, the game offers a flexible learning experience.
+- I want my employees to be able to upskill in a flexible manner by offering a website that is accessible outside the intranet.
+    - As the website is available 24/7 and accessible on any device that is connected to the internet, the game offers a flexible learning experience.
 
 
 ### Functionality Testing
@@ -284,15 +284,15 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 |           | The instructions window disappears when click X button| ✓ |
 |**Start Game** |  | |
 | | When click game button, alert pops up to advise game selected and asks user to select level| ✓|
-| | Click Easy - after selecting game - relevant game loads showing 0 of 6 qs | ✓|
-| | Click Medium - after selecting game - relevant game loads showing 0 of 12 qs | ✓|
-| | Click Hard - after selecting game - relevant game loads showing 0 of 18 qs | ✓|
+| | Click Easy - after selecting game - relevant game loads showing 0 of 6 questions | ✓|
+| | Click Medium - after selecting game - relevant game loads showing 0 of 12 questions | ✓|
+| | Click Hard - after selecting game - relevant game loads showing 0 of 18 questions | ✓|
 | | Home button works| ✓|
 | | Logo links to home page| ✓ |
 |**Contact** | | |
 | | After filling in form user gets correct alert| ✓|
-| | After form submitted, user returned home| ✓|
-| | If form data missing, user gets alert| ✓|
+| | After form submitted, user is returned to home page| ✓|
+| | If form data is missing, user gets an alert| ✓|
 | | Logo links to home page| ✓ |
 |**Fund Risk Game**| ||
 | | Home Button works| ✓|
@@ -300,14 +300,14 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Restart Button restarts game correctly| ✓|
 | | Each game is different | ✓|
 | | All answer buttons function correctly | ✓ |
-| | Random Fund Given for each Q in game | ✓ |
-| | No repeat Qs in same game | ✓ |
-| | correct answer total updates correctly| ✓|
-| | incorrect answer total updates correctly| ✓|
-| | question X of Y updates correctly where x is number of answered qs and Y is total for game| ✓|
+| | Random Fund Given for each question in game | ✓ |
+| | No repeated questions in the same game | ✓ |
+| | Correct answer total updates accordingly| ✓|
+| | Incorrect answer total updates accordingly| ✓|
+| | Question X of Y updates correctly where x is the number of answered questions and Y is the number of total questions for game| ✓|
 | | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
-| | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
-| | Game ends when answered total number of qs for game| ✓|
+| | Correct answer, outputs correct beep sound then alert with congratulations| ✓|
+| | Game ends when answered total number of questions for the game| ✓|
 | | At game end - alert given with result | ✓|
 |**Management Style Game**| ||
 | | Home Button works| ✓|
@@ -315,14 +315,14 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Restart Button restarts game correctly| ✓|
 | | Each game is different | ✓|
 | | All answer buttons function correctly | ✓ |
-| | Random Fund Given for each Q in game | ✓ |
-| | No repeat Qs in same game | ✓ |
-| | correct answer total updates correctly| ✓|
-| | incorrect answer total updates correctly| ✓|
-| | question X of Y updates correctly where x is number of answered qs and Y is total for game| ✓|
+| | Random Fund Given for each question in game | ✓ |
+| | No repeat questions in the same game | ✓ |
+| | Correct answer total updates accordingly| ✓|
+| | Incorrect answer total updates accordingly| ✓|
+| | Question X of Y updates correctly where x is the number of answered questions and Y is the number of total questions for game| ✓|
 | | Incorrect answer, outputs wrong beep sound then alert with correct answer| ✓|
-| | Correct answer, outputs correct beep sound then alert with congrarulations| ✓|
-| | Game ends when answered total number of qs for game| ✓|
+| | Correct answer, outputs correct beep sound then alert with congratulations| ✓|
+| | Game ends when answered total number of questions for the game| ✓|
 | | At game end - alert given with result | ✓|
 
 
@@ -330,7 +330,7 @@ All testing was repeated on a mobile device and all functions listed above are w
    
 ### Validation Testing
 
-The contact form was tested by leaving each input blank and trying to submit the form. The correct validation message was given for each input except the textarea. I had forgot to include the required parameter and updated this. I retested the contact form and all fields are working as expected now. 
+The contact form was tested by leaving each input blank and trying to submit the form. The correct validation message was given for each input except the textarea. I had forgotten to include the required parameter and updated this. I've re-tested the contact form and all fields are working as expected now. 
 
 ### Compatibility Testing
 
@@ -346,11 +346,11 @@ Using Google Developer tools, I viewed the website on the following devices:
 - Surface duo
 - Galaxy fold
 
-Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout. I want the user experience to be consistent across devices. After adding further CSS, I reran the css validation to ensure no errors had occured in the meantime. 
+Based on the results I decided to add more custom styling using media queries for each page. The main changes made were to increase the size of elements on larger screens and reduce the white space, while preserving the overall layout as I wanted the user experience to be consistent across all devices. After adding further CSS, I have re-run the CSS validation to ensure no errors had occurred in the meantime. 
 
-While viewing the page on different sized devices, I realised that that the logo was not exactly centered on some devices. I changed the display to block to allow the use of text-align centre for the image and this fixed the bug. 
+While viewing the page on different sized screen devices, I realised that that the logo was not exactly centered on some devices. I changed the display to block, allowing the use of text-align centre for the image and this fixed the bug. 
 
-On the game setup page, on IPhone 5 on Goolge developer tools, the option buttons container was bigger than the width of the device. This was causing a display issue. I fixed the issue with a media query for smaller mobile devices to reduce the margin between level buttons to ensure all content fits within the viewport width. 
+On the game setup page, on IPhone 5 on Google developer tools, the option buttons container was bigger than the width of the device. This was causing a display issue. I fixed the issue with a media query for smaller mobile devices to reduce the margin between level buttons to ensure all content fits within the viewport width. 
 
 #### Different Browsers
 
@@ -360,71 +360,70 @@ I tested the website on:
 - Safari
 - Firefox
 - Microsoft Edge
-- Internet explorer
+- Internet Explorer
 
 Differences discovered across browsers:
 
-- If using autofill, the autofilling of the form field changes the cell background colour. The cell colour varies depending on the browser.
+- If using autofill, the auto filling of the form field changes the cell background colour. The cell colour varies depending on the browser.
 
-- The alert box appears different on different browsers. Additonally, on firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additonal dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages dont appear.
+- The alert box appears different on different browsers. Additonally, on Firefox , when playing any game, the browser asks the user if they want to "Prevent this page from creating additional dialogues" when the alert window with the answer message pops up. This is a feature of the browser but it can cause an issue if the user hits prevent and then the game messages don't appear.
 ![Firefox browser message](Assets/IMAGES/firefoxAlertMessageIssue.png)
-To prevent this happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built in security features from confusing the game user. To achieve this, I used Bootstraps Modal. I reviewed this on all browsers and the display is more user friendly and appears the same across browsers. 
+To prevent this from happening, I did some searching online to see what other developers have done to obtain the same functionality. I discovered that a modal dialog could be used to keep the message window consistent across browsers and prevent the built-in security features from confusing the game user. To achieve this, I have used the Bootstraps Modal. I reviewed this feature on all browsers and the display is more user friendly and consistent across browsers. 
 
-- On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column css styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes to increase browser compability. After checking caniuse.com, I relaised that the spacing used not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the problem.
+- On Internet Explorer 11 (IE 11) on the home page the buttons are not distibuted with the flex column CSS styling and sit on top of each other. I firstly used [autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes to increase browser compatibility. After checking caniuse.com, I realised that the spacing used is not compatible on IE. I targeted IE with a specific media query to give the home page a similar layout and this fixed the layout problem.
 
-- On IE11 , the modals were not working at all. I added a meta tag to improve compability. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing. I debugged the issue by changing the display to show for the button and when click the modal appears. Further testing shows my jquery files are causing the issue. As my only access to Internet explorer is through my work computer, with security settings I did not have access to the console on IE. I continued to trial and test other possible known compability issues using stack overflow. This was still proving difficult without being able to pinpoint the issue. 
+- On IE 11 , the modals were not working at all. I added a meta tag to improve compatibility. I read that the fade class is not compatible with IE11. After removing the class, the modal was still not appearing. I debugged the issue by changing the display property of the modal button from hidden to visible. Clicking the modal button, proved the modal is working correctly and highlighted an issue with the javascript file.  Further testing shows the jquery lines in my file are causing the issue. As my only access to Internet explorer is through my work computer, with security settings I did not have access to the console on IE. I continued to trial and test other possible known compability issues using stack overflow. This was still proving difficult without being able to pinpoint the issue. 
 
-    - I obtained a laptop with IE that had access to developer tools. The first error that appears is that my for/of loop was expecting a ; in the conditional statement. Looking up this error, I realised that IE is not compabile with for/of loops. I restructed my for loop to be: for(i=0; i< dataArray.length; i++).
+    - I obtained a laptop with IE that had access to developer tools. The first error that appears is that my for/of loop was expecting a ; in the conditional statement. Looking up this error, I realised that IE is not compatible with for/of loops. I restructured my for loop to be: `for(i=0; i< dataArray.length; i++)`.
 
-    - The next error that the console gave was that Promise is undefined. I looked up to see why this is occuring in IE11 and discoved that you need to include Polyfill to make it work in Internet Explorer according to [Stack Overflow](https://stackoverflow.com/questions/42533264/getting-error-promise-is-undefined-in-ie11). I added this script and retested. Finally the game setup page is working as intended on IE.
+    - The next error that the console gave was that Promise is undefined. I looked up to see why this occured on IE11 and discovered that you need to include a Polyfill to make it work in Internet Explorer according to [Stack Overflow](https://stackoverflow.com/questions/42533264/getting-error-promise-is-undefined-in-ie11). I added this script and re-tested. Finally, the game setup page is working as intended on IE.
 
-    - I then started working on the game page but even after fixing the same issues as mentioned there were more compability issues. After trying many different troubleshooting steps, I decided to use githubs version control to revert my files to before I made the changes, as parts of my site that were working started to give errors. Given the time constriants of the project, I reached out to the student support in my course and they advised that as IE is being used less frequent that I should not focus on this browsers issues for the project as it is rapidly declining with time. 
+    - I then started working on the game page, but even after fixing the same issues as mentioned above, there were more compatibility issues arising. After trying many different troubleshooting steps, I decided to use Githubs version control to revert my files to before I made the changes, as parts of my site that were working started to give errors. Given the time constraint of the project, I reached out to the student support in my course and they advised that as IE is being used less frequently, that I should not focus on this browser's issues for the project as its use is rapidly declining with time. 
 
-    - I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covers Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented in IE11
+    - I then added in an alert that would display when a user visits the landing page using Interent Explorer only to tell them to use another browser. This was achieved using navigator.appName as documented on [W3Schools](https://www.w3schools.com/jsref/prop_nav_appname.asp) but this only covered Internet explorer until version 10. To include version 11, I followed the advise on [stackoverflow](https://stackoverflow.com/questions/21825157/internet-explorer-11-detection) and included window.msCrypto as it is only implemented on IE11. Using an if else statement, I tested that my newly added code only gave the alert on IE. The alert message is shown below. 
 
 ![Alert on Internet Explorer](Assets/IMAGES/ieAalert.PNG)
 
-After submitting my project, I will fork my repositoray and then work on the Javascript files to make them compatible with Internet Explorer aswell. 
+After submitting my project, I intend to fork my repository to work on the Javascript files and make them compatible with Internet Explorer aswell. 
 
 
 #### Different Operating Systems
-  
-Different Operating Systems
-The above testing was conducted on operating systems:
+
+The above testing was conducted on below operating systems:
 
 - Windows 8.1
 - MacOS Big Sur 11.2.3
 - iOS 14.4.2
 - Android
 
-The was no differences detected on different operating systems. [Browser Stack](live.browserstack.com) was used to view and check the functionality across a wide range of devices and operating systems.
+There were no differences detected on those operating systems. [Browser Stack](live.browserstack.com) was used to view and check the functionality across a wide range of devices and operating systems.
 
 
 ## Technologies Used
 
 ### Frameworks and Libraries
 
-- [Google Fonts](https://fonts.google.com/) was used to import the font used for the website.
+- [Google Fonts](https://fonts.google.com/) was used to import the font selectedfor the website.
 - [jQuery](https://jquery.com/) was used as a Javascript library.
-- [Bootstrap](https://getbootstrap.com/) was used for creating the modals on the website to ensure the message box was consistenct across browsers. 
+- [Bootstrap](https://getbootstrap.com/) was used for creating the modals on the website to ensure the message box was consistent across browsers. 
 
 ### Version Control
 
 - [Git](https://git-scm.com/) was used as a version control system.
-- [GitHub](https://github.com/) was used for repository hosting.
+- [GitHub](https://github.com/) was used for the repository hosting.
 - [Gitpod](https://www.gitpod.io/) was used as the developer platform.
 
 ### Other Programs
 
 - [Balsamiq](https://balsamiq.com/) was used to create a mock-up of the website after exploring the strategy and scope planes of user experience for this project.
-- [Color Combos](https://www.colorcombos.com) was used to extract all the hex colours used on the New Ireland Website and create teh colour scheme for this project.
+- [Color Combos](https://www.colorcombos.com) was used to extract all the hex colours used on the New Ireland Website and create the colour scheme for this project.
 - [Shuttle Stock](https://www.shutterstock.com) was used for the logo image.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
 - [W3C Html Checker](https://validator.w3.org/) was used to validate HTML code.
-- [Pic Resize](https://picresize.com/) was used to resize images available on the website to improve its performance.
-- [Ligthhouse](https://github.com/GoogleChrome/lighthouse) was used to audit my website. The results of the audit were considered when making improvements to improve the website performance etc.
+- [Pic Resize](https://picresize.com/) was used to resize images available on the website, improving its performance.
+- [Ligthhouse](https://github.com/GoogleChrome/lighthouse) was used to audit my website. The results of the audit were considered when making improvements to the website's performance etc.
 - [Am I responsive](http://ami.responsivedesign.is/) was used to view the website across several devices at once.
-- [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) checker was used to check the spelling of the website.
+- [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) was used to check the spelling of the website.
 - [Free Sound](https://freesound.org/) was used to get the sound files used in the game. 
 - [Can I use](https://caniuse.com/) was used to check browser supports range and potential compability issues and known bugs. 
 - [Browser Stack](live.browserstack.com) was used to test the website on different operating systems and browsers.
@@ -446,7 +445,7 @@ To copy the repository so that you have access to all the files and any new chan
 
 - Log into GitHub and locate the [Fund Centre Game](https://github.com/jojo157/FundCentreGame) repository.
 - On the top far right click on the fork button.
-- This will add a copy of Fund Centre Game repository to your repository.
+- This will add a copy of Fund Centre Game to your repository.
 
 You can add the Fund Centre Game repository to your local machine using the below steps:
 
@@ -460,9 +459,9 @@ You can add the Fund Centre Game repository to your local machine using the belo
 
 ### Code
 
-- [Email js API](https://www.emailjs.com/docs/) code template for using emailjs provided in their documentation was used to implement the email tempalte API on contact page when form submitted.
+- [Email js API](https://www.emailjs.com/docs/) code template for using emailjs provided in their documentation was used to implement the email template API on the contact page when the form is submitted.
 - [Bootstrap](https://getbootstrap.com/) was used to implement the modal across pages.
-- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) was used as aguide for using the css flexbox. 
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) was used as aguide for using the CSS flexbox. 
 - To import the text files [Stack Overflow](https://stackoverflow.com/questions/26656260/importing-data-from-a-text-file-into-an-array-using-javascript/26656364) provided assistance and help with the code. 
 - To create the floating pop up div, an essential resource was [Encode DNA](https://www.encodedna.com/2012/12/floating-div-using-css.htm) .
 
@@ -479,7 +478,7 @@ You can add the Fund Centre Game repository to your local machine using the belo
 ### Acknowledgements
 - I would like to thank Bank of Ireland Life / New Ireland Assurance for the content for the game.
 - I would like to thank my mentor Spencer Barriball for his help, encouragement and advice. 
-- I would like to thank Code Institue's Tutor support for their help throughout the course.
+- I would like to thank Code Institute's Tutor support for their help throughout the course.
 - I would like to thank my fellow students for their help on slack. 
 - I would like to thank my wife Leticia for her continued support. 
-- I would like to thank Stack Overflow and W3Schools for their content as when trouble shooting these resources were essential to work out how to correct my code. 
+- I would like to thank Stack Overflow and W3Schools for their content when trouble shooting as these resources were essential to work out how to correct my code. 
