@@ -707,12 +707,44 @@ Padding-top: 20px;
   -webkit-box-direction: normal; 
       -ms-flex-direction: column; 
           flex-direction: column; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
+  -webkit-box-pack: space-between; 
+      -ms-flex-pack: space-between; 
+          justify-content: space-between;
   text-align: center;
 }
 
+#home-button-404{
+  height:50px;
+    width: 100px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+    background-color:#b5ca83;
+    border: 2px solid #1a3e5b;
+    color: #000;
+}
+
+.error-404-subsection{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#image-404{
+  height: 40vh;
+  width:auto;
+  
+}
+
+#image-404 image{
+  object-fit: fill;
+  height: 100%;
+}
 
 
 /* ----------------------  Media Queries-------------------------------------  */
