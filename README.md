@@ -100,6 +100,8 @@ The following features are in scope for this project.
     - The user can navigate to the home page and decide to change game or level at any stage when in an active game. The page logo also acts to allow the user to return to the home page at any stage. 
 - Sound Alerts
     - When a user gets an answer wrong, they are given a wrong beep sound and the correct answer is shown. When a user gets an answer right, they get a positive sound and congratulated. 
+- 404 Error page
+    - A custom 404 error page if the user navigates to a resource that does not exist with a button to return home. 
 
 #### Future Features 
 
@@ -337,7 +339,9 @@ I tested the functionality of the site on a laptop first. Each page was tested a
 | | Correct answer, outputs correct beep sound then alert with congratulations| ✓|
 | | Game ends when answered total number of questions for the game| ✓|
 | | At game end - alert given with result | ✓|
-
+|**404 error page**| ||
+| | The 404 custom error page appears if the user navigates to a resource that doesnt exist| ✓|
+| | A home button is present, when the user clicks the button they are brought to the home page| ✓|
 
 All testing was repeated on a mobile device and all functions listed above are working correctly. 
    
