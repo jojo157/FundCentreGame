@@ -27,6 +27,7 @@ Image created using [Am I responsive](http://ami.responsivedesign.is/)
     - [Typography](#typography)
     - [Images](#images)
 - [Testing](#testing)
+    - [Development Issues](#development-issues)
     - [Code Validation](#code-validation)
         - [Html](#html)
         - [CSS](#css)
@@ -151,6 +152,17 @@ I wanted to use a logo that was relevant to a game about investment funds. The i
 
 ## Testing
 
+During development, testing was conducted at every step, mainly using the console to log results and check for errors. Minor issues that were quickly resolved are not noted in this Readme but details of changes are included in the project commits. Issues that took longer to resolve are discussed below. 
+
+### Development Issues
+
+- The fund risk level for the fund displayed on screen was incorrect when the checkAnswer function was called. I noticed that the fund answer for the first question was being given for all the following questions within the game. This was caused by a declared variable and its scope. To resolve the issue, I removed the declared variable and accessed the DOM to check the risk level for the fund shown from the relevant array. The checkAnswer function works as intended now. 
+
+- I wanted to be able to pass the user selected game level from the Game Load page to the Game page. I had tried using session storage but realised this is independent for each page as the document is updated. I discovered a suggestion on Stack Overflow to add the variable to the page address and then extract the variable from the address on the Game page. I created a function for both pages to achieve this result and the game level is now passed to the game. 
+
+- I wanted to prevent repeat fund questions within the same game. My first function gave an error of "Uncaught RangeError: Maximum call stack size exceeded". After debugging the function at different lines, I realised the variable I had expected to be false was resulting in true. This had created an infinity loop calling my function. I then changed my code and checked that the result was as expected. The next error was given when the repeat question fuction returned true. The error was "Uncaught Type Error: Cannot read property '0' of undefined". I then went through the function line by line, identified the issue and created a conditional statement to handle the event to ensure there was no Type Error and a new unique fund was displayed instead of the repeat question. This was tested using the console to view the outputs as the game was played and to identify when a repeat question was encounted and how the code responded. All questions in a game are now unique.. 
+
+
 ### Code Validation
 
 #### Html
@@ -187,7 +199,8 @@ Warnings
 - Warnings were given for missing semi-colons . 
     - These were updated accordingly. 
 - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics.
-    - The functions were updated to improve semantics where applicable.
+    - The functions were updated to improve semantics where applicable. The remaining functions where this warning is given are in the format:
+    `for(let game of games){game.addEventListener("click", function(){ ...})}`
 
 After following the guidance provided and re-running all Javascript files through validation, no errors were presented as shown below.
 
